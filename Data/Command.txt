@@ -1,0 +1,904 @@
+[Kick]
+Name = kick
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eKicks a player.<br>&eUsage: /kick [Name] <Reason>
+
+[Say]
+Name = say
+Rank = 255
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = 
+
+[Ban]
+Name = ban
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eBans a player.<br>&eUsage: /Ban [Name] <Reason>
+
+[Un-Ban]
+Name = unban
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eUnbans a player.<br>&eUsage: /Unban [Name]
+
+[Stop-Player]
+Name = stop
+Rank = 149
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eStops a player, he can't built now.<br>&eUsage: /Stop [Name] <Reason>
+
+[Un-Stop]
+Name = unstop
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eUnstops a player, he can build now.<br>&eUsage: /Unstop [Name]
+
+[Mute-Player]
+Name = mute
+Rank = 149
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eMutes a player, he can't speak now.<br>&eUsage: /mute [Name] <minutes>
+
+[Unmute-Player]
+Name = unmute
+Rank = 149
+Rank_Show = 0
+Plugin = 
+Group = 
+Description = 
+
+[List-Commands]
+Name = commands
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = Normal
+Description = &eGives a list of available commands.
+
+[Command-Help]
+Name = cmdhelp
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = Normal
+Description = &eGives help to a command.
+
+[List-Players]
+Name = players
+Rank = -1
+Rank_Show = 0
+Plugin = Lua:Command_List_Players_2
+Group = Normal
+Description = &eGives a list of online players.
+
+[Player-Info]
+Name = pinfo
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eGives some information about a player.<br>&eUsage: /pinfo [Name]
+
+[Set-Rank]
+Name = setrank
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eChanges the rank of a player.<br>&eUsage: /setrank [Name] [-32768 to 32767]
+
+[Get-Rank]
+Name = getrank
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eGives the rank of a player.<br>&eUsage: /getrank [Name]
+
+[Set-Long-Attribute]
+Name = setattr
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eChanges a attribute of a player.<br>&eUsage: /setattr [Attribute] [Value]
+
+[Get-Long-Attribute]
+Name = getattr
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eReturns a attribute of a player.<br>&eUsage: /getattr [Attribute]
+
+[Set-String-Attribute]
+Name = setsattr
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eChanges a attribute of a player.<br>&eUsage: /setsattr [Attribute] [String]
+
+[Get-String-Attribute]
+Name = getsattr
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eReturns a attribute of a player.<br>&eUsage: /getsattr [Attribute]
+
+[Material]
+Name = material
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = Build
+Description = &eChanges your building material. Build it with Stone.<br>&eYou get a list of materials with /materials<br>&eUsage: /material [material]
+
+[Place]
+Name = place
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Build
+Description = &ePlaces a block under you. The material is your last built<br>&eUsage: /place <material>
+
+[Paint]
+Name = paint
+Rank = 50
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Paint
+Group = Build
+Description = &eStarts buildmode: Paint. Delete blocks to paint.
+
+[No_Physics]
+Name = np
+Rank = 50
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_No_Physics
+Group = Build
+Description = &eStarts buildmode: No Physics. Just build without triggering any block.
+
+[Brush]
+Name = brush
+Rank = 100
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Brush
+Group = Build
+Description = &eStarts buildmode: Brush. <br>&eUsage: /brush [Size]
+
+[Place_Tree]
+Name = tree
+Rank = 250
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Tree
+Group = Build
+Description = &eStarts buildmode: Tree. <br>&eUsage: /tree [Size]
+
+[Map_Blocks_Count_Box]
+Name = bcountbox
+Rank = 100
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_BCount
+Group = Build
+Description = &eStarts buildmode: Blockcount-Box. Place two blocks to get the blocktypes
+
+[Measure]
+Name = measure
+Rank = 0
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Measure
+Group = Build
+Description = &eStarts buildmode: Measure. Place or Delete two blocks to get the distance
+
+[Get Midpoint]
+Name = center
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Get_Midpoint
+Group = Build
+Description = &eStarts buildmode: Get Center. Place two blocks to get the Center between them
+
+[Line]
+Name = line
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Line
+Group = Build
+Description = &eStarts buildmode: Line. Place two blocks to describe the line.<br>&eYou set the material with the last block.<br>&eUsage: /line
+
+[Triangle]
+Name = triangle
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Triangle
+Group = Build
+Description = &eStarts buildmode: Triangle. Place three blocks to describe the triangle.<br>&eYou set the material with the last block.<br>&eUsage: /triangle <replace material>
+
+[Hollow-Triangle]
+Name = htriangle
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hollow_Triangle
+Group = Build
+Description = &eStarts buildmode: Hollow Triangle. Place three blocks to describe the triangle.<br>&eYou set the material with the last block.<br>&eUsage: /htriangle <replace material>
+
+[Hyperbol]
+Name = hyperbol
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hyperbol
+Group = Build
+Description = &eStarts buildmode: Hyperbol. Place four blocks to describe the hyperbolic-plane.<br>&eYou set the material with the last block.<br>&eUsage: /hyperbol <replace material>
+
+[Circle]
+Name = circle
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Circle
+Group = Build
+Description = &eStarts buildmode: Circle. Place two blocks to describe the circle.<br>&eYou set the material with the last block.<br>&eUsage: /circle <replace material>
+
+[Hollow-Circle]
+Name = hcircle
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hollow_Circle
+Group = Build
+Description = &eStarts buildmode: Hollow_Circle. Place two blocks to describe the circle.<br>&eYou set the material with the last block.<br>&eUsage: /hcircle <replace material>
+
+[Text]
+Name = text
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Text
+Group = Build
+Description = &eStarts buildmode: Text. Place two blocks to build the text.
+
+[Box]
+Name = box
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Box
+Group = Build
+Description = &eStarts buildmode: Box. Place two blocks to describe the Box.<br>&eYou set the material with the last block.<br>&eUsage: /box <replace material>
+
+[Hollow-Box]
+Name = hbox
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hollow_Box
+Group = Build
+Description = &eStarts buildmode: Hollow Box. Place two blocks to describe the Box.<br>&eYou set the material with the last block.<br>&eUsage: /hbox <replace material>
+
+[Sphere]
+Name = sphere
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Sphere
+Group = Build
+Description = &eStarts buildmode: Sphere. Place two blocks to describe the Sphere.<br>&eYou set the material with the last block.<br>&eUsage: /sphere <replace material>
+
+[Hollow-Sphere]
+Name = hsphere
+Rank = 60
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hollow_Sphere
+Group = Build
+Description = &eStarts buildmode: Hollow Sphere. Place two blocks to describe the Sphere.<br>&eYou set the material with the last block.<br>&eUsage: /hsphere <replace material>
+
+[Hollow]
+Name = hollow
+Rank = 100
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Hollow
+Group = Build
+Description = &eStarts buildmode: Hollow.
+
+[Rotate]
+Name = rotate
+Rank = 32000
+Rank_Show = 0
+Plugin = 
+Group = Build
+Description = &eStarts buildmode: Rotate. &cWIP
+
+[Rank-Box]
+Name = rbox
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Rank_Box
+Group = Build
+Description = &eStarts buildmode: Restriction-Box. Place two blocks to describe the Box.<br>&eUsage: /rbox [rank]
+
+[Cancel]
+Name = cancel
+Rank = -1
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Cancel
+Group = Build
+Description = &eCancel any mode. You build normal after it.
+
+[Block-Get-Type]
+Name = bget
+Rank = -1
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Get_Blocktype
+Group = Build
+Description = &eStarts Mode: Block-Get. Place or delete a block.
+
+[Block-Get-Rank]
+Name = rget
+Rank = -1
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Get_Rank
+Group = Build
+Description = &eStarts Mode: Rank-Get. Place or delete a block.
+
+[Block-Get-Player]
+Name = pget
+Rank = 0
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Get_Player
+Group = Build
+Description = &eStarts Mode: Player-Get. Place or delete a block.
+
+[Stick]
+Name = stick
+Rank = 150
+Rank_Show = 150
+Plugin = Lua:Command_Build_Mode_Stick
+Group = Statics
+Description = &eStarts buildmode: Stick. Place two blocks to describe the stick,<br>&eyou set the material with the last block.<br>&eUsage: /Stick
+
+[Anchor]
+Name = anchor
+Rank = 150
+Rank_Show = 150
+Plugin = Lua:Command_Build_Mode_Anchor
+Group = Statics
+Description = &eStarts buildmode: Anchor. Place a block.<br>&eUsage: /Anchor
+
+[Stick_Physic_Stop]
+Name = sstop
+Rank = 200
+Rank_Show = 200
+Plugin = Lua:Command_SP_Stop
+Group = Statics
+Description = &eStops stickphysics
+
+[Stick_Physic_Start]
+Name = sstart
+Rank = 200
+Rank_Show = 200
+Plugin = Lua:Command_SP_Start
+Group = Statics
+Description = &eStarts stickphysics
+
+[Stick_Physic_Clear]
+Name = sclear
+Rank = 200
+Rank_Show = 200
+Plugin = Lua:Command_SP_Clear
+Group = Statics
+Description = &eClears stickphysics
+
+[Undo-Time]
+Name = undotime
+Rank = 255
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eUsage: /undotime [Seconds]
+
+[Undo-Player]
+Name = undoplayer
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = OP
+Description = &eUsage: /undoplayer [Name] <Seconds>
+
+[Undo]
+Name = undo
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Normal
+Description = &eUsage: /undo <Seconds>
+
+[Map-Info]
+Name = mapinfo
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eGives some information about a map.
+
+[Map-Resend]
+Name = mapresend
+Rank = 250
+Rank_Show = 0
+Plugin = Lua:Command_Map_Resend
+Group = Map
+Description = &eResends the map you are in.
+
+[Map-Save]
+Name = mapsave
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eSaves the map you are in.<br>&eUsage: /mapsave <Name><br>&eName is not needed.
+
+[Map-Load]
+Name = mapload
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eLoads the map you are in.<br>&eUsage: /mapload <Name><br>&eName is not needed.
+
+[Map-Resize]
+Name = mapresize
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eResizes the map you are in.<br>&eUsage: /mapresize [X] [Y] [Z]<br>&cDont make smaller maps than 16x16x16, the client can crash!
+
+[Map-Rename]
+Name = maprename
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eRenames the map you are in.<br>&eUsage: /maprename [Name]
+
+[Map-Directory-Rename]
+Name = mapdirrename
+Rank = 253
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eRenames the directory of the map you are in.<br>&eUsage: /mapdirrename [Directory]
+
+[Map-Delete]
+Name = mapdelete
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eDeletes the map you are in.
+
+[Map-Add]
+Name = mapadd
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eAdd's a new map.<br>&eUsage: /mapadd [Name]
+
+[List-Mapfills]
+Name = mapfills
+Rank = 252
+Rank_Show = 0
+Plugin = Lua:Command_List_Mapfills
+Group = Map
+Description = &eShow available mapfills. Use them with /Mapfill.
+
+[Map-Fill]
+Name = mapfill
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eFills the map you are in.<br>&eUsage: /mapfill [Script] <Arguments>
+
+[Map-Stype]
+Name = mapstyle
+Rank = 252
+Rank_Show = 0
+Plugin = Lua:Map_Style_Main
+Group = Map
+Description = &eStyles the map you are in.<br>&eUsage: /mapstyle [Script] <Arguments>
+
+[Map-Export]
+Name = mapexport
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Export
+Group = Map
+Description = &eStarts mode: Export Map. Place two blocks to describe the part of the map.<br>&eUsage: /mapexport [name]
+
+[Map-Import]
+Name = mapimport
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Import
+Group = Map
+Description = &eStarts mode: Import Map. Place a block to import the map.<br>&eThe map appears in positive directions (X+,Y+, Z+).<br>&eUsage: /mapimport [name]
+
+[Map-Scaleimport]
+Name = mapscaleimport
+Rank = 255
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Scaleimport
+Group = Map
+Description = &eStarts mode: Import Map (Scaled).<br>&ePlace a block to import the map.<br>&eThe map appears in positive directions (X+,Y+, Z+).<br>&eUsage: /mapscaleimport [X] [Y] [Z] [name]  (X,Y,Z --> Scale)
+
+[spmap]
+Name = spmap
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = 
+
+[Map_Blocks_Count]
+Name = bcount
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eCounts all blocks in the map.<br>&eUsage: /bcount or /bcount physic
+
+[Map_Rank_Build_Set]
+Name = mapbuildrank
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eChanges the global build-rank of the map<br>&eUsage: /mapbuildrank [Rank]
+
+[Map_Rank_Join_Set]
+Name = mapjoinrank
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eChanges the join-rank of the map<br>&eUsage: /mapjoinrank [Rank]
+
+[Map_Rank_Show_Set]
+Name = mapshowrank
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eChanges the show-rank of the map<br>&eUsage: /mapshowrank [Rank]
+
+[Map_Physic_Stop]
+Name = pstop
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = 
+Description = 
+
+[Map_Physic_Start]
+Name = pstart
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = 
+Description = 
+
+[Change-Map]
+Name = map
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eTeleports you in the selected map.<br>&eUsage: /map [Name]
+
+[List-Maps]
+Name = maps
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eGives a list of available maps.
+
+[List-Usermaps]
+Name = usermaps
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Map
+Description = &eGives a list of exported maps.
+
+[List-Materials]
+Name = materials
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = Build
+Description = &eGives a list of available materials.
+
+[Teleport]
+Name = tp
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eTeleports you to a player.
+
+[Bring]
+Name = bring
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eTeleports a player to you.<br>&eUsage: /bring [Player]
+
+[Set-Spawn]
+Name = setspawn
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eChanges the spawnpoint of the map.
+
+[Set-Killspawn]
+Name = setkillspawn
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eChanges the kill-spawnpoint of the server.<br>&eIt doesn't work if the global killspawn isn't activated.
+
+[Set-Location]
+Name = setloc
+Rank = 100
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eSaves/Changes a location.<br>&eUsage: /setloc [name]
+
+[Delete-Location]
+Name = delloc
+Rank = 100
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eDeletes a location.<br>&eUsage: /delloc [name]
+
+[Teleport-2-Location]
+Name = tploc
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eTeleports you to a location.<br>&eUsage: /tploc [name]
+
+[Bring-2-Location]
+Name = bringloc
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eTeleports a player to a location.<br>&eUsage: /bringloc [Player] [location]
+
+[List-Locations]
+Name = locations
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eGives a list of saved locations.
+
+[Teleporter-Box]
+Name = tpbox
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Teleporter_Box
+Group = TP
+Description = &eCreates a teleporter-box (Portal).<br>&eDestination-coordinates are your present coordinates.<br>&eUsage: /tpbox [name]
+
+[Old-Teleporter-Box]
+Name = otpbox
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Old_Teleporter_Box
+Group = TP
+Description = &eCreates a teleporter-box (Portal).<br>&eDestination-coordinates are your present coordinates.<br>&eUsage: /tpbox [name]
+
+[List-Teleporters]
+Name = teleporters
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eLists all Teleporters on a map.
+
+[Delete-Teleporterbox]
+Name = deltp
+Rank = 200
+Rank_Show = 0
+Plugin = 
+Group = TP
+Description = &eDeletes a teleporter-box (Portal).<br>&eUsage: /deltp [name]
+
+[Get-Teleporterbox]
+Name = tpget
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Build_Mode_Get_Teleporter
+Group = TP
+Description = &eGives the name of a teleporter-box (Portal).<br>&eBuild inside a teleporter.<br>&eUsage: /tpget
+
+[Time]
+Name = time
+Rank = -1
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = &eShows the Servertime.
+
+[Server-Info]
+Name = serverinfo
+Rank = 100
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = &eShows some information about the server.
+
+[Log]
+Name = log
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = &eReturns some lines from the server-log<br>&eUsage [Lines] <Type>
+
+[Ping]
+Name = ping
+Rank = 250
+Rank_Show = 0
+Plugin = 
+Group = Normal
+Description = &eShould show the ping of your connection. Doesnt work at the moment.
+
+[Watchdog]
+Name = watchdog
+Rank = 150
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = &eShows some information about the server-threads.
+
+[Lua-Run-Function]
+Name = luarun
+Rank = 260
+Rank_Show = 0
+Plugin = Lua:Command_Run_Function
+Group = Server
+Description = &eRun's a Lua-Function.
+
+[List-Plugins]
+Name = plugins
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = 
+
+[Plugin-Load]
+Name = pload
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = 
+
+[Plugin-Unload]
+Name = punload
+Rank = 252
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = 
+
+[Crash-Server]
+Name = crash
+Rank = 1000
+Rank_Show = 0
+Plugin = 
+Group = Server
+Description = &cHm, dont use it ;)
+
+[Find-Ranks]
+Name = findranks
+Rank = 0
+Rank_Show = 0
+Plugin = 
+Group = Normal
+Description = &eGives a list of players with the given range of ranks.
+
+[Me]
+Name = me
+Rank = 50
+Rank_Show = 0
+Plugin = Lua:Command_Me
+Group = Normal
+Description = &eShows an action.<br>&eUsage: /me is doing something
+
+[Change Name]
+Name = changename
+Rank = 250
+Rank_Show = 0
+Plugin = Lua:Command_Change_Name
+Group = OP
+Description = &eChanges your name.<br>&eUsage: /changename [prefix] [name] [suffix]
+
+[Reset Name]
+Name = resetname
+Rank = 250
+Rank_Show = 0
+Plugin = Lua:Command_Reset_Name
+Group = OP
+Description = &eResets your name.<br>&eUsage: /resetname
+
+[Mobs_Add]
+Name = madd
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Mobs_Add
+Group = Normal
+Description = &eAdds mobs to a map.
+
+[Mobs_Delete]
+Name = mdel
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Mobs_Delete
+Group = Normal
+Description = &eDeletes all mobs on a map.
+
+[Gun]
+Name = gun
+Rank = 10
+Rank_Show = 0
+Plugin = Lua:Command_Gun
+Group = Normal
+Description = &eActivates the gun.
+
+[Message To Admins]
+Name = mad
+Rank = 50
+Rank_Show = 0
+Plugin = Lua:Command_Message_Admins
+Group = Normal
+Description = 
+
+[trace]
+Name = trace
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Trace
+Group = OP
+Description = 
+
+[Gamemode Gun]
+Name = gungame
+Rank = 200
+Rank_Show = 0
+Plugin = Lua:Command_Gamemode_Gun_Start
+Group = Normal
+Description = -
+

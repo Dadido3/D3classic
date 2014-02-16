@@ -1,0 +1,2 @@
+[Blockchanges]
+Max_Changes_Per_s = 1100

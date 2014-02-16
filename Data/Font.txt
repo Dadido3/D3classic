@@ -1,0 +1,5 @@
+[Standart]
+Image_File = Data/Fonts/Standart.bmp
+
+[Minecraft]
+Image_File = Data/Fonts/Minecraft.bmp

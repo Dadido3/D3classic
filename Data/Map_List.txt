@@ -1,0 +1,10 @@
+[0]
+Name = Hub
+Directory = Maps/Hub/
+Delete = 0
+Reload = 0
+[1]
+Name = Khazad Dum
+Directory = Maps/Khazad_Dum/Bridge/
+Delete = 0
+Reload = 0

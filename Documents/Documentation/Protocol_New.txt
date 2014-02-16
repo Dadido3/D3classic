@@ -1,0 +1,254 @@
+Types:
+	Byte: 1 Byte
+	Short: 2 Byte
+	Int: 4 Byte
+	Quad: 8 Byte
+	Float: 4 Byte
+	Double: 8 Byte
+	UTF-8 String: (Short)Length + Bytearray[Length]
+
+
+
+Client to Server:
+	Login
+		Packet_ID			Byte				0x01
+		Protocol_Version	Int					
+		Player_Name			UTF-8 String		
+		Server_Password		UTF-8 String		
+	
+	Handshake
+		Packet_ID			Byte				0x02
+		Username			UTF-8 String		
+	
+	Chat
+		Packet_ID			Byte				0x03
+		Message				String				
+		
+	Unknown
+		Packet_ID			Byte				0x0A
+							Byte				
+	
+	Send Position
+		Packet_ID			Byte				0x0B
+		X					Double				
+		Z					Double				
+							Double				
+		Y					Double				
+							Byte				
+	
+	Send Rotation
+		Packet_ID			Byte				0x0C
+		Rotation			Float				
+		Pitch				Float				
+							Byte				
+	
+	Send Position+Rotation
+		Packet_ID			Byte				0x0D
+		X					Double				
+		Z					Double				
+							Double				
+		Y					Double				
+		Rotation			Float				
+		Pitch				Float				
+							Byte				
+	
+	Digging
+		Packet_ID			Byte				0x0E
+		Status				Byte				
+		X					Int					
+		Z					Byte				
+		Y					Int					
+							Byte				
+	
+	Place
+		Packet_ID			Byte				0x0F
+		Type				Short				
+		X					Int					
+		Z					Byte				
+		Y					Int					
+		Direction			Byte				
+	
+	
+	
+	Disconnect
+		Packet_ID			Byte				0xFF
+		Reason				UTF-8 String		
+	
+	
+Server to Client:
+	Login Response
+		Packet_ID			Byte				0x01
+		Player_ID			Int					
+		Server_Name?		UTF-8 String		
+		MOTD?				UTF-8 String		
+	
+	Handshake
+		Packet_ID			Byte				0x02
+							UTF-8 String		
+	
+	Chat
+		Packet_ID			Byte				0x03
+		Message				UTF-8 String		
+	
+	Unknown (Not used in this direction?)
+		Packet_ID			Byte				0x0A
+							Byte				
+	
+	Unknown (Not used in this direction?)
+		Packet_ID			Byte				0x0B
+							Double				
+							Double				
+							Double				
+							Double				
+							Byte				
+	
+	Unknown (Not used in this direction?)
+		Packet_ID			Byte				0x0C
+							Float				
+							Float				
+							Byte				
+	
+	Unknown (Not used in this direction?)
+		Packet_ID			Byte				0x0D
+							Double				
+							Double				
+							Double				
+							Float				
+							Float				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x0E
+							Byte				
+							Int					
+							Byte				
+							Int					
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x0F
+							Short				
+							Int					
+							Byte				
+							Int					
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x10
+							Int					
+							Short				
+		
+	Unknown
+		Packet_ID			Byte				0x11
+							Short				
+							Byte				
+							Short				
+	
+	Player Animation
+		Packet_ID			Byte				0x12
+		Entity_ID			Int					
+		Animation			Byte				
+	
+	Player Spawn
+		Packet_ID			Byte				0x14
+		Unique_ID			Int					
+		Player_Name			UTF-8 String		
+		X					Int					
+		Y					Int					
+		Z					Int					
+		Rotation			Byte				
+		Pitch				Byte				
+							Short				
+		
+	Mob Spawn
+		Packet_ID			Byte				0x15
+		Unique_ID			Int					
+							Short				
+							Byte				
+		X					Int					
+		Y					Int					
+		Z					Int					
+		Rotation			Byte				
+		Pitch				Byte				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x16
+							Int					
+							Int					
+		
+	Unknown
+		Packet_ID			Byte				0x1D
+							Int					
+		
+	Unknown
+		Packet_ID			Byte				0x1E
+							Int					
+		
+	Unknown
+		Packet_ID			Byte				0x1F
+							Byte				
+							Byte				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x20
+							Int					
+							Byte				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x21
+							Int					
+							Byte				
+							Byte				
+							Byte				
+							Byte				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x22
+							Int					
+							Int					
+							Int					
+							Int					
+							Byte				
+							Byte				
+		
+	Unknown
+		Packet_ID			Byte				0x32
+							Int					
+							Int					
+							Byte				
+		
+	Map Chunk
+		Packet_ID			Byte				0x33
+		X					Int					
+		Z					Short				
+		Y					Int					
+		Size_X				Byte				
+		Size_Z 				Byte				
+		Size_Y 				Byte				
+		Data_Size (Compr.)	Int					
+		Data (Compr.)		Byte[Data_Size]
+		
+	Multiple Blockchanges
+		Packet_ID			Byte				0x34
+		Chunk X				Int					
+		Chunk Y				Int					
+		Size				Short				
+		Coordinates			Short[Size]			
+		Type				Byte[Size]			
+		Metadata			Byte[Size]			
+		
+	Unknown
+		Packet_ID			Byte				0x35
+							Int					
+							Byte				
+							Int					
+							Byte				
+							Byte				
+		
+	Kick
+		Packet_ID			Byte				0xFF
+		Message 			UTF-8 String		

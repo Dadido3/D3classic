@@ -1,0 +1,45 @@
+[-32768]
+Name = Griefer
+Prefix = &d
+[0]
+Name = Guest
+Prefix = &f
+[10]
+Name = Builder
+Prefix = &e
+[60]
+Name = Trusted Builder
+Prefix = &6
+[100]
+Name = Architect
+Prefix = &a
+On_Client = 100
+[149]
+Name = Half-Op
+Prefix = &2
+On_Client = 100
+[150]
+Name = Operator
+Prefix = &9
+On_Client = 100
+[200]
+Name = Admin
+Prefix = &4
+On_Client = 100
+[252]
+Name = The Threesome
+Prefix = &7
+On_Client = 100
+[253]
+Name = Co-Owner
+Prefix = &3
+Color_Code = 51
+On_Client = 100
+[260]
+Name = Owner
+Prefix = &b
+On_Client = 100
+[32767]
+Name = Founder
+Prefix = &8
+On_Client = 100

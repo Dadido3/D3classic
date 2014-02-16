@@ -1,0 +1,39 @@
+if  you set Map_ID to -1 the event will work on all maps.
+
+Event_Timer(Map_ID)
+
+Event_Client_Add(Result, Client_ID)
+Event_Client_Delete(Result, Client_ID)
+Event_Client_Login(Result, Client_ID)
+Event_Client_Logout(Result, Client_ID)
+
+Event_Entity_Add(Result, Entity_ID)
+Event_Entity_Delete(Result, Entity_ID)
+Event_Entity_Position_Set(Result, Entity_ID, Map_ID, X, Y, Z, Rotation, Look, Priority, Send_Own_Client)
+Event_Entity_Die(Result, Entity_ID)
+
+Event_Map_Add(Result, Map_ID)
+Event_Map_Action_Delete(Result, Action_ID, Map_ID)
+Event_Map_Action_Resize(Result, Action_ID, Map_ID)
+Event_Map_Action_Fill(Result, Action_ID, Map_ID)
+Event_Map_Action_Save(Result, Action_ID, Map_ID)
+Event_Map_Action_Load(Result, Action_ID, Map_ID)
+
+Event_Map_Block_Change(Result, Player_Number, Map_ID, X, Y, Z, Type, Undo, Physic, Send, Send_Priority)
+Event_Map_Block_Change_Client(Result, Client_ID, Map_ID, X, Y, Z, Mode, Type)
+Event_Map_Block_Change_Player(Result, Player_Number, Map_ID, X, Y, Z, Type, Undo, Physic, Send, Send_Priority)
+	Use "Return 1" to allow the Blockchange and "Return 0" to prevent it
+
+Event_Chat_Map(Result, Entity_ID, Message)
+Event_Chat_All(Result, Entity_ID, Message)
+Event_Chat_Private(Result, Entity_ID, Player_Name, Message)
+
+Command(Client_ID, Command, Text_0, Text_1, Arg_0, Arg_1, Arg_2, Arg_3, Arg_4)
+
+Map_Block_Physics(Map_ID, X, Y, Z)
+Map_Block_Create(Map_ID, X, Y, Z, Old_Block, Client_ID)
+Map_Block_Delete(Map_ID, X, Y, Z, Old_Block, Client_ID)
+
+Map_Fill(Map_ID, Size_X, Size_Y, Size_Z, Argument_String)
+
+Build_Mode(Client_ID, Map_ID, X, Y, Z, Mode, Block_Type)

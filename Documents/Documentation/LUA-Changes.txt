@@ -1,0 +1,106 @@
+Removed:
+	
+-	Client_Get_X(Client_ID)
+-	Client_Get_Y(Client_ID)
+-	Client_Get_Z(Client_ID)
+-	Client_Get_Rotation(Client_ID)
+-	Client_Get_Look(Client_ID)
+-	Client_Get_Player(Client_ID) or Client_Get_Player_Number(Client_ID)
+-	Client_Position_Set(Client_ID)
+	
+Use these instead:
+	
++	Entity_Get_X(Entity_ID)
++	Entity_Get_Y(Entity_ID)
++	Entity_Get_Z(Entity_ID)
++	Entity_Get_Rotation(Entity_ID)
++	Entity_Get_Look(Entity_ID)
++	Entity_Get_Player(Entity_ID)
++	Entity_Position_Set(Entity_ID)
+	
+You get the Entity_ID with "Entity_ID = Client_Get_Entity(Client_ID)"
+
+--------------------------------------------------------------------------------------
+
+Removed:
+	
+-	Map_Block_Change(Client_ID, Map_ID, X, Y, Z, Mode, Type, Send_Priority, Undo, Physic)
+-	Map_Block_Change_Fast(Player_Number, Map_ID, X, Y, Z, Type, Send_Priority, Undo, Physic, Send)
+-	Map_Block_Set_Rank(Map_ID, X, Y, Z, Rank)
+	
+Use these instead:
+	
++	Map_Block_Change(Player_Number, Map_ID, X, Y, Z, Type, Undo, Physic, Send, Send_Priority)			; Set a block without checking ranks
++	Map_Block_Change_Player(Player_Number, Map_ID, X, Y, Z, Type, Undo, Physic, Send, Send_Priority)	; Set a block with checking ranks (/Box uses this for example)
++	Map_Block_Change_Client(Client_ID, Map_ID, X, Y, Z, Mode, Type)
+	
+The old "Map_Block_Change" is replaced with "Map_Block_Change_Client" in the new version.
+"Map_Block_Change_Fast" is replaced with "Map_Block_Change" or "Map_Block_Change_Player", Use Map_Block_Change if you are not sure.
+
+--------------------------------------------------------------------------------------
+
+Removed:
+	
+-	Client_Examine()
+-	Client_Next()
+-	Player_Examine()
+-	Player_Next()
+-	Map_Examine()
+-	Map_Next()
+-	Rank_Examine()
+-	Rank_Next()
+-	Teleporter_Examine()
+-	Teleporter_Next()
+	
+Use these instead:
+	
++	Table, Elements = Client_Get_Table()
++	Table, Elements = Entity_Get_Table()
++	Table, Elements = Player_Get_Table()
++	Table, Elements = Map_Get_Table()
++	Table, Elements = Block_Get_Table()
++	Table, Elements = Rank_Get_Table()
++	Table, Elements = Teleporter_Get_Table()
+	
+You can simply use "for" to get all elements, Example:
+	
+	local Entity_Table, Entities = Entity_Get_Table()
+	for i = 1, Entities do
+		local Entity_ID = Entity_Table[i]
+	end
+	
+--------------------------------------------------------------------------------------
+
+There is no Lua-Events file anymore, so you have to register/delete events with the following commands:
+	
++	Event_Add(ID, Function, Type, Set_Or_Check, Time, Map_ID)
+		ID = Identification of the event, you can delete it or overwrite it again with "Event_Add"
+		Function = Your function in lua
+		Type = Can be one of these:
+			timer
+			client_add
+			client_delete
+			client_login
+			client_logout
+			entity_add
+			entity_delete
+			entity_position_set
+			entity_die
+			map_add
+			map_action_delete
+			map_action_resize
+			map_action_fill
+			map_action_save
+			map_action_load
+			map_block_change
+			map_block_change_client
+			map_block_change_player
+			chat_map
+			chat_all
+			chat_private
+		Set_Or_Check = If you wanna change the "Result" variable, better use 0
+		Time = For the Timer event, in ms
+		Map_ID = ...
+	
++	Event_Delete(ID)
+	

@@ -1,0 +1,8 @@
+&bVersion INFO!
+&bUseful commands: &e/faq /help /rules /commands /site
+&bGet the server on: &3http://github.com/Dadido3/D3classic
+&bUse &c@&e[name]&b [message] for private messages.
+&bFeature: Multiple Maps.<br>&bUse &e/maps &band &e/map [name]
+&bUse &c#&b[text] for global messages.
+&bThe staff is ALWAYS watching. Don't grief.
+&bBuild need checking? Ask a &3staff member &bfor help.<br>&bIf there isn't one on the map, check &e/players <br>&b(And &e/ranks &bto see what the colors mean)

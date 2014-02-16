@@ -1,0 +1,108 @@
+[Normal]
+Name = Normal
+Plugin = 
+
+[Paint]
+Name = Paint
+Plugin = Lua:Build_Mode_Paint
+
+[No_Physics]
+Name = No_Physics
+Plugin = Lua:Build_Mode_No_Physics
+
+[Brush]
+Name = Brush
+Plugin = Lua:Build_Mode_Brush
+
+[Tree]
+Name = Tree
+Plugin = Lua:Build_Mode_Tree
+
+[Get Block-Type]
+Name = Get Block-Type
+Plugin = Lua:Build_Mode_Get_Blocktype
+
+[Get Rank]
+Name = Get Rank
+Plugin = Lua:Build_Mode_Get_Rank
+
+[Get Last-Player]
+Name = Get Last-Player
+Plugin = Lua:Build_Mode_Get_Player
+
+[Get Teleporter]
+Name = Get Teleporter
+Plugin = Lua:Build_Mode_Get_Teleporter
+
+[Export Map-Area]
+Name = Export Map-Area
+Plugin = Lua:Build_Mode_Export
+
+[Import Map-Area]
+Name = Import Map-Area
+Plugin = Lua:Build_Mode_Import
+
+[Rotate Area]
+Name = Rotate Area
+Plugin = Lua:Build_Mode_Rotate
+
+[BCount]
+Name = BCount
+Plugin = Lua:Build_Mode_BCount
+
+[Measure]
+Name = Measure
+Plugin = Lua:Build_Mode_Measure
+
+[Get Midpoint]
+Name = Get Midpoint
+Plugin = Lua:Build_Mode_Get_Midpoint
+
+[Line]
+Name = Line
+Plugin = Lua:Build_Mode_Line
+
+[Triangle]
+Name = Triangle
+Plugin = Lua:Build_Mode_Triangle
+
+[Hyperbol]
+Name = Hyperbol
+Plugin = Lua:Build_Mode_Hyperbol
+
+[Circle]
+Name = Circle
+Plugin = Lua:Build_Mode_Circle
+
+[Text]
+Name = Text
+Plugin = Lua:Build_Mode_Text
+
+[Box]
+Name = Box
+Plugin = Lua:Build_Mode_Box
+
+[Rank-Box]
+Name = Rank-Box
+Plugin = Lua:Build_Mode_Rank_Box
+
+[Teleporter-Box]
+Name = Teleporter-Box
+Plugin = Lua:Build_Mode_Teleporter_Box
+
+[Sphere]
+Name = Sphere
+Plugin = Lua:Build_Mode_Sphere
+
+[Hollow]
+Name = Hollow
+Plugin = Lua:Build_Mode_Hollow
+
+[Stick]
+Name = Stick
+Plugin = Lua:Build_Mode_Stick
+
+[Anchor]
+Name = Anchor
+Plugin = Lua:Build_Mode_Anchor
+

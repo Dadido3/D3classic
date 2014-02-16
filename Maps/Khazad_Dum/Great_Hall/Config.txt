@@ -1,0 +1,17 @@
+; Overview_Types: 0=Nothing, 1=2D, 2=Iso(fast)
+; Save_Intervall: in minutes (0 = Disabled)
+;
+Server_Version = 999
+Unique_ID = BJANEQQDOXIBMQYX
+Name = Great_Hall
+Rank_Build = 0
+Rank_Join = 0
+Rank_Show = 0
+Size_X = 256
+Size_Y = 256
+Size_Z = 48
+Spawn_X = 178.000000
+Spawn_Y = 10.000000
+Spawn_Z = 15.000000
+Spawn_Rot = 176.000000
+Spawn_Look = 6.000000

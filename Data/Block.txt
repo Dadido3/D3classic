@@ -1,0 +1,2569 @@
+; Physic: 0  = Physic Off
+;         10 = Original Sand (Falling)
+;         11 = New Sand
+;         20 = Infinite Water
+;         21 = Finite Water
+
+[0]
+Name = Air
+On_Client = 0
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = -1
+
+[1]
+Name = Stone
+On_Client = 1
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6645093
+
+[2]
+Name = Grass
+On_Client = 2
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Grass_2_Dirt_Fast
+Do_Time = 1200
+Do_Time_Random = 1200
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 4960630
+
+[3]
+Name = Dirt
+On_Client = 3
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Dirt_2_Grass
+Do_Time = 1200
+Do_Time_Random = 1200
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3624555
+
+[4]
+Name = Cobblestone
+On_Client = 4
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6250335
+
+[5]
+Name = Wood
+On_Client = 5
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4220797
+
+[6]
+Name = Plant
+On_Client = 6
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11401600
+
+[7]
+Name = Solid
+On_Client = 7
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 100
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 4539717
+
+[8]
+Name = Water
+On_Client = 8
+Physic = 21
+Physic_Plugin = 
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 60
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 10438957
+
+[9]
+Name = Still Water
+On_Client = 9
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 10438957
+
+[10]
+Name = Lava
+On_Client = 10
+Physic = 21
+Physic_Plugin = 
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 60
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 1729750
+
+[11]
+Name = Still Lava
+On_Client = 11
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 1729750
+
+[12]
+Name = Sand
+On_Client = 12
+Physic = 11
+Physic_Plugin = 
+Do_Time = 200
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 8431790
+
+[13]
+Name = Gravel
+On_Client = 13
+Physic = 10
+Physic_Plugin = 
+Do_Time = 200
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6710894
+
+[14]
+Name = Goldore
+On_Client = 14
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6648180
+
+[15]
+Name = Ironore
+On_Client = 15
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6777454
+
+[16]
+Name = Coal
+On_Client = 16
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 6118749
+
+[17]
+Name = Tree
+On_Client = 17
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2703954
+
+[18]
+Name = Leaves
+On_Client = 18
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2535736
+
+[19]
+Name = Sponge
+On_Client = 19
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Sponge
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3117714
+
+[20]
+Name = Glass
+On_Client = 20
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 16118490
+
+[21]
+Name = Red
+On_Client = 21
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2763442
+
+[22]
+Name = Orange
+On_Client = 22
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2780594
+
+[23]
+Name = Yellow
+On_Client = 23
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2798258
+
+[24]
+Name = Light Green
+On_Client = 24
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2798189
+
+[25]
+Name = Green
+On_Client = 25
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2798122
+
+[26]
+Name = Aqua Green
+On_Client = 26
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 7254570
+
+[27]
+Name = Cyan
+On_Client = 27
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11711018
+
+[28]
+Name = Light Blue
+On_Client = 28
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11699029
+
+[29]
+Name = Blue
+On_Client = 29
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11690337
+
+[30]
+Name = Purple
+On_Client = 30
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11676269
+
+[31]
+Name = Light Purple
+On_Client = 31
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11680908
+
+[32]
+Name = Pink
+On_Client = 32
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11676338
+
+[33]
+Name = Dark Pink
+On_Client = 33
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 7154354
+
+[34]
+Name = Dark Grey
+On_Client = 34
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4144959
+
+[35]
+Name = Light Grey
+On_Client = 35
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 7566195
+
+[36]
+Name = White
+On_Client = 36
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11711154
+
+[37]
+Name = Yellow Flower
+On_Client = 37
+Physic = 0
+Physic_Plugin = Lua:Physic_Entity_Temp_Destroy
+Do_Time = 250
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2434341
+
+[38]
+Name = Red Flower
+On_Client = 38
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2500134
+
+[39]
+Name = Brown Mushroom
+On_Client = 39
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2565927
+
+[40]
+Name = Red Mushroom
+On_Client = 40
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2631720
+
+[41]
+Name = Gold
+On_Client = 41
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2590138
+
+[42]
+Name = Iron
+On_Client = 42
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 10132121
+
+[43]
+Name = Double Stair
+On_Client = 43
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 44
+Killer = 0
+Special = 0
+Color_Overview = 2829099
+
+[44]
+Name = Stair
+On_Client = 44
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = Lua:Physic_Standart_Stair
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2894892
+
+[45]
+Name = Brick
+On_Client = 45
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4282014
+
+[46]
+Name = TNT
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3951751
+
+[47]
+Name = Bookcase
+On_Client = 47
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3098197
+
+[48]
+Name = Mossy Cobblestone
+On_Client = 48
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4806729
+
+[49]
+Name = Obsidian
+On_Client = 49
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 1708562
+
+[50]
+Name = Torch
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3289650
+
+[51]
+Name = Fire
+On_Client = 11
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Fire
+Do_Time = 100
+Do_Time_Random = 200
+Do_Repeat = 1
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 1729750
+
+[52]
+Name = Water Source
+On_Client = 29
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Water_Source
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 100
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 13290186
+
+[53]
+Name = Lava Source
+On_Client = 21
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Lava_Source
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 100
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 13290186
+
+[54]
+Name = Chest
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3552822
+
+[55]
+Name = Redstone Wire
+On_Client = 21
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3618615
+
+[56]
+Name = Diamond Ore
+On_Client = 20
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3684408
+
+[57]
+Name = Diamond Block
+On_Client = 20
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3750201
+
+[58]
+Name = Workbench
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Workbench
+Do_Time = 1000
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 50
+Rank_Delete = 50
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3815994
+
+[59]
+Name = Crops
+On_Client = 0
+Physic = 46
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3881787
+
+[60]
+Name = Soil
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 255
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3947580
+
+[61]
+Name = Furnace
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Furnace
+Do_Time = 1000
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 50
+Rank_Delete = 50
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 4013373
+
+[62]
+Name = Burning Furnace
+On_Client = 0
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 50
+Rank_Delete = 50
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4079166
+
+[63]
+Name = Sign Post
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4144959
+
+[64]
+Name = Wooden Door
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4210752
+
+[65]
+Name = Ladder
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4276545
+
+[66]
+Name = Minecart Tracks
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4342338
+
+[67]
+Name = Cobblestone Stairs
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4408131
+
+[68]
+Name = Wall Sign
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4473924
+
+[69]
+Name = Lever
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4539717
+
+[70]
+Name = Stone Pressure Plate
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4605510
+
+[71]
+Name = Iron Door
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4671303
+
+[72]
+Name = Wooden Pressure Plate
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4737096
+
+[73]
+Name = Redstone Ore
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4802889
+
+[74]
+Name = Glowing Redstone Ore
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4868682
+
+[75]
+Name = Redstone Torch Off
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 4934475
+
+[76]
+Name = Redstone Torch On
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5000268
+
+[77]
+Name = Stone Button
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5066061
+
+[78]
+Name = Snow
+On_Client = 36
+Physic = 11
+Physic_Plugin = 
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 11711154
+
+[79]
+Name = Ice
+On_Client = 20
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 16118490
+
+[80]
+Name = Snow Block
+On_Client = 36
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 11711154
+
+[81]
+Name = Cactus
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5329233
+Replace_By_Load = 49
+
+[82]
+Name = Clay
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5395026
+
+[83]
+Name = Reed
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5460819
+
+[84]
+Name = Jukebox
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5526612
+
+[85]
+Name = Fence
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 5592405
+
+[86]
+
+[87]
+
+[88]
+
+[89]
+
+[90]
+
+[91]
+
+[92]
+
+[93]
+
+[94]
+
+[95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+
+[100]
+
+[101]
+Replace_By_Load = 44
+
+[102]
+
+[103]
+
+[104]
+
+[105]
+
+[106]
+
+[107]
+
+[108]
+
+[109]
+
+[110]
+
+[111]
+
+[112]
+
+[113]
+
+[114]
+
+[115]
+
+[116]
+
+[117]
+
+[118]
+
+[119]
+
+[120]
+
+[121]
+
+[122]
+
+[123]
+
+[124]
+
+[125]
+
+[126]
+
+[127]
+
+[128]
+
+[129]
+
+[130]
+
+[131]
+
+[132]
+
+[133]
+
+[134]
+
+[135]
+
+[136]
+
+[137]
+
+[138]
+
+[139]
+
+[140]
+
+[141]
+
+[142]
+
+[143]
+
+[144]
+
+[145]
+
+[146]
+
+[147]
+
+[148]
+
+[149]
+
+[150]
+
+[151]
+
+[152]
+
+[153]
+
+[154]
+
+[155]
+
+[156]
+
+[157]
+
+[158]
+
+[159]
+
+[160]
+
+[161]
+
+[162]
+
+[163]
+
+[164]
+
+[165]
+
+[166]
+
+[167]
+
+[168]
+
+[169]
+
+[170]
+
+[171]
+
+[172]
+
+[173]
+
+[174]
+
+[175]
+
+[176]
+
+[177]
+
+[178]
+
+[179]
+
+[180]
+
+[181]
+
+[182]
+
+[183]
+
+[184]
+
+[185]
+
+[186]
+
+[187]
+
+[188]
+
+[189]
+
+[190]
+
+[191]
+
+[192]
+
+[193]
+
+[194]
+
+[195]
+
+[196]
+
+[197]
+
+[198]
+
+[199]
+Name = Black Hole
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 252
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 13092807
+
+[200]
+Name = Kill Lava
+On_Client = 10
+Physic = 0
+Physic_Plugin = 
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 100
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 1729750
+
+[201]
+Name = Kill Stone
+On_Client = 1
+Physic = 0
+Physic_Plugin = 
+Do_Time = 232
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 100
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 6645093
+
+[202]
+Name = Nuke
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Atomic_Bomb
+Do_Time = 100
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[203]
+Name = Slow Smoke
+On_Client = 34
+Physic = 1
+Physic_Plugin = Lua:Physic_Special_Slow_Smoke
+Do_Time = 1000
+Do_Time_Random = 1000
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 150
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 4144959
+
+[204]
+Name = Mine
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[205]
+
+[206]
+Name = Original Water
+On_Client = 8
+Physic = 20
+Physic_Plugin = 
+Do_Time = 200
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 10438957
+
+[207]
+Name = Original Lava
+On_Client = 10
+Physic = 20
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 1729750
+
+[208]
+Name = Invisible
+On_Client = 0
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 150
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = -1
+
+[209]
+Name = Acid
+On_Client = 8
+Physic = 21
+Physic_Plugin = 
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 10438957
+
+[210]
+Name = Still Sand
+On_Client = 12
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 8431790
+
+[211]
+Name = Still Acid
+On_Client = 8
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 10438957
+
+[212]
+Name = Kill Rose
+On_Client = 38
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 13948116
+
+[213]
+Name = Still Gravel
+On_Client = 13
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 0
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 6710894
+
+[214]
+Name = No Entry
+On_Client = 0
+Physic = 0
+Physic_Plugin = 
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 50
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = -1
+
+[215]
+Replace_By_Load = 78
+
+[216]
+Name = Fast Lava
+On_Client = 10
+Physic = 20
+Physic_Plugin = 
+Do_Time = 255
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 240
+Rank_Delete = 240
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 1729750
+
+[217]
+Name = Kill Glass
+On_Client = 20
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 150
+Rank_Delete = 150
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 16118490
+
+[218]
+Name = Invisible Sponge
+On_Client = 0
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Super_Sponge_Drain
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 50
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = -1
+
+[219]
+Name = Drain Sponge
+On_Client = 19
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Sponge_Drain
+Do_Time = 200
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 150
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3117714
+
+[220]
+Name = Super Drain Sponge
+On_Client = 19
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Super_Sponge_Drain
+Do_Time = 200
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 150
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3117714
+
+[221]
+Name = Spark
+On_Client = 41
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Spark
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2590138
+
+[222]
+Name = Rocket
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Rocket
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[223]
+Name = Short Spark
+On_Client = 41
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Short_Spark
+Do_Time = 500
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 2590138
+
+[224]
+Name = Mega Rocket
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Mega_Rocket
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[225]
+Name = Red Spark
+On_Client = 10
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Short_Spark
+Do_Time = 100
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 1
+Special = 0
+Color_Overview = 1729750
+
+[226]
+Name = Fire Fountain
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Fireworks_Fire_Fountain
+Do_Time = 300
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[227]
+Name = Admin TNT
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_TNT
+Do_Time = 50
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[228]
+Name = Fan
+On_Client = 42
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Ventilator
+Do_Time = 200
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 10132121
+
+[229]
+Name = Door
+On_Client = 42
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Door
+Do_Time = 500
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 100
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 10132121
+
+[230]
+
+[231]
+
+[232]
+Name = Ash
+On_Client = 49
+Physic = 11
+Physic_Plugin = 
+Do_Time = 200
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 1708562
+
+[233]
+
+[234]
+Name = Elevator
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 15395562
+
+[235]
+
+[236]
+Name = Flasher
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 15527148
+
+[237]
+
+[238]
+
+[239]
+
+[240]
+
+[241]
+
+[242]
+
+[243]
+Name = Vines
+On_Client = 46
+Physic = 0
+Physic_Plugin = 
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 0
+Do_By_Load = 0
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 15987699
+
+[244]
+Name = FT
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Flamethrower
+Do_Time = 250
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 250
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[245]
+Name = Turret
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Turret
+Do_Time = 4000
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 250
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[246]
+Name = D-Rocket
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Directional_Rocket
+Do_Time = 25
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 250
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = 3951751
+
+[247]
+Name = Cannon
+On_Client = 46
+Physic = 0
+Physic_Plugin = Lua:Physic_Cannon
+Do_Time = 250
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 200
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 3951751
+
+[248]
+Name = Blob
+On_Client = 25
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Blob
+Do_Time = 200
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 250
+Rank_Delete = 250
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 2798122
+
+[249]
+Name = Blob Source
+On_Client = 45
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Blob_Source
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 255
+Rank_Delete = 255
+After_Delete = 0
+Killer = 1
+Special = 1
+Color_Overview = 4282014
+
+[250]
+Name = Smoke Source
+On_Client = 35
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Smoke_Source
+Do_Time = 1000
+Do_Time_Random = 100
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 200
+Rank_Delete = 200
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 7566195
+
+[251]
+Name = Sponge Repel Small
+On_Client = 0
+Physic = 0
+Physic_Plugin = Lua:Physic_Standart_Sponge_Repel_Small
+Do_Time = 0
+Do_Time_Random = 0
+Do_Repeat = 0
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 32767
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 0
+Color_Overview = -1
+
+[252]
+
+[253]
+
+[254]
+Name = Push Block
+On_Client = 21
+Physic = 0
+Physic_Plugin = Lua:Physic_Special_Pushblock
+Do_Time = 200
+Do_Time_Random = 0
+Do_Repeat = 1
+Do_By_Load = 1
+Create_Plugin = 
+Delete_Plugin = 
+Rank_Place = 10
+Rank_Delete = 0
+After_Delete = 0
+Killer = 0
+Special = 1
+Color_Overview = 2763442
+
+[255]
+

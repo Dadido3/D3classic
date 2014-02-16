@@ -1,0 +1,17 @@
+; Overview_Types: 0=Nothing, 1=2D, 2=Iso(fast)
+; Save_Intervall: in minutes (0 = Disabled)
+;
+Server_Version = 999
+Unique_ID = LWTFBLRWZKMGRCRR
+Name = West_Gate
+Rank_Build = 0
+Rank_Join = 0
+Rank_Show = 0
+Size_X = 256
+Size_Y = 128
+Size_Z = 96
+Spawn_X = 130.000000
+Spawn_Y = 27.000000
+Spawn_Z = 47.000000
+Spawn_Rot = 118.000000
+Spawn_Look = -21.000000

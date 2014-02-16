@@ -1,0 +1,2 @@
+Server_Name = D3 Test! [Physic/Antigrief]
+MOTD = &3Hiho &f+hax

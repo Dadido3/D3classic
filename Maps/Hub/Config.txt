@@ -1,0 +1,21 @@
+; Overview_Types: 0=Nothing, 1=2D, 2=Iso(fast)
+; Save_Intervall: in minutes (0 = Disabled)
+;
+Server_Version = 1004
+Unique_ID = NWHXTAJLJGJNBTYT
+Name = Hub
+Rank_Build = 50
+Rank_Join = 0
+Rank_Show = 0
+Physic_Stopped = 0
+MOTD_Override = 
+Save_Intervall = 10
+Overview_Type = 2
+Size_X = 256
+Size_Y = 256
+Size_Z = 256
+Spawn_X = 99.9375
+Spawn_Y = 250.65625
+Spawn_Z = 57.75
+Spawn_Rot = 0
+Spawn_Look = 0

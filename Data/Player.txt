@@ -1,0 +1,14 @@
+; Kill_Modes: 0=Map-Spawn, 1=Global Kill-Spawn, 2=Kick, 3=Ban
+
+Message_Welcome = &cWelcome to this Server!<br>&eGo throught a teleporter.
+Players_Max = 255
+Name_Verification = 1
+Kill_Mode = 0
+Kill_Spawn_Map_ID = 251
+Kill_Spawn_X = 11.00
+Kill_Spawn_Y = 47.00
+Kill_Spawn_Z = 5.00
+Kill_Spawn_Rot = -87.00
+Kill_Spawn_Look = 56.00
+
+Spawn_Map_ID = 0

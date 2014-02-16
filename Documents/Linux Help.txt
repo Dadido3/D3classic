@@ -1,0 +1,35 @@
+What you have to install:
+	-?	libsdl-devel			(libsdl1.2-dev)
+	-	libgtk-devel			(libgtk2.0-dev)
+	-?	libstdc++-devel			
+	-	iodbc and iodbc-devel	
+
+
+if the server doesn't work:
+
+	-	I get "Permission denied" or "command not found" if i start it from the terminal.
+		-	Rightclick on "Minecraft-Server_x86" or "Minecraft-Server_x64" and press Properties.
+			Go into the tab "Permissions".
+			Enable the option "Allow executing file as program".
+			
+	-	The heartbeat doesn't start/work.
+		-	Rightclick on "Heartbeat_Linux" and press Properties.
+			Go into the tab "Permissions".
+			Enable the option "Allow executing file as program".
+			
+	-	Everything is in german and the server can't find the files.
+		-	You haven't started the server correct.
+			Go with the terminal into the folder (Example: cd '/home/user/Desktop/Server').
+			And then start it like this:
+			./Minecraft-Server_x86
+			or
+			./Minecraft-Server_x64
+			
+	-	The (network)server doesn't work.
+	-	G-Zip doesn't work.
+		-	You haven't installed all libs.
+
+
+Known Problems:
+	-	Ubuntu x86:		The (network)server doesn't work
+	-	Ubuntu x86:		zlib crashes the server (Segmentation violation   Line: 158   File: GZip.pbi)

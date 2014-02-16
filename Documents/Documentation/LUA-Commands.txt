@@ -1,0 +1,129 @@
+Client_Get_Map_ID(Client_ID)																
+Client_Get_X(Client_ID)																		
+Client_Get_Y(Client_ID)																		
+Client_Get_Z(Client_ID)																		
+Client_Get_Rotation(Client_ID)																
+Client_Get_Look(Client_ID)																	
+Client_Get_IP(Client_ID)																	
+Client_Get_Name(Client_ID)																	
+Client_Get_Player_Number(Client_ID)															Result: Player_Number
+Client_Get_Logged_In(Client_ID)																
+Client_Examine()																			
+Client_Next()																				Use it in a while loop after Client_Examine()
+Client_Get_ID()																				Result: Client_ID. Use it after Client_Next()
+Client_Position_Set(Client_ID, Map_ID, X, Y, Z, Rotation, Look, Send_Own, Priority)			Priority: 1->255, XYZ in blocks, Rotation/Look in degree
+Client_Move_Interpolated(Client_ID, X, Y, Z, Speed)											Speed in m/s, XYZ in blocks
+Client_Kick(Client_ID, Message, Hide)														Hide: Hides the Kickmessage
+Client_Kill(Client_ID)																		Kills the Client(Player)
+Client_Fake_Add(Name, Hide_Mode)															Adds a new Client(Logged in with Name) with no connection. Hide_Mode: 0=Nothing 10=Login/Logout-Messages 15=Mapchanges 20=from playerlist 50=...
+Client_Physic_Set(Client_ID, Mode, Gravity)													Mode: 0=Off 1=Gravity/Autojump/Collision | Gravity in m/s²
+Client_Hidemode_Get(Client_ID)																Returns the Hidemode
+Client_Hidemode_Set(Client_ID, Hide_Mode)													Changes the Hidemode
+Client_Buildmode_Set(Client_ID, Mode)														
+Client_Buildmode_State_Set(Client_ID, State)												
+Client_Buildmode_State_Get(Client_ID)														
+Client_Buildmode_Point_Set(Client_ID, Point, X, Y, Z)										
+Client_Buildmode_Point_Get(Client_ID, Point)												
+Client_Buildmode_Long_Set(Client_ID, Variable, Value)										
+Client_Buildmode_Long_Get(Client_ID, Variable)												
+Client_Buildmode_Float_Set(Client_ID, Variable, Value)										
+Client_Buildmode_Float_Get(Client_ID, Variable)												
+Client_Buildmode_String_Set(Client_ID, Variable, Value)										
+Client_Buildmode_String_Get(Client_ID, Variable)											
+																							
+																							
+Build_Client_Line(Client_ID, Map_ID, X0, Y0, Z0, X1, Y1, Z1, Material, Priority, Undo, Physic)							Builds a line with Map_Block_Change(...)
+Build_Client_Box(Client_ID, Map_ID, X0, Y0, Z0, X1, Y1, Z1, Material, Rep_Material, Hollow, Priority, Undo, Physic)		Builds a box with Map_Block_Change(...)
+Build_Client_Sphere(Client_ID, Map_ID, X, Y, Z, R, Material, Rep_Material, Hollow, Priority, Undo, Physic)				Builds a sphere with Map_Block_Change(...)
+Build_Rank_Box(Map_ID, X0, Y0, Z0, X1, Y1, Z1, Rank, Max_Rank)															Changes the Rank inside the described box (Everything above Max_Rank won't be changed)
+																							
+																							
+Player_Get_Name(Player_Number)																
+Player_Get_IP(Player_Number)																
+Player_Get_Rank(Player_Number)																
+Player_Get_Online(Player_Number)															
+Player_Get_Ontime(Player_Number)															
+Player_Set_Rank(Player_Number, Rank)														
+Player_Attribute_Long_Set(Player_Number, Attribute, Value)									Attribute is a case-sensitive String, Value is a number
+Player_Attribute_Long_Get(Player_Number, Attribute)											Attribute is a case-sensitive String
+Player_Attribute_String_Set(Player_Number, Attribute, String)								Attribute is a case-sensitive String
+Player_Attribute_String_Get(Player_Number, Attribute)										Attribute is a case-sensitive String
+Player_Inventory_Set(Player_Number, Material, Number)										Changes the number of blocks in the inventory of the player
+Player_Inventory_Get(Player_Number, Material)												Returns the number of blocks in the inventory of the player
+Player_Examine()																			
+Player_Next()																				Use it in a while loop after Player_Examine()
+Player_Get_Number()																			Result: Player_Number. Use it after Player_Next()
+Player_Name_2_Number(Player_Name)															Result: Player_Number
+																							
+																							
+Map_Block_Change(Client_ID, Map_ID, X, Y, Z, Mode, Type, Priority, Undo, Physic)			Priority: 0->255, Undo: 0/1, Physic: 0/1, Mode: 0/1 (In most cases Map_Block_Change_Fast() is better)
+Map_Block_Change_Fast(Player_Number, Map_ID, X, Y, Z, Type, Priority, Undo, Physic, Send)	Priority: 0->255, Undo: 0/1, Physic: 0/1. Use Player_Number -1 for 'No Information'
+Map_Block_Move(Map_ID, X_0, Y_0, Z_0, X_1, Y_1, Z_1, Priority, Undo, Physic)				Moves player and type information
+Map_Block_Send(Client_ID, Map_ID, X, Y, Z, Type)											Sends a blockchange to Client_ID. (It changes nothing!)
+Map_Block_Get_Type(Map_ID, X, Y, Z)															
+Map_Block_Get_Rank(Map_ID, X, Y, Z)															
+Map_Block_Set_Rank(Map_ID, X, Y, Z, Rank)													
+Map_Block_Get_Player_Last(Map_ID, X, Y, Z)													Result: Player_Number
+Map_Get_Name(Map_ID)																		
+Map_Get_Filename(Map_ID)																	
+Map_Get_Filename_Overview(Map_ID)															
+Map_Get_Rank_Build(Map_ID)																	
+Map_Get_Rank_Join(Map_ID)																	
+Map_Get_Rank_Show(Map_ID)																	
+Map_Get_Dimensions(Map_ID)																	Result: X, Y, Z
+Map_Get_Spawn(Map_ID)																		Result: X, Y, Z, Rotation, Look
+Map_Set_Name(Map_ID, Name)																	
+Map_Set_Filename(Map_ID, Filename)															
+Map_Set_Filename_Overview(Map_ID, Filename)													
+Map_Set_Rank_Build(Map_ID, Rank)															
+Map_Set_Rank_Join(Map_ID, Rank)																
+Map_Set_Rank_Show(Map_ID, Rank)																
+Map_Set_Spawn(Map_ID, X, Y, Z, Rotation, Look)												
+Map_Add(Map_ID, X, Y, Z, Name)																Adds a map. Use Map_ID -1 and the function uses a free ID
+Map_Delete(Map_ID)																			Result: Action_ID (Added to queue) | 
+Map_Resize(Map_ID, X, Y, Z)																	Result: Action_ID (Added to queue) | 
+Map_Resend(Map_ID)																			Resends the Map if there are players on it.
+Map_Fill(Map_ID, Function, Argumentstring)													Result: Action_ID (Added to queue) | 
+Map_Save(Map_ID, Filename)																	Result: Action_ID (Added to queue) | Saves the map with the given filename. Use an empty filename for the filename in map_list.txt
+Map_Save_Overview(Map_ID, Filename)															Result: Action_ID (Added to queue) | Saves the map with the given filename. Use an empty filename for the filename in map_list.txt
+Map_Load(Map_ID, Filename)																	Result: Action_ID (Added to queue) | Loads the map with the given filename. Use an empty filename for the filename in map_list.txt
+Map_Export(Map_ID, X0, Y0, Z0, X1, Y1, Z1, Filename)										Saves an area of the map into a File
+Map_Client_Import(Client_ID, Filename, Map_ID, X, Y, Z, SX, SY, SZ)							Imports an mapfile(v.1000). Client_ID can be 0(Playernumber will be -1)
+Map_Examine()																				
+Map_Next()																					Use it in a while loop after Map_Examine()
+Map_Get_ID()																				Result: Map_ID. Use it after Map_Next()
+																							
+																							
+Block_Get_Name(ID)																			
+Block_Get_Rank_Place(ID)																	
+Block_Get_Rank_Delete(ID)																	
+																							
+																							
+Rank_Get_Name(Rank, Exact)																	
+Rank_Get_Color(Rank, Exact)																	
+Rank_Get_Root(Rank, Exact)																	
+Rank_Add(Rank, Name, Color)																	
+Rank_Delete(Rank, Exact)																	
+Rank_Examine()																				
+Rank_Next()																					
+Rank_Get_Rank()																				
+																							
+																							
+Teleporter_Get_Box(Name)																	Returns the cox of teleporter (Map_ID, X0, Y0, Z0, X1, Y1, Z1)
+Teleporter_Get_Destination(Name)															Returns the destination (Map_ID, X, Y, Z, Rotation, Look)
+Teleporter_Add(Name, Map_ID, X0, Y0, Z0, X1, Y1, Z1, Dest_Map_ID, X, Y, Z, Rot, Look)		Creates a teleporter (The last 6 Arguments are the destination)
+Teleporter_Delete(Name)																		Deletes a teleporter
+Teleporter_Examine()																		
+Teleporter_Next()																			Use it in a while loop after Teleporter_Examine()
+Teleporter_Get_Name()																		Result: Teleporter_Name. Use it after Teleporter_Next()
+																							
+																							
+System_Message_Network_Send_2_All(Map_ID, Message)											Sends a global message if Map_ID == -1
+System_Message_Network_Send(Client_ID, Message)												
+																							
+																							
+Lang_Get(Language, Input, Field_0, Field_1, Field_2, Field_3)								Returns the translated String. Language should be ""
+																							
+																							
+Files_File_Get(File)																		Returns the path to the file
+Files_Folder_Get(Folder)																	Returns the path to the folder

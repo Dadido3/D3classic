@@ -1,0 +1,56 @@
+[0]
+Command = ranks
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &eAvailable Ranks:<br>&dGriefer -32768 - -1<br>&fGuest 0 - 9<br>&eBuilder 10 - 59<br>&6Trusted Builder 60 - 99<br>&aArchitect 100 - 148<br>&2Half-Op 149<br>&9Operator 150 - 199<br>&4Admin 200 - 251<br>&7The Threesome 252<br>&3Co-Owner 253<br>&bOwner 254<br>&8Higher Ranks 255 - 32767
+[1]
+Command = help
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &aHELP FILE <br>&b Use &e#[message] &bfor global Chat.<br>&b Use &e@[player] [message] &bfor private chat.<br>&b Use &e/commands &bto get a list of available commands.<br>&b Use &e/cmdhelp [Command] &bfor some information about a cmd.<br>&b Use &e/Players &bto get the playerlist.<br>&b Use &e/Ranks &bto get all available ranks.<br>&b Use &e/map [mapname] &bto change maps.<br>&b Use &e/maps &bto view a list of maps.<br>&c If you want to get builder rank, you have to build something in <br>&c the guestarea. After you finished ask a staff member to <br>&c promote you. (If you see a staff member in &e/Players &cbut <br>&c he's not on the map use &e#[message] &cto talk to him.)
+[6]
+Command = rules
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &eRules:<br>&e 1) No Spam<br>&e 2) No Griefing<br>&e 3) No swastikas or inappropriate symbols<br>&e 4) No mindless tunneling<br>&e 5) Be careful with /box and /line, I can see who used it!<br>&e 6) Do not ask for a Promotion or Points!<br>&e 7) Don't ask for Premium!<br>&e 8) Respect others and their creations!<br>&e 9) Do not try to bypass a punishment. You will be kicked.<br>&e 10) &cListen to the staff!
+[7]
+Command = faq
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &eWhere can i build:<br>&b   You can build in the Guest-Area if you are '&fGuest&b',<br>&b   or outside the walled-off area if you are '&eBuilder&b'<br>&eWhere is the Guest-Area:<br>&b   The Guest-Area is where you spawn (Inside the Water-Walls)<br>&eHow can i get 'Builder':<br>&b   If you want to be 'Builder' you have to build<br>&b   something nice in the guest-Area.<br>&b   After it a operator has to decide if you get builder.<br>&eHow do i die:<br>&b   You die if you touch special Lava or some other special Blocks.<br>&b   Try other blocks and explore the ways of dying ;)
+[8]
+Command = site
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &4Please Register!<br>&3http://d3-serv.net/
+[9]
+Command = oprules
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &1OP Rules:<br>&9 1) Respect everyone, including guests.<br>&e 2) Always stop users before banning.<br>&e 3) Don't mess with the guest area.<br>&e 4) Do not mute, stop, ban, or demote without good reason.<br>&e 5) Do not promote to op or higher without permission.<br>&e 6) &9ALWAYS&e warn and check theres no buildings in progress<br>&e before you reset the guest area.<br>&e 7) Follow standard rules, and don't bend them.<br>&e YOU'RE THE STAFF<br>&4Follow these rules, or you get the boot. 
+[10]
+Command = appeal
+Operator[0] = 
+Operator[1] = 
+Operator[2] = 
+Operator[3] = 
+Operator[4] = 
+Answer = &eTo appeal for being demoted or stopped!<br>&ePlease go to our forums at:<br>&ehttp://d3-server.net/<br>&ePost Under 'Griefer/Ban Appeal'

@@ -1,0 +1,69 @@
+; You have to restart if you change the file.
+; 
+; How it works:
+;   [Folder]
+;   Main = ../
+;   Data = Data/
+;   
+;   [Files]
+;   Answer = [Main][Data]Answer.txt
+; 
+; Means that the File Answer is in '../Data/Answer.txt'.
+; You can create your own folders if you want:
+;   Example: [Folder]
+;            Log = Log/
+;            
+;            [Files]
+;            Log = [Main][Log]Log_[i].txt
+; 
+; You can also use [date] instead of [i] for the Logfile.
+
+[Folder]
+Main = 
+Data = Data/
+Heartbeat = Heartbeat/
+HTML = HTML/
+Temp = Temp/
+Lua = Lua/
+Maps = Maps/
+Usermaps = Usermaps/
+Logs = Logs/
+Plugins = Plugins/
+
+[Files]
+Files = Files.txt
+Log = [Main][Logs]Log_[i].txt
+
+Answer = [Main][Data]Answer.txt
+Block = [Main][Data]Block.txt
+Build_Mode = [Main][Data]Build_Mode.txt
+Command = [Main][Data]Command.txt
+Font = [Main][Data]Font.txt
+Heartbeat = [Main][Data]Heartbeat.txt
+Language_Strings = [Main][Data]Language_Strings.txt
+Location = [Main][Data]Location.txt
+Lua_Event = [Main][Data]Lua_Event.txt
+Map_List = [Main][Data]Map_List.txt
+Map_Settings = [Main][Data]Map_Settings.txt
+Network = [Main][Data]Network.txt
+Player = [Main][Data]Player.txt
+Playerlist = [Main][Data]Playerlist.sqlite
+Rank = [Main][Data]Rank.txt
+System = [Main][Data]System.txt
+Teleporter = [Main][Data]Teleporter.txt
+Timed_Messages = [Main][Data]Timed_Messages.txt
+Undo = [Main][Data]Undo.txt
+
+Heartbeat_Executable_Win = [Main][Heartbeat]Heartbeat.exe
+Heartbeat_Executable_Linux = [Main][Heartbeat]Heartbeat_Linux
+Heartbeat_Interface = [Main][Heartbeat]Interface.txt
+
+Error_HTML = [Main][HTML]Error_[i].html
+Heartbeat_HTML = [Main][HTML]Heartbeat.html
+Map_HTML = [Main][HTML]Map.html
+Mem_HTML = [Main][HTML]Memory.html
+Network_HTML = [Main][HTML]Network.html
+Watchdog_HTML = [Main][HTML]Watchdog.html
+
+Map_Send_Temp = [Main][Temp]Send.gz
+Map_Save_Temp = [Main][Temp]Save.gz

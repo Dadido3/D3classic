@@ -1,0 +1,873 @@
+[Allokationsfehler in [Field_0]]1
+
+[Ban Reason]2
+en: [Field_0]&e: [Field_1]
+
+[Buildmode: Anchor created]0
+en: &eAnchor created
+
+[Buildmode: Anchor started]0
+en: &eBuildmode: Anchor<br>&ePlace a block to build an anchor.<br>&eUse /Cancel to stop the buildmode.
+
+[Buildmode: Box created]0
+en: &eBox created
+
+[Buildmode: Box started]0
+en: &eBuildmode: Box<br>&ePlace two blocks to describe the box.
+
+[Buildmode: Box too big]0
+en: &eBox is too big
+
+[Buildmode: Brush started]0
+en: &eBuildmode: Brush<br>&ePlace or delete a block.<br>&eUse /Cancel to stop the buildmode.
+
+[Buildmode: Brush: Define a size]0
+en: &eDefine a size for the brush.
+
+[Buildmode: Canceled]0
+en: &eBuildmode canceled, you can now build normal.
+
+[Buildmode: Circle created]0
+en: &eCircle created
+
+[Buildmode: Circle started]0
+en: &eBuildmode: Circle<br>&ePlace two blocks to describe the circle.
+
+[Buildmode: Export started]0
+en: &eBuildmode: Export<br>&ePlace two blocks to describe the area.
+
+[Buildmode: Export: Define a file]0
+en: &eDefine a file.
+
+[Buildmode: Export: Saved]0
+en: &eArea exported.
+
+[Buildmode: Get Midpoint started]0
+en: &eBuildmode: Get Center<br>&ePlace two blocks to get the center of them.
+
+[Buildmode: Get_Blocktype started]0
+en: &eBuildmode: Block-Get<br>&ePlace or delete a block.
+
+[Buildmode: Get_Blocktype: Material is '[Field_0]']2
+en: &eMaterial is '[Field_0]' ([Field_1])
+
+[Buildmode: Get_Player started]0
+en: &eBuildmode: Player-Get<br>&ePlace or delete a block.
+
+[Buildmode: Get_Player: Player is '[Field_0]<c>']2
+en: &ePlayer is '[Field_0]&e' ([Field_1])
+
+[Buildmode: Get_Rank started]0
+en: &eBuildmode: Rank-Get<br>&ePlace or delete a block.
+
+[Buildmode: Get_Rank: Rank is '[Field_0]<c>' ([Field_1])]2
+en: &eRank is '[Field_0]&e' ([Field_1])
+
+[Buildmode: Get_Teleporter started]0
+en: &eBuildmode: Teleporter-Get<br>&ePlace or delete a block.
+
+[Buildmode: Get_Teleporter: Teleportername is '[Field_0]']1
+en: &eTeleportername is '[Field_0]'
+
+[Buildmode: Hollow done ([Field_0]ms)]1
+en: &eDone hollowing in [Field_0]ms
+
+[Buildmode: Hollow started]0
+en: &eBuildmode: Hollow<br>&ePlace two blocks to hollow the area.
+
+[Buildmode: Hollow_Box started]0
+en: &eBuildmode: Hollow-Box<br>&ePlace two blocks to build a Hollow-Box.
+
+[Buildmode: Hollow_Circle started]0
+en: &eBuildmode: Hollow-Circle<br>&ePlace two blocks to build a Hollow-Circle.
+
+[Buildmode: Hollow_Sphere started]0
+en: &eBuildmode: Hollow-Sphere<br>&ePlace a block to define the center<br>&eAnd another block to set the radius.
+
+[Buildmode: Hyperbol created]0
+
+[Buildmode: Hyperbol started]0
+
+[Buildmode: Import started]0
+en: &eBuildmode: Import<br>&ePlace a block to import the map.<br>&eThe map appears in positive directions (X+,Y+,Z+).
+
+[Buildmode: Import: Define a file]0
+en: &eDefine a file for Import.
+
+[Buildmode: Import: File '[Field_0]' not found]1
+en: &eFile '[Field_0]' not found.
+
+[Buildmode: Import: Imported]0
+en: &eMap imported
+
+[Buildmode: Line created]0
+en: &eLine created
+
+[Buildmode: Line started]0
+en: &eBuildmode: Line<br>&ePlace two blocks to build a line.
+
+[Buildmode: Midpoint created]0
+en: &eCenter placed
+
+[Buildmode: No Physics started]0
+en: &eBuildmode: No Physics<br>&eJust build without triggering the physics.<br>&eUse /Cancel to stop the buildmode.
+
+[Buildmode: No information found]0
+en: &eNo information found.
+
+[Buildmode: No teleporter found]0
+en: &eNo teleporter found.
+
+[Buildmode: Paint started]0
+en: &eBuildmode: Paint<br>&eDelete a block, and it get's replaced.<br>&eUse /Cancel to stop the buildmode.
+
+[Buildmode: Rank_Box created]0
+en: &eRank-Box created
+
+[Buildmode: Rank_Box started]0
+en: &eBuildmode: Rank-Box<br>&ePlace two blocks to build a box.
+
+[Buildmode: Rank_Box: Define a rank]0
+en: &eDefine a rank for the Rank-Box.
+
+[Buildmode: Replace '[Field_0]']1
+en: &eReplace only '[Field_0]'.
+
+[Buildmode: Rotate Started]0
+en: &eBuildmode: Rotate<br>&eWork in progress...
+
+[Buildmode: Scaleimport started]0
+en: &eBuildmode: Scale-Import<br>&ePlace a block to import the map.<br>&eThe map appears in positive directions (X+,Y+,Z+).
+
+[Buildmode: Scaleimport: Define a file]0
+en: &eDefine a file for Scale-Import.
+
+[Buildmode: Scaleimport: File '[Field_0]' not found]1
+en: &eFile '[Field_0]' not found.
+
+[Buildmode: Sphere created]0
+en: &eSphere created
+
+[Buildmode: Sphere started]0
+en: &eBuildmode: Sphere<br>&ePlace a block to describe the center<br>&eAnd another block to describe the radius.
+
+[Buildmode: Sphere too big]0
+en: &eSphere too big.
+
+[Buildmode: Stick created]0
+en: &eStick created
+
+[Buildmode: Stick started]0
+en: &eBuildmode: Stick<br>&ePlace two blocks to describe the stick.
+
+[Buildmode: Teleport_Box created]0
+en: &eTeleport-Box created
+
+[Buildmode: Teleport_Box started]0
+en: &eBuildmode: Teleport-Box<br>&eThe destination is your current position<br>&ePlace two blocks to describe the teleporter.
+
+[Buildmode: Teleport_Box: Define a name]0
+en: &eDescribe a name for the teleporter.
+
+[Buildmode: Text created]0
+
+[Buildmode: Text started]0
+
+[Buildmode: Tree Started]0
+en: &eBuildmode: Tree<br>&ePlace a block to create a tree.<br>&eUse /Cancel to stop the buildmode.
+
+[Buildmode: Triangle created]0
+en: &eTriangle created
+
+[Buildmode: Triangle started]0
+en: &eBuildmode: Triangle<br>&ePlace three blocks to create a triangle.
+
+[Can't allocate receive-memory]1
+en: Can't allocate receive-memory (Client_ID:[Field_0])
+
+[Can't allocate send-memory]1
+en: Can't allocate send-memory (Client_ID:[Field_0])
+
+[Can't compress the data]1
+en: Can't compress the data ([Field_0])
+
+[Can't find *Map_Data\Teleporter()\ID = [Field_0]]1
+en: Can't find *Map_Data\Teleporter()\ID = [Field_0]
+
+[Can't find Build_Mode()\ID = [Field_0]]1
+en: Can't find Build_Mode()\ID = [Field_0]
+
+[Can't find Entity()\ID = [Field_0]]1
+en: Can't find Entity()\ID = [Field_0]
+
+[Can't find Entity()\Name = [Field_0]]1
+en: Can't find Entity()\Name = [Field_0]
+
+[Can't find Location()\Name = [Field_0]]1
+en: Can't find Location()\Name = [Field_0]
+
+[Can't find Map_Action_List()\ID = [Field_0]]1
+en: Can't find Map_Action_List()\ID = [Field_0]
+
+[Can't find Map_Data()\ID = [Field_0]]1
+en: Can't find Map_Data()\ID = [Field_0]
+
+[Can't find Map_Data()\Name = [Field_0]]1
+en: Can't find Map_Data()\Name = [Field_0]
+
+[Can't find Map_Data()\Unique_ID = [Field_0]]1
+en: Can't find Map_Data()\Unique_ID = [Field_0]
+
+[Can't find Mem_Element()\Memory = [Field_0]]1
+en: Can't find Mem_Element()\Memory = [Field_0]
+
+[Can't find Network_Client()\ID = [Field_0]]1
+en: Can't find Network_Client()\ID = [Field_0]
+
+[Can't find Player_List()\Name = [Field_0]]1
+en: Can't find Player_List()\Name = [Field_0]
+
+[Can't find Player_List()\Number = [Field_0]]1
+en: Can't find Player_List()\Number = [Field_0]
+
+[Can't find Rank()\Rank = [Field_0]]1
+en: Can't find Rank()\Rank = [Field_0]
+
+[Can't find Teleporter()\Name = [Field_0]]1
+en: Can't find Teleporter()\Name = [Field_0]
+
+[Can't import the map: Memory-error]0
+en: Can't import the map: Memory-error
+
+[Can't load lib]1
+en: Can't load lib '[Field_0]'
+
+[Can't resize map.]0
+en: Can't resize map.
+
+[Can't save]1
+en: Can't save '[Field_0]'
+
+[Can't send data]2
+en: Can't send data (ID:[Field_0], Bytes_Sent:[Field_1])
+
+[Can't send the map: GZip-error]0
+
+[Can't send the map: Memory-error]0
+en: Can't send the map: Memory-error
+
+[Can't start server]0
+en: Can't start (Network)Server
+
+[Client created]2
+en: Client created (ID:[Field_0], IP:[Field_1])
+
+[Client deleted]3
+en: Client deleted (ID:[Field_0], IP:[Field_1], Message:[Field_2])
+
+[Client kicked]2
+en: Client kicked (Name:[Field_0], Message:[Field_1])
+
+[Client uses command]2
+en: Client '[Field_0]' uses command '[Field_1]'
+
+[Database closed]1
+en: Database closed. File:[Field_0]
+
+[Database created]1
+en: Database created. File:[Field_0]
+
+[Database error: [Field_0]]1
+en: Database error. File:[Field_0]
+
+[Database loaded]1
+en: Database loaded. File:[Field_0]
+
+[Database not opened. Can't open]2
+en: Database not opened. Can't open. File:[Field_0] ([Field_1])
+
+[Database opened]1
+en: Database opened. File:[Field_0]
+
+[Disconnected]0
+en: Disconnected
+
+[Error in [Field_0]]1
+en: Error in '[Field_0]'
+
+[File loaded]1
+en: File loaded. File:[Field_0]
+
+[File not loaded]1
+en: File not loaded. File:[Field_0]
+
+[File not saved]1
+en: File not saved. File:[Field_0]
+
+[File saved]1
+en: File saved. File:[Field_0]
+
+[Font not loaded: Can't load image]1
+en: Font not loaded: Can't load image. File:[Field_0]
+
+[Font not loaded: Memory-error]0
+en: Font not loaded: Memory-error.
+
+[Forced disconnect]0
+en: Forced disconnect
+
+[Heartbeat not sent]0
+en: Heartbeat not sent.
+
+[Heartbeat sent]0
+en: Heartbeat sent.
+
+[Ingame: Added delete to queue]0
+en: &eAdded delete to queue.
+
+[Ingame: Added fill to queue]0
+en: &eAdded fill to queue.
+
+[Ingame: Added load to queue]0
+en: &eAdded load to queue.
+
+[Ingame: Added resize to queue]0
+en: &eAdded resize to queue.
+
+[Ingame: Added save To queue]0
+en: &eAdded save to queue.
+
+[Ingame: Attribute changed]0
+en: &eAttribute changed
+
+[Ingame: Attribute is [Field_0]]1
+en: &eAttribute is '[Field_0]'
+
+[Ingame: Banned]1
+en: &eBanned: [Field_0]
+
+[Ingame: Block placed]0
+en: &eBlock placed
+
+[Ingame: Blockchanges undone]0
+en: &eBlockchanges undone
+
+[Ingame: Blocksend-Queue:]0
+en: &eBlocksend-Queue:
+
+[Ingame: Blocksend-Stopped]0
+
+[Ingame: Buildmaterial is [Field_0]]1
+en: &eBuildmaterial is now '[Field_0]'.
+
+[Ingame: Buildmaterial is normal]0
+en: &eBuildmaterial is now normal.
+
+[Ingame: Can't ban [Field_0]<c> (A <= B)]1
+en: &eYou can't ban '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't find Block()Name = [Field_0]]1
+en: &eCan't find the Blocktype '[Field_0]'.
+
+[Ingame: Can't find Block()\Name = [Field_0]]1
+en: &eCan't find the Blocktype '[Field_0]'.
+
+[Ingame: Can't find Command()\Name = [Field_0]]1
+en: &eCan't find the Command '[Field_0]'.
+
+[Ingame: Can't find Command_Group()\Name = [Field_0]]1
+en: &eCan't find the Command_Group '[Field_0]'.
+
+[Ingame: Can't find Entity()\Name = [Field_0]]1
+en: &eCan't find the Entity '[Field_0]'.
+
+[Ingame: Can't find Location()\Name = [Field_0]]1
+en: &eCan't find the Location '[Field_0]'.
+
+[Ingame: Can't find Map]0
+en: &eCan't find map.
+
+[Ingame: Can't find Map_Data()\Name = [Field_0]]1
+en: &eCan't find the Map '[Field_0]'.
+
+[Ingame: Can't find Network_Client()\Player\Entity\Name = [Field_0]]1
+en: &eCan't find the Player '[Field_0]'.
+
+[Ingame: Can't find Player_List()\Name = [Field_0]]1
+en: &eCan't find the Player '[Field_0]'.
+
+[Ingame: Can't find Plugin()\Plugin_Info\Name = [Field_0]]1
+en: &eCan't find the Plugin '[Field_0]'
+
+[Ingame: Can't find command]0
+en: &eUnknown command.
+
+[Ingame: Can't kick [Field_0]<c> (A <= B)]1
+en: &eYou can't kick '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't mute [Field_0]<c> (A <= B)]1
+en: &eYou can't mute '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't rank [Field_0]<c> (A <= B)]1
+en: &eYou can't rank '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't rank [Field_0]<c> (A <= Rank)]1
+en: &eYou can't rank '[Field_0]&e'. Your rank is <= than the defined rank.
+
+[Ingame: Can't stop [Field_0]<c> (A <= B)]1
+en: &eYou can't stop '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't unban [Field_0]<c> (A <= B)]1
+en: &eYou can't unban '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't unmute [Field_0]<c> (A <= B)]1
+en: &eYou can't unmute '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Can't unstop [Field_0]<c> (A <= B)]1
+en: &eYou can't unstop '[Field_0]&e'. Your rank is <= than the player.
+
+[Ingame: Command Description:]0
+en: &eCommand-description:
+
+[Ingame: Command Groups:]0
+en: &eCommand-groups:
+
+[Ingame: Commands:]0
+en: &eCommands:
+
+[Ingame: Counter (Compiled, Builded): ([Field_0], [Field_1])]2
+en: &eCounter (Compiled, Builded): ([Field_0], [Field_1])
+
+[Ingame: Directory:]0
+en: &eDirectory:
+
+[Ingame: Entity '[Field_0]' changes to map '[Field_1]']2
+en: &e'[Field_0]&e' changes to map '[Field_1]'.
+
+[Ingame: Entity '[Field_0]' joins map '[Field_1]']2
+en: &e'[Field_0]&e' joins map '[Field_1]'.
+
+[Ingame: Free memory: [Field_0] MB.]1
+en: &eFree memory: [Field_0] MB.
+
+[Ingame: Global_Message]0
+en: &c#
+
+[Ingame: ID:]0
+en: &eID:
+
+[Ingame: IP:]0
+en: &eIP:
+
+[Ingame: Invalid Value]0
+en: &eInvalid Value
+
+[Ingame: Kicks:]0
+en: &eKicks:
+
+[Ingame: Killspawn changed]0
+en: &eKillspawn changed
+
+[Ingame: Location added]0
+en: &eLocation added
+
+[Ingame: Location deleted]0
+en: &eLocation deleted
+
+[Ingame: Locations:]0
+en: &eLocations:
+
+[Ingame: Log:]0
+en: &eLog
+
+[Ingame: Logins:]0
+en: &eLogins:
+
+[Ingame: Map added]0
+en: &eMap added
+
+[Ingame: Map deleted]1
+en: &eMap '[Field_0]' deleted
+
+[Ingame: Map filled]1
+en: &eMap '[Field_0]' filled
+
+[Ingame: Map loaded]1
+en: &eMap '[Field_0]' loaded
+
+[Ingame: Map renamed]0
+en: &eMap renamed
+
+[Ingame: Map resized]1
+en: &eMap '[Field_0]' resized
+
+[Ingame: Map saved]1
+en: &eMap '[Field_0]' saved
+
+[Ingame: Map styled]0
+
+[Ingame: Mapdirectory changed]0
+en: &eMap-directory changed
+
+[Ingame: Mapinfo:]0
+en: &eMapinfo:
+
+[Ingame: Maps:]0
+en: &eMaps:
+
+[Ingame: Materials:]0
+en: &eMaterials:
+
+[Ingame: Memoryusage:]0
+en: &eMemoryusage:
+
+[Ingame: Memoryusage: [Field_0] MB ([Field_1] MB)]2
+en: &eMemoryusage: [Field_0] MB ([Field_1] MB)
+
+[Ingame: Muted]2
+en: &eMuted: [Field_0]&e: (until [Field_1])
+
+[Ingame: Name:]0
+en: &eName:
+
+[Ingame: Number:]0
+en: &eNumber:
+
+[Ingame: Online since [Field_0] hours.]1
+en: &eOnline since [Field_0] hours.
+
+[Ingame: Ontime:]0
+en: &eOntime:
+
+[Ingame: Physic started]0
+en: &ePhysic started
+
+[Ingame: Physic stopped]0
+en: &ePhysic stopped
+
+[Ingame: Physic-Queue:]0
+
+[Ingame: Physik-Queue:]0
+en: &ePhysik-Queue:
+
+[Ingame: Ping: [Field_0]ms.]1
+en: &ePing: [Field_0]ms.
+
+[Ingame: Player '[Field_0]<c>' logged in]1
+en: &ePlayer '[Field_0]&e' logged in
+
+[Ingame: Player '[Field_0]<c>' logged out ([Field_1])]2
+en: &ePlayer '[Field_0]&e' logged out. ([Field_1])
+
+[Ingame: Player banned]2
+en: &ePlayer '[Field_0]&e' got banned. ([Field_1])
+
+[Ingame: Player kicked]2
+en: &ePlayer '[Field_0]&e' got kicked. ([Field_1])
+
+[Ingame: Player muted]2
+en: &ePlayer '[Field_0]&e' got muted. ([Field_1])
+
+[Ingame: Player muted (minute)]3
+en: &ePlayer '[Field_0]&e' got muted for [Field_2] minute. ([Field_1])
+
+[Ingame: Player muted (minutes)]3
+en: &ePlayer '[Field_0]&e' got muted for [Field_2] minutes. ([Field_1])
+
+[Ingame: Player stopped]1
+en: &ePlayer '[Field_0]&e' got stopped. ([Field_1])
+
+[Ingame: Player unbanned]1
+en: &ePlayer '[Field_0]&e' got unbanned.
+
+[Ingame: Player unmuted]1
+en: &ePlayer '[Field_0]&e' got unmuted.
+
+[Ingame: Player unstopped]1
+en: &ePlayer '[Field_0]&e' got unstopped.
+
+[Ingame: Playerinfo:]0
+en: &ePlayerinfo:
+
+[Ingame: Players:]0
+en: &ePlayers:
+
+[Ingame: Please define a directory]0
+en: &ePlease define a directory.
+
+[Ingame: Please define a function]0
+en: &ePlease define a function.
+
+[Ingame: Please define a name]0
+en: &ePlease define a name.
+
+[Ingame: Plugin '[Field_0]' loaded]1
+en: &ePlugin '[Field_0]' &aloaded
+
+[Ingame: Plugin '[Field_0]' not loaded]1
+en: &ePlugin '[Field_0]' &6not loaded
+
+[Ingame: Plugin '[Field_0]' not unloaded]1
+en: &ePlugin '[Field_0]' &6not unloaded
+
+[Ingame: Plugin '[Field_0]' unloaded]1
+en: &ePlugin '[Field_0]' &4unloaded
+
+[Ingame: Plugins:]0
+en: &ePlugins:
+
+[Ingame: Preview Type:]0
+en: &ePreview Type:
+
+[Ingame: Rank changed]0
+en: &eRank changed
+
+[Ingame: Rank changed '[Field_0]<c>' '[Field_1]' ([Field_2])]3
+en: &eRank of '[Field_0]&e' changed to '[Field_1]' ([Field_2])
+
+[Ingame: Rank of '[Field_0]' is '[Field_1]' ([Field_2])]3
+en: &eRank of '[Field_0]&e' is '[Field_1]' ([Field_2])
+
+[Ingame: Rank:]0
+en: &eRank:
+
+[Ingame: Ranks: Build=[Field_0] Join=[Field_1] Show=[Field_2]]3
+en: &eRanks: Build=[Field_0] Join=[Field_1] Show=[Field_2]
+
+[Ingame: Serverinfo:]0
+en: &eServerinfo:
+
+[Ingame: Servertime: [Field_0]]1
+en: &eServertime: [Field_0]
+
+[Ingame: Size:]0
+en: &eSize:
+
+[Ingame: Spawn changed]0
+en: &eSpawn changed
+
+[Ingame: Stickphysics started]0
+en: &eStickphysics started
+
+[Ingame: Stickphysics stopped]0
+en: &eStickphysics stopped and restored
+
+[Ingame: Stopped]1
+en: &eStopped: [Field_0]
+
+[Ingame: Teleporter deleted]0
+en: &eTeleporter deleted
+
+[Ingame: Teleporter not deleted]0
+en: &eTeleporter not deleted
+
+[Ingame: Teleporters:]0
+en: &eTeleporters:
+
+[Ingame: U_ID:]0
+en: &eU_ID:
+
+[Ingame: Usermaps]0
+en: &eUsermaps:
+
+[Ingame: Version: [Field_0]]1
+en: &eVersion: [Field_0]
+
+[Ingame: You are muted]0
+en: &eYou are muted.
+
+[Ingame: You are not allowed to build here.]0
+en: &eYou are not allowed to build here.
+
+[Ingame: You are not allowed to build this block.]0
+en: &eYou are not allowed to build this block.
+
+[Ingame: You are not allowed to build. (Stopped)]0
+en: &eYou are not allowed to build. (Stopped)
+
+[Ingame: You are not allowed to delete this block.]0
+en: &eYou are not allowed to delete this block.
+
+[Ingame: You are not allowed to join map '[Field_0]']1
+en: &eYou are not allowed to join map '[Field_0]'.
+
+[Ingame: You are not allowed to use this command]0
+en: &eYou are not allowed to use this command.
+
+[Ingame: Your rank got changed '[Field_0]' ([Field_1])]2
+en: &eYour rank got changed '[Field_0]' ([Field_1])
+
+[Ingame: Your rank is '[Field_0]' ([Field_1])]2
+en: &eYour rank got changed '[Field_0]&e' ([Field_1])
+
+[Ingame: [Field_0] Died]1
+en: &c[Field_0] died
+
+[Kick Reason]2
+en: [Field_0]&e: [Field_1]
+
+[Login failed: Invalid name (IP=[Field_0], Name='[Field_1]')]2
+
+[Login failed: Name-Verification (MPPass=[Field_0], IP=[Field_1], Name='[Field_2]')]3
+
+[Login failed: Name-Verification ([Field_0] != [Field_1], IP=[Field_2], Name='[Field_3]')]4
+
+[Login failed: Player is banned (IP=[Field_0], Name='[Field_1]')]2
+
+[Login failed: Server is full (IP=[Field_0], Name='[Field_1]')]2
+
+[Login failed: Spawnmap invalid (IP=[Field_0], Name='[Field_1]')]2
+
+[Login failed: Spawnmap is full (IP=[Field_0], Name='[Field_1]')]2
+
+[Login failed: Unknown Client-Version [Field_0] (IP=[Field_0], Name='[Field_1]')]3
+
+[Map exported]1
+en: Map '[Field_0]' exported
+
+[Map filled]3
+en: Map filled ([Field_0],[Field_1],[Field_2])
+
+[Map imported]4
+en: Map '[Field_0]' imported ([Field_1],[Field_2],[Field_3])
+
+[Map loaded]4
+en: Map '[Field_0]' loaded ([Field_1],[Field_2],[Field_3])
+
+[Map not exported: Memory-error]1
+en: Map '[Field_0]' not exported: Memory-error
+
+[Map not imported: Filesize is wrong]1
+en: Map '[Field_0]' not imported: Filesize is wrong
+
+[Map not imported: Unknown version]1
+en: Map '[Field_0]' not imported: Unknown version
+
+[Map not loaded: Filesize is wrong]1
+en: Map '[Field_0]' not loaded: Filesize is wrong
+
+[Mapsending error]0
+en: Mapsending error, sorry.
+
+[Memoryallocationerror in [Field_0]]1
+en: Memoryallocationerror in [Field_0]
+
+[Network_Client()\ID = 0]0
+en: Network_Client()\ID = 0
+
+[Network_Client()\ID exists already]1
+en: Network_Client()\ID exists already
+
+[Networkerror]0
+en: Networkerror
+
+[New Map [Field_0]]1
+en: New Map [Field_0]
+
+[No free Entity()\ID]0
+en: No free Entity()\ID
+
+[No free Entity()\ID_Client]0
+en: No free Entity()\ID_Client
+
+[Path to file not defined]1
+en: Path to file '[Field_0]' not defined
+
+[Path to folder not defined]1
+en: Path to folder '[Field_0]' not defined
+
+[Player banned]2
+en: Player got banned (Name:[Field_0], Message:[Field_1])
+
+[Player kicked]2
+en: Player got kicked (Name:[Field_0], Message:[Field_1])
+
+[Player logged in (IP=[Field_0], Name='[Field_1]')]2
+en: Player logged in (IP=[Field_0], Name='[Field_1]')
+
+[Player logged out (IP=[Field_0], Name='[Field_1]', Message='[Field_2]')]3
+en: Player logged out (IP=[Field_0], Name='[Field_1]', Message='[Field_2]')
+
+[Player muted]1
+en: Player got muted (Name:[Field_0])
+
+[Player stopped]1
+en: Player got stopped (Name:[Field_0])
+
+[Player unbanned]1
+en: Player got unbanned (Name:[Field_0])
+
+[Player unmuted]1
+en: Player got unmuted (Name:[Field_0])
+
+[Player unstopped]1
+en: Player got unstopped (Name:[Field_0])
+
+[Plugin loaded]3
+en: Plugin loaded (File:'[Field_0]', Name:'[Field_1]', Auth:'[Field_2]')
+
+[Plugin not loaded: Can't open it]1
+en: Plugin not loaded: Can't open it (File:'[Field_0]')
+
+[Plugin not loaded: Incompatible]2
+en: Plugin not loaded: Incompatible (File:'[Field_0]', Vers:[Field_1])
+
+[Plugin unloaded]1
+en: Plugin unloaded (File:'[Field_0]')
+
+[Private_Message: At]0
+en: &c@
+
+[Private_Message: From]0
+en: &cP
+
+[Rank Reason]1
+en: (Before:[Field_1]) [Field_0]&e: [Field_2]
+
+[Rank added]2
+en: Rank [Field_0] added (Name:[Field_1])
+
+[Rank deleted]1
+en: Rank [Field_0] deleted
+
+[Red_Screen: You got kicked]1
+en: &eYou got kicked: [Field_0]
+
+[Redscreen: Invalid name]0
+en: &eYou have a invalid name.
+
+[Redscreen: Name-Verification]0
+en: &eName-Verification not correct.
+
+[Redscreen: Server is full]0
+en: &eServer is full.
+
+[Redscreen: Spawnmap invalid]0
+en: &eInvalid spawnmap.
+
+[Redscreen: Spawnmap is full]0
+
+[Redscreen: Unknown Client-Version]0
+en: &eUnknown client-version.
+
+[Redscreen: You are banned]0
+en: &eYou are banned.
+
+[Runtimeerror in [Field_0]]2
+en: Runtimeerror in [Field_0]: [Field_1]
+
+[Server started]1
+en: (Network)Server started (Port:[Field_0])
+
+[Server stopped]0
+en: (Network)Server Stopped
+
+[Stop Reason]2
+en: [Field_0]&e: [Field_1]
+
+[Timeout]0
+en: Timeout
+
+[Unknown data]2
+en: Unkown data (ID:[Field_0], Byte:[Field_1])
+

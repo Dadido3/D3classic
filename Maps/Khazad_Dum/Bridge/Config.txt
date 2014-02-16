@@ -1,0 +1,21 @@
+; Overview_Types: 0=Nothing, 1=2D, 2=Iso(fast)
+; Save_Intervall: in minutes (0 = Disabled)
+;
+Server_Version = 1004
+Unique_ID = YJAHHOEYXOHMTYXQ
+Name = Khazad Dum
+Rank_Build = 0
+Rank_Join = 0
+Rank_Show = 0
+Physic_Stopped = 0
+MOTD_Override = 
+Save_Intervall = 10
+Overview_Type = 2
+Size_X = 256
+Size_Y = 96
+Size_Z = 96
+Spawn_X = 16.875
+Spawn_Y = 21.28125
+Spawn_Z = 90.5625
+Spawn_Rot = 90
+Spawn_Look = 30.9375
