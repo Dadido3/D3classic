@@ -1,11 +1,10 @@
-
 ; ########################################## Konstanten ##########################################
 
 ; ########################################## Variablen ###########################################
 
 Structure Entity_Main
-  Timer_Send.l                    ; Timer für das Senden der Entities (Pos, Löschen, Erstellen)
-  Timer_Check_Pos.l               ; Timer für das Überprüfen der Position
+  Timer_Send.l                    ; Timer fï¿½r das Senden der Entities (Pos, Lï¿½schen, Erstellen)
+  Timer_Check_Pos.l               ; Timer fï¿½r das ï¿½berprï¿½fen der Position
 EndStructure
 Global Entity_Main.Entity_Main
 
@@ -157,14 +156,14 @@ Procedure Entity_Delete(ID)
     
     Plugin_Event_Entity_Add(Entity())
     
-    ; ############# Pointer zu dem Element löschen
+    ; ############# Pointer zu dem Element lï¿½schen
     ForEach Network_Client()
       If Network_Client()\Player\Entity = Entity()
         Network_Client()\Player\Entity = 0
       EndIf
     Next
     
-    ; ############# Element löschen
+    ; ############# Element lï¿½schen
     DeleteElement(Entity())
   EndIf
 EndProcedure
@@ -237,7 +236,7 @@ Procedure Entity_Kill(ID)
   List_Restore(*Pointer, Entity())
 EndProcedure
 
-Procedure Entity_Position_Check(ID) ; Prüft, ob dieses Entity den Block betreten darf/ ob er tötlich ist ... und Teleporter
+Procedure Entity_Position_Check(ID) ; Prï¿½ft, ob dieses Entity den Block betreten darf/ ob er tï¿½tlich ist ... und Teleporter
   List_Store(*Pointer, Entity())
   If Entity_Select_ID(ID)
     Map_ID = Entity()\Map_ID
@@ -304,7 +303,7 @@ Procedure Entity_Position_Set(ID, Map_ID, X.f, Y.f, Z.f, Rotation.f, Look.f, Pri
       
       If Plugin_Event_Entity_Position_Set(Entity(), Map_ID, X.f, Y.f, Z.f, Rotation.f, Look.f, Priority.a, Send_Own_Client.a)
         
-        If Entity()\Map_ID <> Map_ID ; ############## Wenn Kartenwechsel, dann: Neue ID_Client, Texte senden, Rang prüfen
+        If Entity()\Map_ID <> Map_ID ; ############## Wenn Kartenwechsel, dann: Neue ID_Client, Texte senden, Rang prï¿½fen
           If Map_Select_ID(Map_ID)
             If Entity()\Player_List = 0 Or Entity()\Player_List\Rank >= Map_Data()\Rank_Join
               System_Message_Network_Send_2_All(Entity()\Map_ID, Lang_Get("", "Ingame: Entity '[Field_0]' changes to map '[Field_1]'", Entity_Displayname_Get(ID), Map_Data()\Name))
@@ -327,16 +326,20 @@ Procedure Entity_Position_Set(ID, Map_ID, X.f, Y.f, Z.f, Rotation.f, Look.f, Pri
           EndIf
         Else
           If Map_Select_ID(Entity()\Map_ID) ; ###### Wenn aktuelle Karte vorhanden
-            Entity()\X = X
-            Entity()\Y = Y
-            Entity()\Z = Z
-            Entity()\Rotation = Rotation
-            Entity()\Look = Look
-            Entity()\Send_Pos = Priority
-            If Send_Own_Client
-              Entity()\Send_Pos_Own = #True
+            If Send_Own_Client Or Not Entity()\Send_Pos_Own
+              Entity()\X = X
+              Entity()\Y = Y
+              Entity()\Z = Z
+              Entity()\Rotation = Rotation
+              Entity()\Look = Look
+              Entity()\Send_Pos = Priority
+              If Send_Own_Client
+                Entity()\Send_Pos_Own = #True
+              EndIf
+              ProcedureReturn #True
+            Else
+              ProcedureReturn #False
             EndIf
-            ProcedureReturn #True
           EndIf
           
         EndIf
@@ -353,11 +356,11 @@ EndProcedure
 
 ;-
 
-Procedure Entity_Send() ; Verwaltet das Bewegen, Erstellen und Löschen von Entities der Klienten
+Procedure Entity_Send() ; Verwaltet das Bewegen, Erstellen und Lï¿½schen von Entities der Klienten
   
   ForEach Network_Client()
     If Network_Client()\Logged_In
-      ; ############### Entities löschen
+      ; ############### Entities lï¿½schen
       ForEach Network_Client()\Player\Entities()
         ID = Network_Client()\Player\Entities()\ID
         ID_Client = Network_Client()\Player\Entities()\ID_Client
@@ -367,7 +370,7 @@ Procedure Entity_Send() ; Verwaltet das Bewegen, Erstellen und Löschen von Entit
           If Entity()\Map_ID <> Network_Client()\Player\Map_ID
             Delete = 1
           EndIf
-          ; ######## Das Entitie von sich selbst löschen
+          ; ######## Das Entitie von sich selbst lï¿½schen
           If Network_Client()\Player\Entity
             If Network_Client()\Player\Entity\ID = Entity()\ID
               Delete = 1
