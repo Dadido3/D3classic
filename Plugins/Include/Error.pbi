@@ -1,7 +1,7 @@
-; ########################################## Variablen ##########################################
+﻿; ########################################## Variablen ##########################################
 
 Structure Error_Main
-  Counter.l                     ; Um bei mehreren Fehlen nicht die selbe Datei zu �berschreiben
+  Counter.l                     ; Um bei mehreren Fehlern nicht die selbe Datei zu überschreiben
 EndStructure
 Global Error_Main.Error_Main
 
@@ -41,7 +41,7 @@ Procedure Error_Handler()
       CompilerEndIf
     CompilerEndIf
     WriteStringN(File_ID, "    <b><u>Servertime:</u> "+FormatDate("%hh:%ii:%ss   %dd.%mm.%yyyy", Date())+" (t = "+Str(Date())+")</b><br>")
-    WriteStringN(File_ID, "    <b><u>Elapsedmilliseconds:</u> "+Str(Milliseconds())+"ms</b><br>")
+    WriteStringN(File_ID, "    <b><u>Elapsedmilliseconds:</u> "+Str(ElapsedMilliseconds())+"ms</b><br>")
     WriteStringN(File_ID, "    <br>")
     
     WriteStringN(File_ID, "    <br>")
@@ -106,9 +106,8 @@ Procedure Error_Enable()
   Error_Main\Counter = 10
   OnErrorCall(@Error_Handler())
 EndProcedure
-; IDE Options = PureBasic 4.51 (Windows - x86)
-; CursorPosition = 43
-; FirstLine = 40
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
+; CursorPosition = 3
 ; Folding = -
 ; EnableXP
 ; DisableDebugger

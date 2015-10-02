@@ -1,5 +1,6 @@
 ﻿UsePNGImageEncoder()
 UseSQLiteDatabase()
+UseMD5Fingerprint()
 
 ; ########################################## Dokumentation ######################################
 ;
@@ -463,10 +464,9 @@ Repeat
 ForEver
 
 ; ########################################## Ende ##########################################
-; IDE Options = PureBasic 5.21 LTS Beta 1 (Windows - x64)
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
 ; ExecutableFormat = Console
-; CursorPosition = 144
-; FirstLine = 124
+; CursorPosition = 2
 ; Folding = -
 ; EnableThread
 ; EnableXP

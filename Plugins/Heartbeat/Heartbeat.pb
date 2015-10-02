@@ -1,4 +1,4 @@
-; ################################################### Documentation #########################################
+﻿; ################################################### Documentation #########################################
 ; 
 ; Todo:
 ;  - 
@@ -20,6 +20,8 @@
 XIncludeFile "../Include/Include.pbi"
 
 ; ################################################### Inits #################################################
+
+UseMD5Fingerprint()
 
 ; ################################################### Konstants #############################################
 
@@ -84,7 +86,7 @@ Procedure Heartbeat_Save(Filename.s) ; Speichert die Einstellungen
   EndIf
 EndProcedure
 
-Procedure Heartbeat_Load(Filename.s) ; L�dt die Einstellungen
+Procedure Heartbeat_Load(Filename.s) ; Lädt die Einstellungen
   If OpenPreferences(Filename)
     
     Heartbeat_Main\Public = ReadPreferenceLong("Public", 1)
@@ -146,7 +148,7 @@ EndProcedure
 
 ProcedureCDLL Event_Client_Verify_Name(Name.s, Pass.s)
   Fingerprint.s = Heartbeat_Main\Salt + Name
-  Pass_Valid.s = LTrim( MD5Fingerprint(@Fingerprint, Len(Fingerprint)) , "0")
+  Pass_Valid.s = LTrim( StringFingerprint(Fingerprint, #PB_Cipher_MD5, 0, #PB_Ascii), "0")
   
   If Trim(LCase(Pass_Valid)) = Trim(LCase(Pass))
     ProcedureReturn #True
@@ -199,14 +201,13 @@ ProcedureCDLL Main()
     Heartbeat_Save(PeekS(Files_File_Get("Heartbeat")))
   EndIf
 EndProcedure
-; IDE Options = PureBasic 5.11 (Windows - x64)
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
 ; ExecutableFormat = Shared Dll
-; CursorPosition = 144
-; FirstLine = 125
+; CursorPosition = 149
+; FirstLine = 123
 ; Folding = --
 ; EnableThread
 ; EnableXP
 ; EnableOnError
 ; Executable = Heartbeat.x64.dll
 ; DisableDebugger
-; Compiler = PureBasic 5.11 (Windows - x86)

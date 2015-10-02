@@ -1,4 +1,4 @@
-; ################################################### Documentation #########################################
+﻿; ################################################### Documentation #########################################
 ; 
 ; Todo:
 ;  - 
@@ -402,13 +402,12 @@ ProcedureCDLL Main()
   Next
   
 EndProcedure
-; IDE Options = PureBasic 5.11 (Windows - x64)
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
 ; ExecutableFormat = Shared Dll
-; CursorPosition = 36
+; CursorPosition = 28
 ; Folding = ------
 ; EnableThread
 ; EnableXP
 ; EnableOnError
 ; Executable = lua.x86.so
 ; DisableDebugger
-; Compiler = PureBasic 5.11 (Windows - x86)

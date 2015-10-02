@@ -1,4 +1,4 @@
-; ################################################### Documentation #########################################
+Ôªø; ################################################### Documentation #########################################
 ; 
 ; Todo:
 ;  - 
@@ -32,8 +32,8 @@ Global ScreenCap_Map_ID = 0
 Global ScreenCap_Offset_X = 0     ; Offset der Eingabe
 Global ScreenCap_Offset_Y = 130   ; Offset der Eingabe
 Global ScreenCap_Scale = 1        ; Skalierung der Eingabe
-Global ScreenCap_Size_X = 200     ; Ausgabegrˆﬂe (Eingabegroﬂe = Size_X * Scale)
-Global ScreenCap_Size_Y = 150     ; Ausgabegrˆﬂe (Eingabegroﬂe = Size_X * Scale)
+Global ScreenCap_Size_X = 200     ; Ausgabegr√∂√üe (Eingabegro√üe = Size_X * Scale)
+Global ScreenCap_Size_Y = 150     ; Ausgabegr√∂√üe (Eingabegro√üe = Size_X * Scale)
 Global ScreenCap_Time = 250
 
 ; ################################################### Variables #############################################

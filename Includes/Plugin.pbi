@@ -92,7 +92,7 @@ Structure Plugin_Result_Element
   ID.l
 EndStructure
 
-XIncludeFile "Shared Includes/Plugin_Functions.pbi"
+XIncludeFile "../Shared Includes/Plugin_Functions.pbi"
 Global Plugin_Function.Plugin_Function
 
 ; ########################################## Ladekram ############################################
@@ -1021,9 +1021,9 @@ Procedure Plugin_Main()
     EndIf
   Next
 EndProcedure
-; IDE Options = PureBasic 4.51 (Windows - x86)
-; CursorPosition = 1008
-; FirstLine = 975
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
+; CursorPosition = 95
+; FirstLine = 66
 ; Folding = ---------
 ; EnableXP
 ; DisableDebugger

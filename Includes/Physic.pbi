@@ -98,9 +98,9 @@ EndProcedure
 Procedure Physic_Main()
   
 EndProcedure
-; IDE Options = PureBasic 4.50 (Windows - x86)
-; CursorPosition = 54
-; FirstLine = 28
+; IDE Options = PureBasic 5.40 LTS Beta 1 (Windows - x64)
+; CursorPosition = 30
+; FirstLine = 14
 ; Folding = --
 ; EnableXP
 ; DisableDebugger

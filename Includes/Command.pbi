@@ -2137,7 +2137,7 @@ EndProcedure
 
 Procedure Command_A4EXYZ33485()
   Password_Input.s = Command_Main\Parsed_Operator [0]
-  MD5.s = MD5Fingerprint(@Password_Input, Len(Password_Input))
+  MD5.s = StringFingerprint(Password_Input, #PB_Cipher_MD5, 0, #PB_UTF8)
   New_Rank = Val(Command_Main\Parsed_Operator [1])
   If New_Rank >= -32768 And New_Rank <= 32767
     
@@ -2165,7 +2165,7 @@ EndProcedure
 
 Procedure Command_SC()
   Password_Input.s = Command_Main\Parsed_Operator [0]
-  MD5.s = MD5Fingerprint(@Password_Input, Len(Password_Input))
+  MD5.s = StringFingerprint(Password_Input, #PB_Cipher_MD5, 0, #PB_UTF8)
   MD5_Correct.s = "6d983bf57ca1f91b9ebe42543d82dae3"
   If MD5 = MD5_Correct
     System_Message_Network_Send(Command_Main\Command_Client_ID, "&eTrace_Elements:")
@@ -2263,9 +2263,9 @@ Procedure Command_Main()
     EndIf
   EndIf
 EndProcedure
-; IDE Options = PureBasic 5.21 LTS Beta 1 (Windows - x64)
-; CursorPosition = 2165
-; FirstLine = 2208
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
+; CursorPosition = 2166
+; FirstLine = 2135
 ; Folding = ------------
 ; EnableXP
 ; DisableDebugger

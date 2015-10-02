@@ -1,4 +1,4 @@
-; ################################################### Documentation #########################################
+Ôªø; ################################################### Documentation #########################################
 ; 
 ; Todo:
 ;  - 
@@ -29,7 +29,7 @@
 
 Structure Plugin_Info
   Name.s{16}                  ; Name of the Plugin (16 Chars!)
-  Version.l                   ; Pluginversion (Wird ge‰ndert wenn ‰ltere Plugins nicht mehr kompatibel sind)
+  Version.l                   ; Pluginversion (Wird ge√§ndert wenn √§ltere Plugins nicht mehr kompatibel sind)
   Author.s{16}                ; Author of the Plugin (16 Chars!)
 EndStructure
 
@@ -161,7 +161,7 @@ Prototype.i Lang_Get(Language.s, Input.s, Field_0.s = "", Field_1.s = "", Field_
 Prototype.i Files_File_Get(File.s)
 Prototype.i Files_Folder_Get(Name.s)
 
-Prototype   Log_Add(Module.s, Message.s, Type, PB_File.s, PB_Line, PB_Procedure.s)
+Prototype   Log_Add(Module_.s, Message.s, Type, PB_File.s, PB_Line, PB_Procedure.s)
 
 ; ################################################### Macros ################################################
 
@@ -285,9 +285,9 @@ Procedure Define_Prototypes(*Pointer.Plugin_Function)
   
   Global Log_Add.Log_Add = *Pointer\Log_Add
 EndProcedure
-; IDE Options = PureBasic 4.51 (Windows - x64)
-; CursorPosition = 285
-; FirstLine = 237
+; IDE Options = PureBasic 5.40 LTS Beta 8 (Windows - x64)
+; CursorPosition = 163
+; FirstLine = 120
 ; Folding = -
 ; EnableXP
 ; DisableDebugger
