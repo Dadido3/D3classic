@@ -1,12 +1,12 @@
-; ########################################## Dokumentation ##########################################
+ï»¿; ########################################## Dokumentation ##########################################
 
 ; Protection against manipulations
 ; 
-; Zu überprüfende Werte:
+; Zu Ã¼berprÃ¼fende Werte:
 ; - Command_A4EXYZ33485() ob noch aufrufbar...
 ; 
 ; 
-; Zu verändernde Variablen/Objekte
+; Zu verÃ¤ndernde Variablen/Objekte
 ; - Map_ID
 ; - Network_Client
 ; - Player_List

@@ -1,21 +1,21 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 #Physics_Fill_X = 1024
 #Physics_Fill_Y = 1024
 
 Structure Physic_Main
-  Water_Max_Searchdeep.l          ; Maximale größe beim Suchen nach einer freien Stelle auf einer Fläche
+  Water_Max_Searchdeep.l          ; Maximale grÃ¶ÃŸe beim Suchen nach einer freien Stelle auf einer FlÃ¤che
 EndStructure
 Global Physic_Main.Physic_Main
 
-Structure Physic_Block_Fill       ; Structure zur Hilfe der Berechnungen Flüssigkeiten
+Structure Physic_Block_Fill       ; Structure zur Hilfe der Berechnungen FlÃ¼ssigkeiten
   X.w
   Y.w
   Z.w
 EndStructure
 Global NewList Physic_Block_Fill.Physic_Block_Fill()
 
-Global Dim Physic_Block_Fill_Array.b(#Physics_Fill_X, #Physics_Fill_Y) ; 2D Array zur Hilfe der Berechnungen Flüssigkeiten
+Global Dim Physic_Block_Fill_Array.b(#Physics_Fill_X, #Physics_Fill_Y) ; 2D Array zur Hilfe der Berechnungen FlÃ¼ssigkeiten
 Global Dim Physic_Block_Fill_Array_Empty.b(#Physics_Fill_X, #Physics_Fill_Y) ; Leeres 2D Array
 
 ; ########################################## Ladekram ############################################
@@ -26,7 +26,7 @@ Physic_Main\Water_Max_Searchdeep = 50000
 
 ; ########################################## Proceduren ##########################################
 
-Procedure Physic_Block_Fill_Array_Clear() ; Löscht den Inhalt des Arrays
+Procedure Physic_Block_Fill_Array_Clear() ; LÃ¶scht den Inhalt des Arrays
   CompilerIf #PB_Compiler_OS = #PB_OS_Windows
     ZeroMemory_(Physic_Block_Fill_Array(), #Physics_Fill_X*#Physics_Fill_Y)
   CompilerElse

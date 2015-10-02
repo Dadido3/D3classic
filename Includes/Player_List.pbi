@@ -1,10 +1,10 @@
-; ########################################## Variablen ##########################################
+Ôªø; ########################################## Variablen ##########################################
 
 Structure Player_List_Main
   Database_ID.i               ; Datenbank-ID
-  Number_Counter.w            ; Z‰hler f¸r die eindeutigen Nummern
+  Number_Counter.w            ; Z√§hler f√ºr die eindeutigen Nummern
   Save_File.b                 ; Zeigt an, ob gespeichert werden soll
-  Timer_File_Save.l           ; Timer f¸r das Speichern der Datei
+  Timer_File_Save.l           ; Timer f√ºr das Speichern der Datei
 EndStructure
 Global Player_List_Main.Player_List_Main
 
@@ -14,7 +14,7 @@ Global Player_List_Main.Player_List_Main
 
 ; ########################################## Proceduren ##########################################
 
-Procedure Player_List_Database_Close() ; Schlieﬂt die Datenbank.
+Procedure Player_List_Database_Close() ; Schlie√üt die Datenbank.
   If Player_List_Main\Database_ID
     CloseDatabase(Player_List_Main\Database_ID)
     Player_List_Main\Database_ID = 0
@@ -36,7 +36,7 @@ Procedure Player_List_Database_Create(Filename.s) ; Erstellt eine Datenbank und 
   EndIf
 EndProcedure
 
-Procedure Player_List_Database_Open(Filename.s) ; ÷ffnet eine Datenbank, es kann nun geschrieben und gelesen werden.
+Procedure Player_List_Database_Open(Filename.s) ; √ñffnet eine Datenbank, es kann nun geschrieben und gelesen werden.
   Player_List_Database_Close()
   
   If FileSize(Filename.s) = -1
@@ -56,7 +56,7 @@ Procedure Player_List_Database_Open(Filename.s) ; ÷ffnet eine Datenbank, es kann
   ProcedureReturn 0
 EndProcedure
 
-Procedure Player_List_Select(Name.s, Log=1) ; W‰hlt das Linked-List-Objekt
+Procedure Player_List_Select(Name.s, Log=1) ; W√§hlt das Linked-List-Objekt
   If ListIndex(Player_List()) <> -1 And LCase(Player_List()\Name) = LCase(Name)
     ProcedureReturn #True
   Else
@@ -73,7 +73,7 @@ Procedure Player_List_Select(Name.s, Log=1) ; W‰hlt das Linked-List-Objekt
   ProcedureReturn #False
 EndProcedure
 
-Procedure Player_List_Select_Number(Number, Log=1) ; W‰hlt das Linked-List-Objekt
+Procedure Player_List_Select_Number(Number, Log=1) ; W√§hlt das Linked-List-Objekt
   If ListIndex(Player_List()) <> -1 And Player_List()\Number = Number
     ProcedureReturn #True
   Else
@@ -90,7 +90,7 @@ Procedure Player_List_Select_Number(Number, Log=1) ; W‰hlt das Linked-List-Objek
   ProcedureReturn #False
 EndProcedure
 
-Procedure Player_List_Get_Pointer(Number, Log=1) ; W‰hlt das Linked-List-Objekt
+Procedure Player_List_Get_Pointer(Number, Log=1) ; W√§hlt das Linked-List-Objekt
   If ListIndex(Player_List()) <> -1 And Player_List()\Number = Number
     ProcedureReturn Player_List()
   Else
@@ -128,14 +128,14 @@ Procedure Player_List_Get_Number() ; Eindeutige Spielernummer
   ProcedureReturn Number
 EndProcedure
 
-Procedure Player_List_Load(Filename.s) ; L‰dt die Liste mit Spielern aus Datenbank
+Procedure Player_List_Load(Filename.s) ; L√§dt die Liste mit Spielern aus Datenbank
   If Player_List_Database_Open(Filename.s)
     
-    If DatabaseQuery(Player_List_Main\Database_ID, "SELECT * FROM Player_List") ; Ermittelt alle Eintr‰ge
+    If DatabaseQuery(Player_List_Main\Database_ID, "SELECT * FROM Player_List") ; Ermittelt alle Eintr√§ge
       
       ClearList(Player_List())
       
-      While NextDatabaseRow(Player_List_Main\Database_ID)  ; alle Eintr‰ge durchlaufen
+      While NextDatabaseRow(Player_List_Main\Database_ID)  ; alle Eintr√§ge durchlaufen
         If AddElement(Player_List())
           Player_List()\Number = GetDatabaseLong(Player_List_Main\Database_ID, 0)
           Player_List()\Name = GetDatabaseString(Player_List_Main\Database_ID, 1)
@@ -173,7 +173,7 @@ Procedure Player_List_Load(Filename.s) ; L‰dt die Liste mit Spielern aus Datenba
   ProcedureReturn 0
 EndProcedure
 
-Procedure Player_List_Save(Filename.s) ; Speichert/‹berschreibt die Liste mit (Ge‰nderten)Spielern in Datenbank
+Procedure Player_List_Save(Filename.s) ; Speichert/√úberschreibt die Liste mit (Ge√§nderten)Spielern in Datenbank
   If Player_List_Database_Open(Filename.s)
     
     ForEach Player_List()
@@ -252,7 +252,7 @@ Procedure Player_List_Save_Old(Filename.s) ; Speichert die Liste mit Spielern
   EndIf
 EndProcedure
 
-Procedure Player_List_Load_Old(Filename.s) ; L‰dt die Liste mit Spielern (Alt)
+Procedure Player_List_Load_Old(Filename.s) ; L√§dt die Liste mit Spielern (Alt)
   If OpenPreferences(Filename)
     
     Log_Add("Player_List", "!!!!!!!!!!! Found old Playerlist-File. Server is converting it, please wait.", 5, #PB_Compiler_File, #PB_Compiler_Line, #PB_Compiler_Procedure)
@@ -326,7 +326,7 @@ Procedure Player_List_Load_Old(Filename.s) ; L‰dt die Liste mit Spielern (Alt)
   EndIf
 EndProcedure
 
-Procedure Player_List_Add(Name.s) ; F¸gt ein Player zur Liste hinzu, wenn noch nicht vorhanden
+Procedure Player_List_Add(Name.s) ; F√ºgt ein Player zur Liste hinzu, wenn noch nicht vorhanden
   
   If Player_List_Select(Name, 0) = 0 And Name <> ""
     AddElement(Player_List())

@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+﻿; ########################################## Variablen ##########################################
 
 Structure Teleporter_Main
   
@@ -11,7 +11,7 @@ Global Teleporter_Main.Teleporter_Main
 
 ; ########################################## Proceduren ##########################################
 
-Procedure Teleporter_Select(*Map_Data.Map_Data, ID.s) ; W�hlt das Linked-List-Objekt
+Procedure Teleporter_Select(*Map_Data.Map_Data, ID.s) ; Wählt das Linked-List-Objekt
   If *Map_Data
     If ListIndex(*Map_Data\Teleporter()) <> -1 And LCase(*Map_Data\Teleporter()\ID) = LCase(ID)
       ProcedureReturn #True

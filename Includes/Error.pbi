@@ -1,7 +1,7 @@
-; ########################################## Variablen ##########################################
+﻿; ########################################## Variablen ##########################################
 
 Structure Error_Main
-  Counter.l                     ; Um bei mehreren Fehlen nicht die selbe Datei zu �berschreiben
+  Counter.l                     ; Um bei mehreren Fehlen nicht die selbe Datei zu überschreiben
 EndStructure
 Global Error_Main.Error_Main
 

@@ -1,4 +1,4 @@
-Structure Language_String_Output
+﻿Structure Language_String_Output
   Language.s                            ; Sprache in Kurzform
   Output.s                              ; Ausgabe
 EndStructure

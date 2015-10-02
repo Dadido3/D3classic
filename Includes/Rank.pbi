@@ -1,9 +1,9 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Rank_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Rank_Main.Rank_Main
 

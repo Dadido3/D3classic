@@ -1,23 +1,23 @@
-; ########################################## Dokumentation ##########################################
+ï»¿; ########################################## Dokumentation ##########################################
 
 ; Physikalische Eigenschaften:
 ; 0 = Keine Physik
-; 10 = Fällt gerade herunter
-; 11 = Lässt maximal 45° Schrägen zu (Bildet Pyramiden)
+; 10 = FÃ¤llt gerade herunter
+; 11 = LÃ¤sst maximal 45Â° SchrÃ¤gen zu (Bildet Pyramiden)
 ; 20 = Minecraft original Fluidphysik (Block dupliziert sich seitlich und nach unten)
-; 21 = Realistischeres Fluid (Block Fällt nach unten und füllt flächen aus)
+; 21 = Realistischeres Fluid (Block FÃ¤llt nach unten und fÃ¼llt flÃ¤chen aus)
 
 ; ########################################## Variablen ##########################################
 
 Structure Block_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Block_Main.Block_Main
 
 ; #################################################################
-; !!! Struktur mit Blöcken befindet sich in Main_Structures.pbi !!!
+; !!! Struktur mit BlÃ¶cken befindet sich in Main_Structures.pbi !!!
 ; #################################################################
 Global Dim Block.Block(255)
 
@@ -106,7 +106,7 @@ EndProcedure
 
 ;-######################################################################################
 
-Procedure Block_Get_Pointer(Number) ; Gibt den Pointer zum Element zurück
+Procedure Block_Get_Pointer(Number) ; Gibt den Pointer zum Element zurÃ¼ck
   If Number >= 0 And Number <= 255
     ProcedureReturn @Block(Number)
   EndIf

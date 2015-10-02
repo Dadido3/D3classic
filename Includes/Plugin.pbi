@@ -1,4 +1,4 @@
-
+ï»¿
 ; ########################################## Konstanten ########################################
 
 #Plugin_Version = 503
@@ -38,13 +38,13 @@ PrototypeC   Plugin_Inside_Event_Chat_Private(*Entity.Entity, Player_Name.s, Mes
 ; ########################################## Variablen ##########################################
 
 Structure Plugin_Main
-  Timer_File_Check.l          ; Timer für das überprüfen der Dateigröße
+  Timer_File_Check.l          ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Plugin_Main.Plugin_Main
 
 Structure Plugin_Info
   Name.s{16}                  ; Bezeichnung des Plugins (16 Zeichen!) / Name of the Plugin (16 Chars!)
-  Version.l                   ; Pluginversion (Wird geändert wenn ältere Plugins nicht mehr kompatibel sind) /  Pluginversion
+  Version.l                   ; Pluginversion (Wird geÃ¤ndert wenn Ã¤ltere Plugins nicht mehr kompatibel sind) /  Pluginversion
   Author.s{16}                ; Autor des Plugins (16 Zeichen!) / Author of the plugin
 EndStructure
 Structure Plugin_Inside_Functions
@@ -82,8 +82,8 @@ Structure Plugin
   Plugin_Info.Plugin_Info
   Functions.Plugin_Inside_Functions
   Filename.s
-  Library_ID.i                ; Rückgabe von Openlibrary (0: Ungültig)
-  File_Date_Last.l            ; Datum letzter Änderung
+  Library_ID.i                ; RÃ¼ckgabe von Openlibrary (0: UngÃ¼ltig)
+  File_Date_Last.l            ; Datum letzter Ã„nderung
 EndStructure
 Global NewList Plugin.Plugin()
 
@@ -823,7 +823,7 @@ EndProcedure
 
 ;-##################################
 
-Procedure Plugin_Initialize(Filename.s) ; Initialisiert Plugin und übergibt Funktionspointer...
+Procedure Plugin_Initialize(Filename.s) ; Initialisiert Plugin und Ã¼bergibt Funktionspointer...
   ForEach Plugin()
     If Plugin()\Filename = Filename
       CallCFunction(Plugin()\Library_ID, "Init", @Plugin()\Plugin_Info, @Plugin_Function)
@@ -882,7 +882,7 @@ Procedure Plugin_Deinitialize(Filename.s) ; Deinitialisiert Plugin...
   ProcedureReturn #False
 EndProcedure
 
-Procedure Plugin_Unload(Filename.s) ; Entlädt die Lib, löscht sie aber nicht aus der Liste
+Procedure Plugin_Unload(Filename.s) ; EntlÃ¤dt die Lib, lÃ¶scht sie aber nicht aus der Liste
   List_Store(*Pointer, Plugin())
   ForEach Plugin()
     If Plugin()\Filename = Filename
@@ -901,7 +901,7 @@ Procedure Plugin_Unload(Filename.s) ; Entlädt die Lib, löscht sie aber nicht aus
   ProcedureReturn #False
 EndProcedure
 
-Procedure Plugin_Load(Filename.s) ; Lädt die Lib (Wenn in der Liste vorhanden)
+Procedure Plugin_Load(Filename.s) ; LÃ¤dt die Lib (Wenn in der Liste vorhanden)
   ForEach Plugin()
     If Plugin()\Filename = Filename
       Plugin_Unload(Filename)
@@ -943,7 +943,7 @@ Procedure Plugin_Check_Files(Directory.s)
     CompilerEndIf
   CompilerEndIf
   
-  ; ##################### gelöschte Plugins entladen + von Liste entfernen
+  ; ##################### gelÃ¶schte Plugins entladen + von Liste entfernen
   
   ForEach Plugin()
     If FileSize(Plugin()\Filename) = -1
@@ -953,7 +953,7 @@ Procedure Plugin_Check_Files(Directory.s)
     EndIf
   Next
   
-  ; ##################### neue Plugins zur Liste hinzufügen
+  ; ##################### neue Plugins zur Liste hinzufÃ¼gen
   
   If Right(Directory, 1) = "/" Or Right(Directory, 1) = "\"
     Directory = Left(Directory, Len(Directory)-1)
@@ -1011,7 +1011,7 @@ Procedure Plugin_Main()
     Plugin_Check_Files(Files_Folder_Get("Plugins"))
   EndIf
   
-  ; ########## Main bei den Plugins ausführen
+  ; ########## Main bei den Plugins ausfÃ¼hren
   
   ForEach Plugin()
     If Plugin()\Library_ID

@@ -1,11 +1,11 @@
-#Client_Player_Buildmode_Variables = 5
+ï»¿#Client_Player_Buildmode_Variables = 5
 
 #Player_Attributes = 5
 
 ; ###############################################################################################################
 
 Structure Player_List
-  Number.w                    ; Eindeutige Identifikation des Spielers im Server (-1 ist ungültig)
+  Number.w                    ; Eindeutige Identifikation des Spielers im Server (-1 ist ungÃ¼ltig)
   Name.s                      ; Name des Spielers
   Save.b                      ; Element soll gespeichert werden.
   Online.l                    ; Ob der Spieler online ist
@@ -13,11 +13,11 @@ Structure Player_List
   IP.s                        ; Aktuelle oder letzte IP
   Banned.b                    ; Spieler ist gebannt
   Message_Ban.s               ; Nachricht beim letzten Ban (Inklusive Spielername)
-  Counter_Login.l             ; Zähler für das Einloggen eines Spielers
-  Counter_Kick.l              ; Zähler für das Kicken eines Spielers
+  Counter_Login.l             ; ZÃ¤hler fÃ¼r das Einloggen eines Spielers
+  Counter_Kick.l              ; ZÃ¤hler fÃ¼r das Kicken eines Spielers
   Message_Kick.s              ; Nachricht beim letzten Kick (Inklusive Spielername)
   Rank.w                      ; Rang des Spielers
-  Message_Rank.s              ; Nachricht der letzten Rangänderung (Inklusive Spielername)
+  Message_Rank.s              ; Nachricht der letzten RangÃ¤nderung (Inklusive Spielername)
   Stopped.b                   ; Spieler wurde "Angehalten", er kann nichts mehr bauen und abreissen
   Message_Stop.s              ; Nachricht beim letzten Stop (Inklusive Spielername)
   Time_Muted.l                ; Date() ab dem der Spieler etwas sagen kann.
@@ -25,7 +25,7 @@ Structure Player_List
   Attribute.s [#Player_Attributes]        ; Attributname
   Attribute_Long.l [#Player_Attributes]   ; Wert des Attributs
   Attribute_String.s [#Player_Attributes] ; Wert des Attributs
-  Inventory.u [256]           ; Anzahl verfügbarer Blöcke des Spielers
+  Inventory.u [256]           ; Anzahl verfÃ¼gbarer BlÃ¶cke des Spielers
 EndStructure
 
 ; ################################################################################################################
@@ -37,12 +37,12 @@ Structure Map_Block_Do      ; Physik-Queue
   Z.u
 EndStructure
 
-Structure Map_Block_Changed ; Liste mit geänderten Blöcken (zum Versenden übers Netwerk)
+Structure Map_Block_Changed ; Liste mit geÃ¤nderten BlÃ¶cken (zum Versenden Ã¼bers Netwerk)
   X.u
   Y.u
   Z.u
   Priority.a
-  Old_Material.w            ; Material vor der Änderung
+  Old_Material.w            ; Material vor der Ã„nderung
 EndStructure
 
 Structure Undo_Step
@@ -52,8 +52,8 @@ Structure Undo_Step
   Y.w
   Z.w
   Time.l
-  Type_Before.b           ; Material vor Änderung
-  Player_Number_Before.w  ; Spielernummer vor Änderung
+  Type_Before.b           ; Material vor Ã„nderung
+  Player_Number_Before.w  ; Spielernummer vor Ã„nderung
 EndStructure
 
 Structure Map_Rank_Element
@@ -90,29 +90,29 @@ Structure Map_Data
   Save_Intervall.l          ; Speicherintervall in Minuten
   Save_Time.l               ; Zeitpunkt bei dem zuletzt gespeichert wurde (Millisekunden)
   Directory.s               ; Verzeichnis der Karte
-  Overview_Type.l           ; Übersichtstyp: 0=Keiner, 1=2D, 2=Iso-Schnell
-  Size_X.u                  ; Größe der Karte in X
-  Size_Y.u                  ; Größe der Karte in Y
-  Size_Z.u                  ; Größe der Karte in Z
-  Block_Counter.l [256]     ; Blockzähler auf der Karte
+  Overview_Type.l           ; Ãœbersichtstyp: 0=Keiner, 1=2D, 2=Iso-Schnell
+  Size_X.u                  ; GrÃ¶ÃŸe der Karte in X
+  Size_Y.u                  ; GrÃ¶ÃŸe der Karte in Y
+  Size_Z.u                  ; GrÃ¶ÃŸe der Karte in Z
+  Block_Counter.l [256]     ; BlockzÃ¤hler auf der Karte
   Spawn_X.f                 ; Spawnpoint
   Spawn_Y.f                 ; Spawnpoint
   Spawn_Z.f                 ; Spawnpoint
   Spawn_Rot.f               ; Spawnpoint
   Spawn_Look.f              ; Spawnpoint
   *Data                     ; Speicher mit Kartendaten
-  *Physic_Data              ; Ob ein Block bereits in der Physicsqueue ist (Boolsche Variable 1Byte --> 8Blöcke)
-  *Blockchange_Data         ; Ob ein Block bereits in der Blockchangequeue ist (Boolsche Variable 1Byte --> 8Blöcke)
+  *Physic_Data              ; Ob ein Block bereits in der Physicsqueue ist (Boolsche Variable 1Byte --> 8BlÃ¶cke)
+  *Blockchange_Data         ; Ob ein Block bereits in der Blockchangequeue ist (Boolsche Variable 1Byte --> 8BlÃ¶cke)
   List Map_Block_Do.Map_Block_Do(); Physik-Queue
   List Map_Block_Changed.Map_Block_Changed(); Blockchange-Queue
   List Undo_Step.Undo_Step(); Undo-Steps
   List Rank.Map_Rank_Element(); Liste aller Rang-Box-Elemente (neusten und vordersten Elemente am Anfang der Liste)
   List Teleporter.Map_Teleporter_Element(); List aller Teleporter
   Physic_Stopped.a          ; Wenn 1, dann wurde die Physik auf der Karte deaktiviert
-  Blockchange_Stopped.a     ; Wenn 1, dann wurde das Senden von Blockchanges deaktiviert (Für das Senden der Karte)
-  Rank_Build.w              ; Benötigter Rang um zu bauen
-  Rank_Join.w               ; Benötigter Rang um Karte zu betreten
-  Rank_Show.w               ; Benötigter Rang um die Karte zu sehen (Betreten ist möglich)
+  Blockchange_Stopped.a     ; Wenn 1, dann wurde das Senden von Blockchanges deaktiviert (FÃ¼r das Senden der Karte)
+  Rank_Build.w              ; BenÃ¶tigter Rang um zu bauen
+  Rank_Join.w               ; BenÃ¶tigter Rang um Karte zu betreten
+  Rank_Show.w               ; BenÃ¶tigter Rang um die Karte zu sehen (Betreten ist mÃ¶glich)
   MOTD_Override.s           ; Wenn ungleich "", dann wird beim Betreten der Karte diese MOTD angezeigt
 EndStructure
 
@@ -132,17 +132,17 @@ Structure Entity
   Prefix.s                    ; Vor dem Namen (z.B. Farbcode)
   Name.s                      ; Angezeigter Name
   Suffix.s                    ; Nach dem Namen
-  ID_Client.a                 ; ID für den Client (0 - 254)
+  ID_Client.a                 ; ID fÃ¼r den Client (0 - 254)
   *Player_List.Player_List    ; Spielerelement aus der "Player_List"
   Resend.a                    ; Sendet das Entity neu
   ; ---------------------------
   Map_ID.l                    ; Aktuelle Karte des Entities (-1 Existiert nicht)
-  X.f                         ; Aktuelle X-Position des Entities in Blöcken
-  Y.f                         ; Aktuelle Y-Position des Entities in Blöcken
-  Z.f                         ; Aktuelle Z-Position des Entities in Blöcken
+  X.f                         ; Aktuelle X-Position des Entities in BlÃ¶cken
+  Y.f                         ; Aktuelle Y-Position des Entities in BlÃ¶cken
+  Z.f                         ; Aktuelle Z-Position des Entities in BlÃ¶cken
   Rotation.f                  ; Rotation in Grad
   Look.f                      ; Vertikale Rotation in Grad
-  Send_Pos.a                  ; Position senden (Priorität | 0=Aus)
+  Send_Pos.a                  ; Position senden (PrioritÃ¤t | 0=Aus)
   Send_Pos_Own.a              ; Position an die "Mutterclienten" senden.
   ; ---------------------------
   Time_Message_Death.l        ; Zeit, ab welcher eine Nachricht ausgegeben wird (Verhindern von Chatspam)
@@ -153,7 +153,7 @@ Structure Entity
   Build_Material.w            ; Blocktyp, mit welchem gebaut wird. -1 = Normal bauen
   Build_Mode.s                ; Modus, bei dem die Aktion durch Bauen beschrieben wird. (0: Normal >0: Box, Sphere...)
   Build_State.a               ; Status beim Bauen... (Welcher Punkt...)
-  Build_Variable.Build_Variable [#Client_Player_Buildmode_Variables] ; Variablen für den Buildmode (Rang einer RBox...)
+  Build_Variable.Build_Variable [#Client_Player_Buildmode_Variables] ; Variablen fÃ¼r den Buildmode (Rang einer RBox...)
 EndStructure
 
 ; ################################################################################################################
@@ -165,11 +165,11 @@ EndStructure
 
 Structure Player
   Login_Name.s                ; Name des Spielers beim Login
-  MPPass.s                    ; "Pass" für den Multiplayer (Für accountkontrolle)
+  MPPass.s                    ; "Pass" fÃ¼r den Multiplayer (FÃ¼r accountkontrolle)
   Client_Version.a            ; Version des Clients
   Map_ID.l                    ; ID der Karte, auf welcher der Spieler ist (-1: Der Klient hat keine Karte)
   ; ---------------------------
-  List Entities.Entity_Short(); Entities, welche auf dem Client sichtbar sind (Es Zählt Entity\ID, nicht Entity\ID_Client)
+  List Entities.Entity_Short(); Entities, welche auf dem Client sichtbar sind (Es ZÃ¤hlt Entity\ID, nicht Entity\ID_Client)
   *Entity.Entity              ; Zeiger auf das zu steuernde Entity
   ; ---------------------------
   
@@ -188,20 +188,20 @@ Structure Network_Client
   IP.s                          ; IP des Clients
   *Buffer_Input                 ; Eingansbuffer (Ringbuffer) des Clients
   *Buffer_Input_Offset          ; Offset im Eingangsbuffer
-  *Buffer_Input_Available       ; Verfügbare Daten Eingangsbuffer in Byte
+  *Buffer_Input_Available       ; VerfÃ¼gbare Daten Eingangsbuffer in Byte
   *Buffer_Output                ; Sendebuffer (Ringbuffer) des Clients
   *Buffer_Output_Offset         ; Offset im Sendebuffer
-  *Buffer_Output_Available      ; Verfügbare Daten Sendebuffer in Byte
+  *Buffer_Output_Available      ; VerfÃ¼gbare Daten Sendebuffer in Byte
   Disconnect_Time.l             ; Dieser Client wird zu diesem Zeitpunkt disconnected (0 = Deaktiviert)
-  Last_Time_Event.l             ; Zeit an welcher das letzte Event dieses Clients ausgelöst wurde
+  Last_Time_Event.l             ; Zeit an welcher das letzte Event dieses Clients ausgelÃ¶st wurde
   Player.Player                 ; Spieler-Struktur des Clients
   Upload_Rate.l                 ; Uploadrate in bytes/s
   Download_Rate.l               ; Downloadrate in bytes/s
-  Upload_Rate_Counter.l         ; Upload in bytes (Zähler wird jede Sekunde 0 gesetzt und übernommen)
-  Download_Rate_Counter.l       ; Download in bytes (Zähler wird jede Sekunde 0 gesetzt und übernommen)
+  Upload_Rate_Counter.l         ; Upload in bytes (ZÃ¤hler wird jede Sekunde 0 gesetzt und Ã¼bernommen)
+  Download_Rate_Counter.l       ; Download in bytes (ZÃ¤hler wird jede Sekunde 0 gesetzt und Ã¼bernommen)
   Ping.l                        ; Ping in ms
   Ping_Sent_Time.l              ; Zeitpunkt vom letzten Senden
-  Ping_Time.l                   ; Zeitpunkt zum nächsten Pingen
+  Ping_Time.l                   ; Zeitpunkt zum nÃ¤chsten Pingen
   Logged_In.a                   ; Client ist Eingeloggt
 EndStructure
 
@@ -217,18 +217,18 @@ Structure Block
   Physic.a                ; Physikalisches verhalten
   Physic_Plugin.s         ; Welches Plugin beim Physik-Ereignis aufgerufen wird
   Do_Time.l               ; Zeit, nach welcher der Block beim aktivieren berechnet wird
-  Do_Time_Random.l        ; Sorgt für Zufall
-  Do_Repeat.b             ; Do wird ständig widerholt
+  Do_Time_Random.l        ; Sorgt fÃ¼r Zufall
+  Do_Repeat.b             ; Do wird stÃ¤ndig widerholt
   Do_By_Load.b            ; Beim Laden der Karte in Physic-Warteschlange eintragen
   Create_Plugin.s         ; Plugin beim erstellen
-  Delete_Plugin.s         ; Plugin beim löschen
+  Delete_Plugin.s         ; Plugin beim lÃ¶schen
   Replace_By_Load.w       ; Block gets replaced with this, on maploading
   Rank_Place.w            ; Erforderlicher Rang um den Block zu erstellen
-  Rank_Delete.w           ; Erforderlicher Rang um den Block zu löschen
-  After_Delete.a          ; Typ des Blocks nach dem Löschen
-  Killer.a                ; Dieser Block tötet
+  Rank_Delete.w           ; Erforderlicher Rang um den Block zu lÃ¶schen
+  After_Delete.a          ; Typ des Blocks nach dem LÃ¶schen
+  Killer.a                ; Dieser Block tÃ¶tet
   Special.a               ; Dieser Block ist besonders (Kann nicht normal gebaut werden, wird mit /materials angezeigt)
-  Color_Overview.l        ; Farbe für Übersichtskarte
+  Color_Overview.l        ; Farbe fÃ¼r Ãœbersichtskarte
 EndStructure
 
 ; #################################################################################################################

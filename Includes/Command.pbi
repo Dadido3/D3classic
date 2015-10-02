@@ -1,12 +1,12 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 #Command_Operators_Max = 5
 
 Structure Command_Main
   Save_File.b                                     ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l                                ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l                              ; Timer für das überprüfen der Dateigröße
-  Command_Client_ID.i                             ; Welcher Client den Command ausgeführt hat
+  File_Date_Last.l                                ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l                              ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
+  Command_Client_ID.i                             ; Welcher Client den Command ausgefÃ¼hrt hat
   Parsed_Command.s                                ; Name des Commands
   Parsed_Operator.s [#Command_Operators_Max]      ; Operatoren des Commands
   Parsed_Text_0.s                                 ; Text nach Command
@@ -23,8 +23,8 @@ Structure Command
   Rank.w                  ; Erforderlicher Rang (Muss >= sein) der Spieler sieht diesen Befehl dann nicht.
   Rank_Show.w             ; Ab diesem Rang wird der Befehl in der Befehlsliste gezeigt.
   Plugin.s                ; Plugin-Funktion
-  *Function_Adress        ; Adresse der zugehörigen Funktion (0 = Keine Funktion)
-  Internal.b              ; Befehl ist intern. (Extern löschbar wenn 0)
+  *Function_Adress        ; Adresse der zugehÃ¶rigen Funktion (0 = Keine Funktion)
+  Internal.b              ; Befehl ist intern. (Extern lÃ¶schbar wenn 0)
   Hidden.b                ; Befehl ist versteckt. Geheim! (Nicht in /commands, in der Konsole / Log und nicht in Command.txt)
 EndStructure
 Global NewList Command.Command()

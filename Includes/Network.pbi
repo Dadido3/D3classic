@@ -1,4 +1,4 @@
-InitNetwork()
+ï»¿InitNetwork()
 
 ; ########################################## Variablen ##########################################
 
@@ -10,15 +10,15 @@ InitNetwork()
 
 Structure Network_Main
   Save_File.b                   ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l              ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l            ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l              ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l            ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
   Server_ID.i                   ; ID des Servers
-  *Buffer_Temp                  ; Buffer für temporäre Aufgaben
-  Timer_Rate.l                  ; Timer für Down/Upload-Rate
+  *Buffer_Temp                  ; Buffer fÃ¼r temporÃ¤re Aufgaben
+  Timer_Rate.l                  ; Timer fÃ¼r Down/Upload-Rate
   Upload_Rate.l                 ; Uploadrate in bytes/s
   Download_Rate.l               ; Downloadrate in bytes/s
-  Upload_Rate_Counter.l         ; Upload in bytes (Zähler wird jede Sekunde 0 gesetzt und übernommen)
-  Download_Rate_Counter.l       ; Download in bytes (Zähler wird jede Sekunde 0 gesetzt und übernommen)
+  Upload_Rate_Counter.l         ; Upload in bytes (ZÃ¤hler wird jede Sekunde 0 gesetzt und Ã¼bernommen)
+  Download_Rate_Counter.l       ; Download in bytes (ZÃ¤hler wird jede Sekunde 0 gesetzt und Ã¼bernommen)
 EndStructure
 Global Network_Main.Network_Main
 
@@ -54,7 +54,7 @@ Procedure Network_Save(Filename.s) ; Speichert die Einstellungen
   EndIf
 EndProcedure
 
-Procedure Network_Load(Filename.s) ; Lädt die Einstellungen
+Procedure Network_Load(Filename.s) ; LÃ¤dt die Einstellungen
   If OpenPreferences(Filename)
     
     Port = ReadPreferenceLong("Port", Network_Settings\Port)
@@ -165,7 +165,7 @@ Procedure Network_Client_Count()
   ProcedureReturn ListSize(Network_Client())
 EndProcedure
 
-Procedure Network_Client_Get_Pointer(Client_ID, Log=1)    ; Wählt das Linked-List-Objekt
+Procedure Network_Client_Get_Pointer(Client_ID, Log=1)    ; WÃ¤hlt das Linked-List-Objekt
   If ListIndex(Network_Client()) <> -1 And Network_Client()\ID = Client_ID
     ProcedureReturn Network_Client()
   Else
@@ -182,7 +182,7 @@ Procedure Network_Client_Get_Pointer(Client_ID, Log=1)    ; Wählt das Linked-Lis
   ProcedureReturn 0
 EndProcedure
 
-Procedure Network_Client_Select(Client_ID, Log=1)    ; Wählt das Linked-List-Objekt
+Procedure Network_Client_Select(Client_ID, Log=1)    ; WÃ¤hlt das Linked-List-Objekt
   If ListIndex(Network_Client()) <> -1 And Network_Client()\ID = Client_ID
     ProcedureReturn #True
   Else
@@ -199,7 +199,7 @@ Procedure Network_Client_Select(Client_ID, Log=1)    ; Wählt das Linked-List-Obj
   ProcedureReturn #False
 EndProcedure
 
-Procedure Network_Client_Add(Client_ID)     ; Fügt einen Clienten hinzu
+Procedure Network_Client_Add(Client_ID)     ; FÃ¼gt einen Clienten hinzu
   If ListIndex(Network_Client()) <> -1
     *Network_Client_Old = Network_Client()
   Else
@@ -240,7 +240,7 @@ Procedure Network_Client_Add(Client_ID)     ; Fügt einen Clienten hinzu
   EndIf
 EndProcedure
 
-Procedure Network_Client_Delete(Client_ID, Message.s, Show_2_All)     ; Löscht einen Clienten
+Procedure Network_Client_Delete(Client_ID, Message.s, Show_2_All)     ; LÃ¶scht einen Clienten
   If Network_Client_Select(Client_ID)
     
     Plugin_Event_Client_Delete(Network_Client())
@@ -280,7 +280,7 @@ Procedure Network_Client_Ping(Client_ID) ; Pingt den Client an
   List_Restore(*Network_Client_Old, Network_Client())
 EndProcedure
 
-Procedure Network_Client_Output_Available(Client_ID)     ; Bytes verfügbar im Sendebuffer
+Procedure Network_Client_Output_Available(Client_ID)     ; Bytes verfÃ¼gbar im Sendebuffer
   List_Store(*Network_Client_Old, Network_Client())
   
   If Network_Client_Select(Client_ID)
@@ -322,7 +322,7 @@ Procedure Network_Client_Output_Read_Buffer(Client_ID, *Data_Buffer, Data_Size) 
       Ringbuffer_Max_Data = #Network_Buffer_Size - (Network_Client()\Buffer_Output_Offset)
       ; Bufferadresse mit Offset
       *Ringbuffer_Adress = Network_Client()\Buffer_Output + Network_Client()\Buffer_Output_Offset
-      ; Temporäre zu lesende Datenmenge
+      ; TemporÃ¤re zu lesende Datenmenge
       Data_Temp_Size = Data_Size - Data_Read
       If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
       
@@ -376,7 +376,7 @@ Procedure Network_Client_Output_Write_Word(Client_ID, Value.w)     ; Schreibt ei
   List_Restore(*Network_Client_Old, Network_Client())
 EndProcedure
 
-Procedure Network_Client_Output_Write_String(Client_ID, String.s, Length)     ; Schreibt einen String angegebener Länge in den Sendebuffer
+Procedure Network_Client_Output_Write_String(Client_ID, String.s, Length)     ; Schreibt einen String angegebener LÃ¤nge in den Sendebuffer
   List_Store(*Network_Client_Old, Network_Client())
   
   If Network_Client_Select(Client_ID)
@@ -392,7 +392,7 @@ Procedure Network_Client_Output_Write_String(Client_ID, String.s, Length)     ; 
       Ringbuffer_Max_Data = #Network_Buffer_Size - (Ringbuffer_Write_Offset)
       ; Bufferadresse mit Offset
       *Ringbuffer_Adress = Network_Client()\Buffer_Output + Ringbuffer_Write_Offset
-      ; Temporäre zu schreibende Datenmenge
+      ; TemporÃ¤re zu schreibende Datenmenge
       Data_Temp_Size = Length - Data_Wrote
       If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
       
@@ -406,7 +406,7 @@ Procedure Network_Client_Output_Write_String(Client_ID, String.s, Length)     ; 
   List_Restore(*Network_Client_Old, Network_Client())
 EndProcedure
 
-Procedure Network_Client_Output_Write_Buffer(Client_ID, *Data_Buffer, Data_Size)     ; Schreibt einen Speicherbereich angegebener Länge in den Sendebuffer
+Procedure Network_Client_Output_Write_Buffer(Client_ID, *Data_Buffer, Data_Size)     ; Schreibt einen Speicherbereich angegebener LÃ¤nge in den Sendebuffer
   List_Store(*Network_Client_Old, Network_Client())
   
   If Network_Client_Select(Client_ID)
@@ -422,7 +422,7 @@ Procedure Network_Client_Output_Write_Buffer(Client_ID, *Data_Buffer, Data_Size)
       Ringbuffer_Max_Data = #Network_Buffer_Size - (Ringbuffer_Write_Offset)
       ; Bufferadresse mit Offset
       *Ringbuffer_Adress = Network_Client()\Buffer_Output + Ringbuffer_Write_Offset
-      ; Temporäre zu schreibende Datenmenge
+      ; TemporÃ¤re zu schreibende Datenmenge
       Data_Temp_Size = Data_Size - Data_Wrote
       If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
       
@@ -438,7 +438,7 @@ EndProcedure
 
 
 
-Procedure Network_Client_Input_Available(Client_ID)     ; Bytes verfügbar im Empfangsbuffer
+Procedure Network_Client_Input_Available(Client_ID)     ; Bytes verfÃ¼gbar im Empfangsbuffer
   List_Store(*Network_Client_Old, Network_Client())
   
   If Network_Client_Select(Client_ID)
@@ -486,7 +486,7 @@ Procedure.b Network_Client_Input_Read_Byte(Client_ID)     ; Liest ein Byte aus d
   ProcedureReturn Value.b
 EndProcedure
 
-Procedure.s Network_Client_Input_Read_String(Client_ID, Length)     ; Liest ein String angegebener Länge aus dem Empfangsbuffer
+Procedure.s Network_Client_Input_Read_String(Client_ID, Length)     ; Liest ein String angegebener LÃ¤nge aus dem Empfangsbuffer
   List_Store(*Network_Client_Old, Network_Client())
   
   ;*Temp_Buffer = AllocateMemory(Length)
@@ -503,7 +503,7 @@ Procedure.s Network_Client_Input_Read_String(Client_ID, Length)     ; Liest ein 
         Ringbuffer_Max_Data = #Network_Buffer_Size - (Network_Client()\Buffer_Input_Offset)
         ; Bufferadresse mit Offset
         *Ringbuffer_Adress = Network_Client()\Buffer_Input + Network_Client()\Buffer_Input_Offset
-        ; Temporäre zu lesende Datenmenge
+        ; TemporÃ¤re zu lesende Datenmenge
         Data_Temp_Size = Length - Data_Read
         If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
         
@@ -543,7 +543,7 @@ Procedure Network_Client_Input_Read_Buffer(Client_ID, *Data_Buffer, Data_Size)  
       Ringbuffer_Max_Data = #Network_Buffer_Size - (Network_Client()\Buffer_Input_Offset)
       ; Bufferadresse mit Offset
       *Ringbuffer_Adress = Network_Client()\Buffer_Input + Network_Client()\Buffer_Input_Offset
-      ; Temporäre zu lesende Datenmenge
+      ; TemporÃ¤re zu lesende Datenmenge
       Data_Temp_Size = Data_Size - Data_Read
       If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
       
@@ -576,7 +576,7 @@ Procedure Network_Client_Input_Write_Buffer(Client_ID, *Data_Buffer, Data_Size) 
       Ringbuffer_Max_Data = #Network_Buffer_Size - (Ringbuffer_Write_Offset)
       ; Bufferadresse mit Offset
       *Ringbuffer_Adress = Network_Client()\Buffer_Input + Ringbuffer_Write_Offset
-      ; Temporäre zu schreibende Datenmenge
+      ; TemporÃ¤re zu schreibende Datenmenge
       Data_Temp_Size = Data_Size - Data_Wrote
       If Data_Temp_Size > Ringbuffer_Max_Data : Data_Temp_Size = Ringbuffer_Max_Data : EndIf
       
@@ -598,7 +598,7 @@ EndProcedure
 
 Procedure Network_Input_Do()  ; Wertet die empfangenen Daten aus.
   ForEach Network_Client()
-    Repeat_Max = 10 ; Anzahl maximaler Durchläufe der Schleife für jeden client
+    Repeat_Max = 10 ; Anzahl maximaler DurchlÃ¤ufe der Schleife fÃ¼r jeden client
     
     List_Store(*Network_Client_Old, Network_Client())
     
@@ -629,7 +629,7 @@ Procedure Network_Input_Do()  ; Wertet die empfangenen Daten aus.
             Network_Client()\Ping = Milliseconds() - Network_Client()\Ping_Sent_Time
           EndIf
           
-        Case 5 ; ############### Blockänderung
+        Case 5 ; ############### BlockÃ¤nderung
           If Network_Client_Input_Available(Network_Client()\ID) >= 1 + 8
             Network_Client_Input_Add_Offset(Network_Client()\ID, 1)
             X = Network_Client_Input_Read_Byte(Network_Client()\ID) * 256
@@ -697,7 +697,7 @@ Procedure Network_Input_Do()  ; Wertet die empfangenen Daten aus.
             EndIf
           EndIf
           
-        Case 254 ; ############## Selbstzerstörung aktivieren
+        Case 254 ; ############## SelbstzerstÃ¶rung aktivieren
           If Network_Client_Input_Available(Network_Client()\ID) >= 1 + 10
             Network_Client_Input_Add_Offset(Network_Client()\ID, 1)
             Text.s = Network_Client_Input_Read_String(Network_Client()\ID, 10)

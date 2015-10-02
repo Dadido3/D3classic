@@ -1,4 +1,4 @@
-Structure Plugin_Function     ; Aufrufbare Serverfunktionen / Callable server-functions
+﻿Structure Plugin_Function     ; Aufrufbare Serverfunktionen / Callable server-functions
   *Client_Count_Elements
   *Client_Get_Array
   *Client_Get_Pointer

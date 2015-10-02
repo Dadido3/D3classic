@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+﻿; ########################################## Variablen ##########################################
 
 Structure Z_Stream ; SizeOf(Z_Stream) = 56
   *Next_In
@@ -24,7 +24,7 @@ EndStructure
 Structure GZip_Main
   Lib_ID.i                  ; Library_ID
   Initialised.b             ; GZip (ZLib) wurde geladen
-  Mutex_ID.i                ; Mutex f�r die Lib
+  Mutex_ID.i                ; Mutex für die Lib
 EndStructure
 Global GZip_Main.GZip_Main
 

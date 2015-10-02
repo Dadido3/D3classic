@@ -1,6 +1,6 @@
-; ########################################## Dokumentation ##########################################
+﻿; ########################################## Dokumentation ##########################################
 ; 
-; Test f�r das Darstellen der Karten.
+; Test für das Darstellen der Karten.
 ; 
 ; Probleme !!!!!!
 ;  - Startdrawing auch in Map_Preview

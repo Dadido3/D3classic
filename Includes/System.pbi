@@ -1,9 +1,9 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure System_Main
   Save_File.b                 ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l            ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l          ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l            ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l          ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
   ; ---------------------------
   Server_Name.s
   MOTD.s
@@ -30,7 +30,7 @@ Procedure System_Save(Filename.s) ; Speichert die Einstellungen
   EndIf
 EndProcedure
 
-Procedure System_Load(Filename.s) ; Lädt die Einstellungen
+Procedure System_Load(Filename.s) ; LÃ¤dt die Einstellungen
   If OpenPreferences(Filename)
     
     System_Main\Server_Name = ReadPreferenceString("Server_Name", "")

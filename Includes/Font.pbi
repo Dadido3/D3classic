@@ -1,19 +1,19 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Font_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Font_Main.Font_Main
 
 Structure Font
   ID.s                      ; Font-ID
-  Char_Width_Ind.a [256]    ; Breite eines Zeichens (für jedes individuell)
+  Char_Width_Ind.a [256]    ; Breite eines Zeichens (fÃ¼r jedes individuell)
   Char_Width.a              ; Breite eines Zeichens
-  Char_Height.a             ; Höhe eines Zeichens
+  Char_Height.a             ; HÃ¶he eines Zeichens
   Image_File.s              ; Datei des Font-Sprites
-  *Buffer                   ; Speicher für die Schriftart
+  *Buffer                   ; Speicher fÃ¼r die Schriftart
 EndStructure
 Global NewList Font.Font()
 

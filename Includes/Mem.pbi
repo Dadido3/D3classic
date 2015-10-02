@@ -1,8 +1,8 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Mem_Main
-  Timer_Stats.i       ; Timer für die HTML Statistiken
-  Mutex_ID.i          ; Hauptmutex für Mem_Element Liste
+  Timer_Stats.i       ; Timer fÃ¼r die HTML Statistiken
+  Mutex_ID.i          ; Hauptmutex fÃ¼r Mem_Element Liste
   Memory_Usage.i      ; Speicherverbrauch in Bytes
 EndStructure
 Global Mem_Main.Mem_Main

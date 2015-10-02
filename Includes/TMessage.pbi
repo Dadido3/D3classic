@@ -1,10 +1,10 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure TMessage_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
-  Timer_Do.l              ; Timer für das Ausführen vom TMessage
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
+  Timer_Do.l              ; Timer fÃ¼r das AusfÃ¼hren vom TMessage
 EndStructure
 Global TMessage_Main.TMessage_Main
 

@@ -1,9 +1,9 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Language_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung laden
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung laden
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
   Language.s              ; Hauptsprache, wenn keine angegeben
 EndStructure
 Global Language_Main.Language_Main

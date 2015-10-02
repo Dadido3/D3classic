@@ -1,31 +1,31 @@
-UsePNGImageEncoder()
+ï»¿UsePNGImageEncoder()
 UseSQLiteDatabase()
 
 ; ########################################## Dokumentation ######################################
 ;
 ; Todo:
-; - Gui (eventuell über html)
+; - Gui (eventuell Ã¼ber html)
 ; - Logdatei/debugmessages --> gui
-; - Textausgabe (zum Clienten) überprüfen auf ungültige zeichen
-; - Killareas oder rang-beschränkte bereiche
+; - Textausgabe (zum Clienten) Ã¼berprÃ¼fen auf ungÃ¼ltige zeichen
+; - Killareas oder rang-beschrÃ¤nkte bereiche
 ; - Wortfilter / Wort'highlighter'
-; - Tag-Nachzyklus (Blöcke dazu)
+; - Tag-Nachzyklus (BlÃ¶cke dazu)
 ; - Wettersystem (Regen, Gewitter, Schnee)
 ; - Answersystem verbessern (/me, Globalausgabe, Mapausgabe, Privatausgabe..., Einsetzen von Operanden)
 ; - Nur Mitglieder funktion
 ; - IRC-Chat einbinden
-; - Wildcards für Benutzer
-; - Abkürzungen für Befehle/Materialien
+; - Wildcards fÃ¼r Benutzer
+; - AbkÃ¼rzungen fÃ¼r Befehle/Materialien
 ; - Farbcodes
-; - Textvervollständigung
-; - Hack-prevention (Fliegen, Noclip, Speedhack, Außerhalb der Karte, Distance)
+; - TextvervollstÃ¤ndigung
+; - Hack-prevention (Fliegen, Noclip, Speedhack, AuÃŸerhalb der Karte, Distance)
 ; - Spam detection
 ; - Grief detection
 ; - Spielerzahl / Doppelte Spielernamen / Doppelte IP's... begrenzen
-; - Place max/min wenn außerhalb der karte
+; - Place max/min wenn auÃŸerhalb der karte
 ; - Backupsystem
 ; - IDs anstatt namen, materialnummern anstatt namen...
-; - System für eindeutige clientnummern verbessern
+; - System fÃ¼r eindeutige clientnummern verbessern
 ; - Client_Op_mode verbessern (Ab bestimmtem Rang)
 ; - Mapstats als HTML (Changes/s, Usage, Physics, User...)
 ; - Bei Kartenwechsel, dem Benutzer die Karte anzeigen...
@@ -35,15 +35,15 @@ UseSQLiteDatabase()
 ; - Image (Als bild) der Speicherbelegung erstellen
 ; - Kollisionskontrolle fehlerhaft (Acid.../Rundungsfehler...)
 ; - Koordinaten +16 (Halben block eventuell)
-; - Möglichkeit, maps komprimiert zu speichern
-; - Speichern, von wem der Rang geändert wurde/ wer gemuted hat / gekick / gebannt...
+; - MÃ¶glichkeit, maps komprimiert zu speichern
+; - Speichern, von wem der Rang geÃ¤ndert wurde/ wer gemuted hat / gekick / gebannt...
 ; - Blockchanges bei pget nur an einen Spieler senden
 ; - Ping (N-Befehl 1)
 ; - Andere beweg/rotier befehle (Netzwerk...)
-; - Spielernamen und Farbe änderbar
+; - Spielernamen und Farbe Ã¤nderbar
 ; - LUA-Scripts pro map.
 ; - Spezifischer Rang pro map...
-; - Blockänderung Spielernummer als Word
+; - BlockÃ¤nderung Spielernummer als Word
 ; - Messageblocks
 ; - Willkommensnachricht per Map
 ; - Serverausschalten richtig machen (Speichern warten...)
@@ -51,7 +51,7 @@ UseSQLiteDatabase()
 
 
 ; - Befehle:
-;   - Servereinstellungen verändern...
+;   - Servereinstellungen verÃ¤ndern...
 ;   - Votekick
 ;   - Voteban
 ;   - Setownspawn (Spieler kann seinen Spawn setzen)
@@ -64,40 +64,40 @@ UseSQLiteDatabase()
 ;   - Stop/unstop physics
 ;   - Report Griefer Command
 ;   - Report Bug Command
-;   - Abfragen der Kartengröße
+;   - Abfragen der KartengrÃ¶ÃŸe
 ;   - Copy/Paste extra (mit Rang, last player...)
 ;   - Importierte Maps rotieren
-;   - Neue baufunktionen: Text, Circle, Sphere, Bezier, Polygon, Paint (Hohl und gefüllt...)
-;   - RulerBox, gibt volumen länge bla blub zurück, Rouler line...
+;   - Neue baufunktionen: Text, Circle, Sphere, Bezier, Polygon, Paint (Hohl und gefÃ¼llt...)
+;   - RulerBox, gibt volumen lÃ¤nge bla blub zurÃ¼ck, Rouler line...
 ;   - Spielerliste auf andern karten... (Players [Map]...)
 ;   - Mapstats (Changes/s, Usage, Physics, User, Size...)
 ;   - Undo
-;   - Reload Map möglichkeit bei Box / Extra befehl (für höheren Rang)
+;   - Reload Map mÃ¶glichkeit bei Box / Extra befehl (fÃ¼r hÃ¶heren Rang)
 ;   - /material water brick (beim bauen von 'Brick' ersetzen durch 'Water'...)
-;   - bei R-Get auch kartenbeschränkung ausgeben
+;   - bei R-Get auch kartenbeschrÃ¤nkung ausgeben
 ;   - Compass / Coordinaten abfragen...
 ;   - PGetBox
 ;   - Kill / Suicide
-;   - Pinfo: (Stundenzähler, Karte/n, Muted, Letzter login, erster login, letzte Aktion (Zeit), hinterlegte infos, Gesamtzeit...)
+;   - Pinfo: (StundenzÃ¤hler, Karte/n, Muted, Letzter login, erster login, letzte Aktion (Zeit), hinterlegte infos, Gesamtzeit...)
 ;   - Infos in Spieler hinterlegen/Abfragen
 ;   - Stop/Start(Disable/Protect) Maps
-;   - TimeMute funktion über Date() machen, dauerhaft speichern
+;   - TimeMute funktion Ã¼ber Date() machen, dauerhaft speichern
 ;   - Mute / Demute (Ohne Zeit, Demute deaktiviert Zeit...)
 ;   - Individuelle Namen der Befehle...
 ;   - Mapimport: namen des Importeurs als Blockinfo ablegen...
 
 ; - Materialien:
 ;   - Feuer
-;   - 'Normale' Schwämme (Kein Draining von Seen)
+;   - 'Normale' SchwÃ¤mme (Kein Draining von Seen)
 ;   - Blitz
-;   - Andere Quellen/Schwämme (Sandquelle, Säurequelle, )
-;   - Wasserpumpen (blöcke, welche wasser anheben)
+;   - Andere Quellen/SchwÃ¤mme (Sandquelle, SÃ¤urequelle, )
+;   - Wasserpumpen (blÃ¶cke, welche wasser anheben)
 ;   - Treppen nicht von unten zusammenfassen
 ;   - Pflanzen (sterben, wachsen, Gras nur wo sonne ist....)
 ;   - Lava verwandelt sich zu stein nach zeit
 ;   - TNT explodiert (AdminTNT...)
 ;   - Liquid concrete
-;   - Logikblöcke
+;   - LogikblÃ¶cke
 ;   - Feuerwerk!
 ;   - Dampf
 ;   - Eis
@@ -107,16 +107,16 @@ UseSQLiteDatabase()
 ; Bugs:
 
 
-; Gelöste Bugs:
+; GelÃ¶ste Bugs:
 ; - Fehler im Sende-Ringbuffer
 ; - sporadische Endlosschleife im der Auswerte-funktion der empfangenen Daten
 ; - Bug in Setrank (mit -1 konnte man jemanden auf 255 setzen)
 ; - Bei wechseln bleibt spielerliste bestehen
 ; - Tp/Bring geht nicht immer!
 ; - Bring geht nicht mehr
-; - Map_Block_Do bei Mapresize löschen
+; - Map_Block_Do bei Mapresize lÃ¶schen
 ; - Sand geht durch blockkanten
-; - Bei kartenlöschen und kartenwechsel (erzwungen) falsche position
+; - Bei kartenlÃ¶schen und kartenwechsel (erzwungen) falsche position
 ; - Kartenspeichern, verschieben nur wenn Temp gespeichert!
 ; - Beim synchronen Login von zwei Spielern wird der Name verstauscht.
 
@@ -125,7 +125,7 @@ UseSQLiteDatabase()
 Structure Main
   Version.l           ; Version 1000 = V.1.000
   Mutex.i             ; Hauptmutex
-  Running_Time.l      ; Zeitpunkt (Date()), seit dem der Server läuft
+  Running_Time.l      ; Zeitpunkt (Date()), seit dem der Server lÃ¤uft
 EndStructure
 Global Main.Main
 
@@ -359,7 +359,7 @@ GZip_Init()
 
 Player_Load(Files_File_Get("Player"))
 Player_List_Load(Files_File_Get("Playerlist"))
-Player_List_Load_Old("Data/Playerlist.txt") ; Lädt die alte Spielerliste!
+Player_List_Load_Old("Data/Playerlist.txt") ; LÃ¤dt die alte Spielerliste!
 Block_Load(Files_File_Get("Block"))
 Command_Load(Files_File_Get("Command"))
 Answer_Load(Files_File_Get("Answer"))

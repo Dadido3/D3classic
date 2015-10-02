@@ -1,9 +1,9 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Location_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Location_Main.Location_Main
 
@@ -72,7 +72,7 @@ Procedure Location_Save(Filename.s)
   EndIf
 EndProcedure
 
-Procedure Location_Select(Name.s) ; Wählt das Linked-List-Objekt
+Procedure Location_Select(Name.s) ; WÃ¤hlt das Linked-List-Objekt
   
   If ListIndex(Location()) <> -1 And LCase(Location()\Name) = LCase(Name)
     ProcedureReturn #True

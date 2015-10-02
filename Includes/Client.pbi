@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Client_Main
   Login_Thread_ID.i               ; ID des Login-Threads
@@ -52,7 +52,7 @@ Procedure Client_Login(Client_ID, Name.s, MPPass.s, Version) ; Ein neuer Spieler
     
     If Pre_Login_Correct = 1
       
-      ; ###### Wenn nicht in der Spielerliste vorhanden, hinzufügen.
+      ; ###### Wenn nicht in der Spielerliste vorhanden, hinzufÃ¼gen.
       If Player_List_Select(Network_Client()\Player\Login_Name, 0) = #False
         Player_List_Add(Network_Client()\Player\Login_Name)
       EndIf
@@ -178,13 +178,13 @@ Procedure Client_Login_Thread(*Dummy) ; In diesem Thread werden alle Logins (Log
           If Network_Client_Select(Client_ID)
             ; ############### Mapspawn senden
             Network_Out_Entity_Position(Client_ID, 255, Entity_X, Entity_Y, Entity_Z, Entity_Rotation, Entity_Look)
-            ; ############### Entities löschen
+            ; ############### Entities lÃ¶schen
             ForEach Network_Client()\Player\Entities()
               ID_Client = Network_Client()\Player\Entities()\ID_Client
               Network_Out_Entity_Delete(Network_Client()\ID, ID_Client)
               DeleteElement(Network_Client()\Player\Entities())
             Next
-            ; ############### Karte ist nun gesendet, Client-Map ändern
+            ; ############### Karte ist nun gesendet, Client-Map Ã¤ndern
             Network_Client()\Player\Map_ID = Entity_Map_ID
           EndIf
         EndIf

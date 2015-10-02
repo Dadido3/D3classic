@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+﻿; ########################################## Variablen ##########################################
 
 Structure String_Main
   Regex_ID.i
@@ -19,7 +19,7 @@ Procedure.s String_GV(Input.s) ; Validiert den String
   EndIf
 EndProcedure
 
-Procedure String_IV(Input.s) ; Pr�ft ob der String valid ist
+Procedure String_IV(Input.s) ; Prüft ob der String valid ist
   If IsRegularExpression(String_Main\Regex_ID)
     ProcedureReturn MatchRegularExpression(String_Main\Regex_ID, Input)
   EndIf

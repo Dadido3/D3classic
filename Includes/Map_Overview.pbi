@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 ; ########################################## Ladekram ############################################
 
@@ -10,7 +10,7 @@ Procedure Map_Overview_Save_2D(*Map_Data_Element.Map_Data, Directory.s) ; Speich
   
   *Pointer.Map_Block
   
-  If 1 ; Hier sollte das Element geprüft werden!
+  If 1 ; Hier sollte das Element geprÃ¼ft werden!
     Map_Size_X = *Map_Data_Element\Size_X
     Map_Size_Y = *Map_Data_Element\Size_Y
     Map_Size_Z = *Map_Data_Element\Size_Z
@@ -88,7 +88,7 @@ Procedure Map_Overview_Save_Iso_Fast(*Map_Data_Element.Map_Data, Filename.s) ; S
   
   *Pointer.Map_Block
   
-  If 1 ; Hier sollte das Element geprüft werden!
+  If 1 ; Hier sollte das Element geprÃ¼ft werden!
     Map_Size_X = *Map_Data_Element\Size_X
     Map_Size_Y = *Map_Data_Element\Size_Y
     Map_Size_Z = *Map_Data_Element\Size_Z

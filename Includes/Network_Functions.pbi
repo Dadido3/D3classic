@@ -1,4 +1,4 @@
-; ####################################### System
+ï»¿; ####################################### System
 
 Procedure System_Login_Screen(Client_ID, Message_0.s, Message_1.s, Op_Mode)
   If ListIndex(Network_Client()) <> -1
@@ -170,7 +170,7 @@ Procedure Network_Out_Entity_Add(Client_ID, ID_Client, Name.s, X.f, Y.f, Z.f, Ro
   EndIf
 EndProcedure
 
-Procedure Network_Out_Entity_Delete(Client_ID, ID_Client) ; Löscht eine Spielerobjekt auf einem Client
+Procedure Network_Out_Entity_Delete(Client_ID, ID_Client) ; LÃ¶scht eine Spielerobjekt auf einem Client
   If ListIndex(Network_Client()) <> -1
     *Network_Client_Old = Network_Client()
   Else
@@ -214,7 +214,7 @@ Procedure Network_Out_Entity_Position(Client_ID, ID_Client, X.f, Y.f, Z.f, Rotat
   EndIf
 EndProcedure
 
-Procedure Network_Functions_Main() ; Verwaltet Spieler, verschickt änderungen
+Procedure Network_Functions_Main() ; Verwaltet Spieler, verschickt Ã¤nderungen
   
 EndProcedure
 ; IDE Options = PureBasic 4.50 (Windows - x86)

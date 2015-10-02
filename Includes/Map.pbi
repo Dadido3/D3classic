@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 #Map_Filename_Data = "Data-Layer.gz"
 #Map_Filename_Rank = "Rank-Layer.txt"
@@ -16,26 +16,26 @@ Structure Map_Main
   Action_Thread_ID.i          ; ID des Action-Threads
   Save_File.b                 ; Zeigt an, ob gespeichert werden soll (Map-Liste)
   Save_File_Timer.l           ; Zeigt an, ob gespeichert werden soll (Map-Liste)
-  Temp_Filename.s             ; Temporärer Dateiname für Threadübergabe
-  Temp_ID.i                   ; Temporäre ID für Threadübergabe
-  Temp_Overview_Filename.s    ; Temporärer Dateiname für Threadübergabe
-  File_Date_Last.l            ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l          ; Timer für das überprüfen der Dateigröße
-  Timer_Stats.l               ; Timer für die HTML-Statistiken
+  Temp_Filename.s             ; TemporÃ¤rer Dateiname fÃ¼r ThreadÃ¼bergabe
+  Temp_ID.i                   ; TemporÃ¤re ID fÃ¼r ThreadÃ¼bergabe
+  Temp_Overview_Filename.s    ; TemporÃ¤rer Dateiname fÃ¼r ThreadÃ¼bergabe
+  File_Date_Last.l            ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l          ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
+  Timer_Stats.l               ; Timer fÃ¼r die HTML-Statistiken
 EndStructure
 Global Map_Main.Map_Main
 
 Structure Map_Settings
-  File_Date_Last.l            ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l          ; Timer für das überprüfen der Dateigröße
-  Max_Changes_Per_s.l         ; Maximale Blockänderungen pro Sekunde
+  File_Date_Last.l            ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l          ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
+  Max_Changes_Per_s.l         ; Maximale BlockÃ¤nderungen pro Sekunde
 EndStructure
 Global Map_Settings.Map_Settings
 
 Structure Map_Block         ; Blocks, aus welchen die Karte besteht
   Type.a                    ; Typ des Blocks
   Extra.a                   ; Extra-Daten
-  Player_Last_Change.w      ; Spieler, welcher zuletzt eine Änderung gemacht hat
+  Player_Last_Change.w      ; Spieler, welcher zuletzt eine Ã„nderung gemacht hat
 EndStructure
 
 ; #######################################################
@@ -43,10 +43,10 @@ EndStructure
 ; #######################################################
 
 Structure Map_Action_List
-  ID.l                      ; Aktions-ID einmalig (für Lua-Rückgabe)
-  Client_ID.i               ; Client_ID für Fehlerrückgabe beim Resizen...
+  ID.l                      ; Aktions-ID einmalig (fÃ¼r Lua-RÃ¼ckgabe)
+  Client_ID.i               ; Client_ID fÃ¼r FehlerrÃ¼ckgabe beim Resizen...
   Map_ID.l
-  Action.a                  ; 0=Speichern 1=Laden 5=Reszie 6=Fill 10=Löschen 
+  Action.a                  ; 0=Speichern 1=Laden 5=Reszie 6=Fill 10=LÃ¶schen 
   Function_Name.s           ;
   Directory.s
   X.u
@@ -54,7 +54,7 @@ Structure Map_Action_List
   Z.u
   Argument_String.s         ; Zum Beispiel bei Mapfill
 EndStructure
-Global NewList Map_Action_List.Map_Action_List() ; Liste mit Karten von denen Aktionen ausgeführt werden sollen
+Global NewList Map_Action_List.Map_Action_List() ; Liste mit Karten von denen Aktionen ausgefÃ¼hrt werden sollen
 
 ; ########################################## Ladekram ############################################
 
@@ -283,7 +283,7 @@ Procedure Map_List_Load(Filename.s)
       While NextPreferenceGroup()
         Map_ID = Val(PreferenceGroupName())
         Map_Name.s = ReadPreferenceString("Name", Str(Map_ID))
-        Map_Directory.s = ReadPreferenceString("Directory", Files_Folder_Get("Maps")+ReadPreferenceString("Name", Str(Map_ID))+"/") ; "Name" für das Konvertieren der alten Map_List
+        Map_Directory.s = ReadPreferenceString("Directory", Files_Folder_Get("Maps")+ReadPreferenceString("Name", Str(Map_ID))+"/") ; "Name" fÃ¼r das Konvertieren der alten Map_List
         Map_Delete = ReadPreferenceLong("Delete", 0)
         Map_Reload = ReadPreferenceLong("Reload", 0)
         
@@ -419,7 +419,7 @@ Procedure Map_Delete(Map_ID)
   EndIf
 EndProcedure
 
-Procedure Map_Resize(Map_ID, X, Y, Z) ; Ändert die Größe der Karte
+Procedure Map_Resize(Map_ID, X, Y, Z) ; Ã„ndert die GrÃ¶ÃŸe der Karte
   
   *Pointer_Old.Map_Block
   *Pointer_New.Map_Block
@@ -472,7 +472,7 @@ Procedure Map_Resize(Map_ID, X, Y, Z) ; Ändert die Größe der Karte
               Next
             Next
             
-            ; ######################## Physic und Blockchange Speicher neu füllen
+            ; ######################## Physic und Blockchange Speicher neu fÃ¼llen
             ForEach Map_Data()\Map_Block_Do()
               If Map_Data()\Map_Block_Do()\X < Copy_Area_X And Map_Data()\Map_Block_Do()\Y < Copy_Area_Y And Map_Data()\Map_Block_Do()\Z < Copy_Area_Z
                 Bool_Offset = Map_Get_Offset(Map_Data()\Map_Block_Do()\X, Map_Data()\Map_Block_Do()\Y, Map_Data()\Map_Block_Do()\Z, X, Y, 1)
@@ -548,7 +548,7 @@ Procedure Map_Resize(Map_ID, X, Y, Z) ; Ändert die Größe der Karte
   ProcedureReturn Procedureresult
 EndProcedure
 
-Procedure Map_Fill(Map_ID, Function_Name.s, Argument_String.s) ; Füllt die Karte mit einer Landschaft
+Procedure Map_Fill(Map_ID, Function_Name.s, Argument_String.s) ; FÃ¼llt die Karte mit einer Landschaft
   
   Procedureresult = 0
   
@@ -599,13 +599,13 @@ Procedure Map_Fill(Map_ID, Function_Name.s, Argument_String.s) ; Füllt die Karte
   ProcedureReturn Procedureresult
 EndProcedure
 
-Procedure Map_Save(*Map_Data_Element.Map_Data, Directory.s) ; Komprimiert und Speichert die Karte (Gewählt über Pointer zum Element) (Thread)
+Procedure Map_Save(*Map_Data_Element.Map_Data, Directory.s) ; Komprimiert und Speichert die Karte (GewÃ¤hlt Ã¼ber Pointer zum Element) (Thread)
   
   ProcedureResult = 0
   
   *Pointer.Map_Block
   
-  If 1 ; Hier sollte das Element geprüft werden!
+  If 1 ; Hier sollte das Element geprÃ¼ft werden!
     Map_Size_X = *Map_Data_Element\Size_X
     Map_Size_Y = *Map_Data_Element\Size_Y
     Map_Size_Z = *Map_Data_Element\Size_Z
@@ -727,7 +727,7 @@ Procedure Map_Save(*Map_Data_Element.Map_Data, Directory.s) ; Komprimiert und Sp
   ProcedureReturn Save_Result
 EndProcedure
 
-Procedure Map_Load(Map_ID, Directory.s) ; Dekomprimiert und lädt die Informationen in die aktuelle Karte
+Procedure Map_Load(Map_ID, Directory.s) ; Dekomprimiert und lÃ¤dt die Informationen in die aktuelle Karte
   
   *Pointer.Map_Block
   
@@ -871,7 +871,7 @@ Procedure Map_Send(Client_ID, Map_ID)        ; Komprimiert und sendet die Karte 
     If Map_Select_ID(Map_ID)
       *Map_Data.Map_Data = Map_Data()
       
-      ; Anzahl Blöcke
+      ; Anzahl BlÃ¶cke
       Map_Size_X = *Map_Data\Size_X
       Map_Size_Y = *Map_Data\Size_Y
       Map_Size_Z = *Map_Data\Size_Z
@@ -1124,7 +1124,7 @@ EndProcedure
 Procedure Map_Resend(Map_ID) ; Sendet die Karte an alle neu
   ForEach Network_Client()
     If Network_Client()\Player\Map_ID = Map_ID
-      Network_Client()\Player\Map_ID = -1 ; Setzt den Client auf eine ungültige Karte.
+      Network_Client()\Player\Map_ID = -1 ; Setzt den Client auf eine ungÃ¼ltige Karte.
     EndIf
   Next
   
@@ -1147,7 +1147,7 @@ Procedure Map_Resend(Map_ID) ; Sendet die Karte an alle neu
     Next
   EndIf
   
-  ; ################ Lösche die Blockchange-Elemente
+  ; ################ LÃ¶sche die Blockchange-Elemente
   If Map_Select_ID(Map_ID)
     ForEach Map_Data()\Map_Block_Changed()
       X = Map_Data()\Map_Block_Changed()\X
@@ -1411,7 +1411,7 @@ Procedure Map_Action_Thread(*Dummy)
               EndIf
             EndIf
             
-          Case 10 ; Löschen
+          Case 10 ; LÃ¶schen
             Watchdog_Watch("Map_Action", "Begin: Map_Delete()", 1)
             Plugin_Event_Map_Action_Delete(Action_ID, Map_Data())
             Map_Name.s = Map_Data()\Name
@@ -1487,7 +1487,7 @@ Procedure Map_Block_Changed_Add(*Map_Data.Map_Data, X, Y, Z, Priority.a, Old_Mat
   
 EndProcedure
 
-Procedure Map_Block_Change(Player_Number, *Map_Data.Map_Data, X, Y, Z, Type.a, Undo.a, Physic.a, Send.a, Send_Priority.a) ; Blockänderung, kein prüfen des Ranks
+Procedure Map_Block_Change(Player_Number, *Map_Data.Map_Data, X, Y, Z, Type.a, Undo.a, Physic.a, Send.a, Send_Priority.a) ; BlockÃ¤nderung, kein prÃ¼fen des Ranks
   If *Map_Data
     If X >= 0 And X < *Map_Data\Size_X And Y >= 0 And Y < *Map_Data\Size_Y And Z >= 0 And Z < *Map_Data\Size_Z
       *Pointer.Map_Block = *Map_Data\Data + Map_Get_Offset(X, Y, Z, *Map_Data\Size_X, *Map_Data\Size_Y, #Map_Block_Element_Size)
@@ -1504,7 +1504,7 @@ Procedure Map_Block_Change(Player_Number, *Map_Data.Map_Data, X, Y, Z, Type.a, U
         Undo_Add(Player_Number, *Map_Data\ID, X, Y, Z, *Pointer\Type, *Pointer\Player_Last_Change)
       EndIf
       
-      ; ###### Blocktyp und Last_Player ändern
+      ; ###### Blocktyp und Last_Player Ã¤ndern
       *Map_Data\Block_Counter [*Pointer\Type] - 1
       *Pointer\Type = Type
       *Pointer\Player_Last_Change = Player_Number
@@ -1530,7 +1530,7 @@ Procedure Map_Block_Change(Player_Number, *Map_Data.Map_Data, X, Y, Z, Type.a, U
   EndIf
 EndProcedure
 
-Procedure Map_Block_Change_Client(*Client.Network_Client, *Map_Data.Map_Data, X, Y, Z, Mode.a, Type.a) ; Blockänderung durch Klient, prüfen des Ranks (+Nachricht)
+Procedure Map_Block_Change_Client(*Client.Network_Client, *Map_Data.Map_Data, X, Y, Z, Mode.a, Type.a) ; BlockÃ¤nderung durch Klient, prÃ¼fen des Ranks (+Nachricht)
   If *Client And *Map_Data
     If *Client\Player\Entity
       If *Client\Player\Entity\Player_List
@@ -1544,17 +1544,17 @@ Procedure Map_Block_Change_Client(*Client.Network_Client, *Map_Data.Map_Data, X,
           ; ###### Last_Material setzen
           *Client\Player\Entity\Last_Material = Type
           
-          ; ###### Löschen oder Bauen...
+          ; ###### LÃ¶schen oder Bauen...
           If Mode
             Block_New_Type = Type
           Else
             Block_New_Type = Block(Block_Old_Type)\After_Delete
           EndIf
           
-          ; ###### Block zurücksenden
+          ; ###### Block zurÃ¼cksenden
           Map_Block_Changed_Add(*Map_Data, X, Y, Z, 250, -1)
           
-          ; ###### Überprüfen ob Bauen erlaubt
+          ; ###### ÃœberprÃ¼fen ob Bauen erlaubt
           If *Client\Player\Entity\Player_List\Stopped
             System_Message_Network_Send(*Client\ID, Lang_Get("", "Ingame: You are not allowed to build. (Stopped)"))
           ElseIf *Client\Player\Entity\Player_List\Rank < Block_Rank
@@ -1577,7 +1577,7 @@ Procedure Map_Block_Change_Client(*Client.Network_Client, *Map_Data.Map_Data, X,
             EndIf
           EndIf
           
-          ; ###### Block zurücksenden
+          ; ###### Block zurÃ¼cksenden
           ;Network_Out_Block_Set(*Client\ID, X, Y, Z, *Pointer\Type)
           
         EndIf
@@ -1586,7 +1586,7 @@ Procedure Map_Block_Change_Client(*Client.Network_Client, *Map_Data.Map_Data, X,
   EndIf
 EndProcedure
 
-Procedure Map_Block_Change_Player(*Player.Player_List, *Map_Data.Map_Data, X, Y, Z, Type.a, Undo.a, Physic.a, Send.a, Send_Priority.a) ; Blockänderung eines Players, prüfen des Ranks
+Procedure Map_Block_Change_Player(*Player.Player_List, *Map_Data.Map_Data, X, Y, Z, Type.a, Undo.a, Physic.a, Send.a, Send_Priority.a) ; BlockÃ¤nderung eines Players, prÃ¼fen des Ranks
   If *Player And *Map_Data
     If X >= 0 And X < *Map_Data\Size_X And Y >= 0 And Y < *Map_Data\Size_Y And Z >= 0 And Z < *Map_Data\Size_Z
       *Pointer.Map_Block = *Map_Data\Data + Map_Get_Offset(X, Y, Z, *Map_Data\Size_X, *Map_Data\Size_Y, #Map_Block_Element_Size)
@@ -1595,7 +1595,7 @@ Procedure Map_Block_Change_Player(*Player.Player_List, *Map_Data.Map_Data, X, Y,
       Block_Old_Type = *Pointer\Type
       Block_Rank = Map_Block_Get_Rank(*Map_Data, X, Y, Z)
       
-      ; ###### Überprüfen ob Bauen erlaubt
+      ; ###### ÃœberprÃ¼fen ob Bauen erlaubt
       If *Player\Stopped
         
       ElseIf *Player\Rank < Block_Rank
@@ -1742,7 +1742,7 @@ Procedure Map_Block_Set_Rank_Box(*Map_Data.Map_Data, X_0, Y_0, Z_0, X_1, Y_1, Z_
   
 EndProcedure
 
-Procedure Map_Block_Do_Add(*Map_Data.Map_Data, X.l, Y.l, Z.l) ; Fügt einen Block in die Abarbeitungsschleife ein (Filtert blöcke, welche nichts tun)
+Procedure Map_Block_Do_Add(*Map_Data.Map_Data, X.l, Y.l, Z.l) ; FÃ¼gt einen Block in die Abarbeitungsschleife ein (Filtert blÃ¶cke, welche nichts tun)
   
   *Pointer.Map_Block
   
@@ -1801,16 +1801,16 @@ Procedure Map_Block_Do_Distribute(*Map_Data.Map_Data, X, Y, Z)
     Do_Repeat = Block(Block_Type)\Do_Repeat
     
     Select Physic
-      Case 10 ; Physic: Fällt gerade herunter
+      Case 10 ; Physic: FÃ¤llt gerade herunter
         Physic_Block_Compute_10(*Map_Data, X, Y, Z)
         
-      Case 11 ; Physic: Lässt maximal 45° Schrägen zu (Bildet Pyramiden)
+      Case 11 ; Physic: LÃ¤sst maximal 45Â° SchrÃ¤gen zu (Bildet Pyramiden)
         Physic_Block_Compute_11(*Map_Data, X, Y, Z)
         
       Case 20 ; Physic: Minecraft original Fluidphysik (Block dupliziert sich seitlich und nach unten)
         Physic_Block_Compute_20(*Map_Data, X, Y, Z)
         
-      Case 21 ; Physic: Realistischeres Fluid (Block Fällt nach unten und füllt flächen aus)
+      Case 21 ; Physic: Realistischeres Fluid (Block FÃ¤llt nach unten und fÃ¼llt flÃ¤chen aus)
         Physic_Block_Compute_21(*Map_Data, X, Y, Z)
         
     EndSelect
@@ -1826,7 +1826,7 @@ Procedure Map_Block_Do_Distribute(*Map_Data.Map_Data, X, Y, Z)
   EndIf
 EndProcedure
 
-Procedure Map_Physic_Thread(*Dummy) ; Thread, für Physik
+Procedure Map_Physic_Thread(*Dummy) ; Thread, fÃ¼r Physik
   Repeat
     
     LockMutex(Main\Mutex)
@@ -1894,7 +1894,7 @@ Procedure Map_Physic_Thread(*Dummy) ; Thread, für Physik
   ForEver
 EndProcedure
 
-Procedure Map_Blockchanging_Thread(*Dummy) ; In diesem Thread werden alle Blockänderungen nacheinander gesendet
+Procedure Map_Blockchanging_Thread(*Dummy) ; In diesem Thread werden alle BlockÃ¤nderungen nacheinander gesendet
   Blockchange_Timer = Milliseconds()
   
   Repeat

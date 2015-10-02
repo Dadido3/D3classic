@@ -1,10 +1,10 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 #Heartbeat_Time = 30000
 
 Structure Heartbeat_Main
-  Salt.l            ; Salt für Name-Verification
-  Timer_Do.l        ; Timer für das Ausführen vom Heartbeat
+  Salt.l            ; Salt fÃ¼r Name-Verification
+  Timer_Do.l        ; Timer fÃ¼r das AusfÃ¼hren vom Heartbeat
 EndStructure
 Global Heartbeat_Main.Heartbeat_Main
 

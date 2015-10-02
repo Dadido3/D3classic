@@ -1,10 +1,10 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
-#Log_Size_Max = 1000 ; Größe in Einträgen (Intern)
-#Log_File_Size_Max = 1000000 ; Größe in Bytes (Extern)
+#Log_Size_Max = 1000 ; GrÃ¶ÃŸe in EintrÃ¤gen (Intern)
+#Log_File_Size_Max = 1000000 ; GrÃ¶ÃŸe in Bytes (Extern)
 
 Structure Log_Main
-  Timer_Do.l              ; Timer für das Ausführen von speziellen Aufgaben
+  Timer_Do.l              ; Timer fÃ¼r das AusfÃ¼hren von speziellen Aufgaben
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
   Filename.s              ; Dateiname
 EndStructure
@@ -31,7 +31,7 @@ Log_File_Size_Check()
 
 ; ########################################## Proceduren ##########################################
 
-Procedure Log_File_Size_Check() ; Prüft die Dateigröße und ändert die Datei wenn zu größ
+Procedure Log_File_Size_Check() ; PrÃ¼ft die DateigrÃ¶ÃŸe und Ã¤ndert die Datei wenn zu grÃ¶ÃŸ
   If FileSize(Log_Main\Filename) > #Log_File_Size_Max Or Log_Main\Filename = ""
     Max_Date = 2147483647
     Number = 0

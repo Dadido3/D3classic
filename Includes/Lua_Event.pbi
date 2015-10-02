@@ -1,18 +1,18 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Lua_Event_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Lua_Event_Main.Lua_Event_Main
 
 Structure Lua_Event
   Type.a                ; Typ: 0=Timer 10=Client_Add 11=Client_Del 20=Player_login 21=Player_Logout 22=Player_Map_Join 23=Player_Map_Left 24=Player_Move 25=Player_Die 30=Map_Chat 40=Blockchange
   Map_ID.l              ; ID der Map
-  Lua_Function.s        ; Lua-Funktion welche ausgeführt wird
+  Lua_Function.s        ; Lua-Funktion welche ausgefÃ¼hrt wird
   Time.q                ; Zeitintervall des Events beim Timer modus
-  Time_Next.q           ; Zeitpunkt des nächsten Events beim Timer modus
+  Time_Next.q           ; Zeitpunkt des nÃ¤chsten Events beim Timer modus
 EndStructure
 Global NewList Lua_Event.Lua_Event()
 

@@ -1,11 +1,11 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 #Build_Mode_Blocks_To_Resend_Size_Max = 1000
 
 Structure Build_Mode_Main
   Save_File.b             ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l        ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l      ; Timer für das überprüfen der Dateigröße
+  File_Date_Last.l        ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l      ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
 EndStructure
 Global Build_Mode_Main.Build_Mode_Main
 
@@ -16,7 +16,7 @@ Structure Build_Mode
 EndStructure
 Global NewList Build_Mode.Build_Mode()
 
-Structure Build_Mode_Blocks_To_Resend ; Blöcke welche nach dem Umschalten des Buildmodes zurückgesendet werden
+Structure Build_Mode_Blocks_To_Resend ; BlÃ¶cke welche nach dem Umschalten des Buildmodes zurÃ¼ckgesendet werden
   Client_ID.i
   Map_ID.l
   X.u

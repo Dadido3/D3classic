@@ -1,14 +1,14 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Player_Main
   List_Thread_ID.i            ; ID des List-Threads
   Save_File.b                 ; Zeigt an, ob gespeichert werden soll
-  File_Date_Last.l            ; Datum letzter Änderung, bei Änderung speichern
-  Timer_File_Check.l          ; Timer für das überprüfen der Dateigröße
-  Timer_Ontime_Counter.l      ; Timer für den Ontime_Counter
+  File_Date_Last.l            ; Datum letzter Ã„nderung, bei Ã„nderung speichern
+  Timer_File_Check.l          ; Timer fÃ¼r das Ã¼berprÃ¼fen der DateigrÃ¶ÃŸe
+  Timer_Ontime_Counter.l      ; Timer fÃ¼r den Ontime_Counter
   Message_Welcome.s           ; Nachricht welche dem eingeloggten Benutzer erscheint.
   Players_Max.u               ; Maximale Anzahl spieler
-  Name_Verification.b         ; Namensüberprüfung aktiv
+  Name_Verification.b         ; NamensÃ¼berprÃ¼fung aktiv
   Kill_Mode.a                 ; Sterbe-art (0=Map-Spawn, 1=Global Kill-Spawn, 2=Kick, 3=Ban)
   Kill_Spawn_Map_ID.l         ; Spawnpoint beim Sterben
   Kill_Spawn_X.f              ; Spawnpoint beim Sterben
@@ -54,7 +54,7 @@ Procedure Player_Save(Filename.s) ; Speichert die Einstellungen
   EndIf
 EndProcedure
 
-Procedure Player_Load(Filename.s) ; Lädt die Einstellungen
+Procedure Player_Load(Filename.s) ; LÃ¤dt die Einstellungen
   If OpenPreferences(Filename)
     
     Player_Main\Message_Welcome = ReadPreferenceString("Message_Welcome", "")
@@ -513,7 +513,7 @@ Procedure.s Player_Get_Suffix(Player_Number)
   ProcedureReturn Result
 EndProcedure
 
-Procedure Player_Ontime_Counter_Add(Seconds.d) ; Erhöht den Sekunden Zähler aller Spieler(Online) in der Playerlist
+Procedure Player_Ontime_Counter_Add(Seconds.d) ; ErhÃ¶ht den Sekunden ZÃ¤hler aller Spieler(Online) in der Playerlist
   ForEach Player_List()
     If Player_List()\Online
       Player_List()\Ontime_Counter + Seconds

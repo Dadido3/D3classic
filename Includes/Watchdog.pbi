@@ -1,4 +1,4 @@
-; ########################################## Variablen ##########################################
+ï»¿; ########################################## Variablen ##########################################
 
 Structure Watchdog_Main
   Thread_ID.i           ; Watchdog-Thread
@@ -9,16 +9,16 @@ Global Watchdog_Main.Watchdog_Main
 Structure Watchdog_Module
   Name.s                ; Name des Moduls
   Thread_ID.i           ; Thread_ID (Purebasic) wenn vorhanden
-  Message_Last.s        ; Meldung, welche beim Letzten Event hinzugefügt wurde
-  Message_Biggest.s     ; Meldung, welche beim größten Timeout hinzugefügt wurde
+  Message_Last.s        ; Meldung, welche beim Letzten Event hinzugefÃ¼gt wurde
+  Message_Biggest.s     ; Meldung, welche beim grÃ¶ÃŸten Timeout hinzugefÃ¼gt wurde
   Time_Watch.l          ; Zeitpunkt, an dem zuletzt ein Event stattfand
   Timeout.l             ; Timeout
-  Timeout_Biggest.l     ; Größter Timeout
-  Timeout_Max.l         ; Größte erlaubte "Lag"-Zeit in ms
+  Timeout_Biggest.l     ; GrÃ¶ÃŸter Timeout
+  Timeout_Max.l         ; GrÃ¶ÃŸte erlaubte "Lag"-Zeit in ms
   Calls_Per_Second.l    ; Aufrufe pro Sekunde
   CPU_Time.l            ; Gesamte CPU-Zeit seit beginn in ms
   CPU_Time_0.l          ; CPU-Zeit Messzeitpunk 0
-  CPU_Time_4_Percent.l  ; CPU-Zeit für Prozentmessung in ms
+  CPU_Time_4_Percent.l  ; CPU-Zeit fÃ¼r Prozentmessung in ms
   CPU_Kernel_Last.q     ; CPU-Kernel-Zeitpunkt vom letzten mal (wenn Thread_ID vorhanden)
   CPU_User_Last.q       ; CPU-Usermode-Zeitpunkt vom letzten mal (wenn Thread_ID vorhanden)
   CPU_Kernel_Time.q     ; CPU-Kernel-Zeit (wenn Thread_ID vorhanden)
